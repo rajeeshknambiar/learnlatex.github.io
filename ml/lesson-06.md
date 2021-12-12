@@ -1,32 +1,28 @@
+
 ---
 layout: "lesson"
-lang: "en"
-title: "Extending LaTeX using packages and definitions"
-description: "This lesson shows how you can extend LaTeX to your needs and change its layout further by using different packages, and shows how you can define your own commands."
-toc-anchor-text: "Extending LaTeX"
-toc-description: "Using packages and definitions."
+lang: "ml"
+title: "പാക്കേജുകളും നിർവചനങ്ങളും ഉപയോഗിച്ചു് ലാറ്റെക്കിനെ വിപുലീകരിക്കൽ"
+description: "ലാറ്റെക്കിനെ വിപുലീകരിച്ച് നിങ്ങളുടെ ഇച്ഛാനുസരണം പ്രമാണത്തിന്റെ വിന്യാസക്രമങ്ങളിൽ എങ്ങനെ മാറ്റം വരുത്താമെന്നും അതിനു അനുയോജ്യമായ രീതിയിൽ പാക്കേജുകൾ എങ്ങനെ ഉപയോഗിക്കാമെന്നും നിങ്ങളുടേതായ ആജ്ഞകൾ എങ്ങനെ നിർവ്വചിക്കാമെന്നും ഈ പാഠം നമുക്കു് വിശദീകരിക്കുന്നു."
+toc-anchor-text: "ലാറ്റെക്കിന്റെ വിപുലീകരണം"
+toc-description: "പാക്കേജുകളും നിർവചനങ്ങളും ഉപയോഗിക്കുക."
 ---
 
-# Extending LaTeX
 
-<span
-  class="summary">This lesson shows how you can extend LaTeX to your needs and change its layout further by using packages and definitions. It also shows how you can define your own commands.</span>
+# ലാറ്റെക്കിന്റെ വിപുലീകരണം
 
-After having declared a class, in the preamble you can modify functionality in
-LaTeX by adding one or more *packages*. These can
+<span class="summary">ലാറ്റെക്കിനെ വിപുലീകരിച്ച് നിങ്ങളുടെ ഇച്ഛാനുസരണം പ്രമാണത്തിന്റെ വിന്യാസക്രമങ്ങളിൽ എങ്ങനെ മാറ്റം വരുത്താമെന്നും അതിനു അനുയോജ്യമായ രീതിയിൽ പാക്കേജുകൾ എങ്ങനെ ഉപയോഗിക്കാമെന്നും നിങ്ങളുടേതായ ആജ്ഞകൾ എങ്ങനെ നിർവ്വചിക്കാമെന്നും ഈ പാഠം വിശദീകരിക്കുന്നു.</span>
 
-- Change how some parts of LaTeX work
-- Add new commands to LaTeX
-- Change document design
+പ്രമാണത്തിന്റെ പീഠികയിൽ ഉപയോഗിക്കുവാൻ തീരുമാനിച്ച പ്രമാണവർഗ്ഗത്തിന്റെ പേരു് പ്രസ്താവിച്ചശേഷം, നിങ്ങൾക്കു് അതിന്റെ ചില ഭാഗങ്ങളുടെ വിന്യാസരീതി മാറ്റണമെന്നു് തോന്നിയാൽ, അതിനു് അനുയോജ്യമായ ഒന്നോ അതിൽക്കൂടുതലോ പാക്കേജുകൾ പീഠികയിൽ ചേർക്കാവുന്നതാണു്.  അവ,
 
-## Changing how LaTeX works
+- ചില ഭാഗങ്ങളിലെ ലാറ്റെക്കിന്റെ പ്രവർത്തനരീതിയെ മാറ്റുന്നു
+- ചില പുതിയ ആജ്ഞകൾ നിങ്ങൾക്കു നൽകുന്നു
+- പ്രമാണത്തിന്റെ ദൃശ്യരൂപത്തെ മാറ്റുന്നു
 
-The LaTeX 'kernel' (the core of LaTeX) is rather limited in user customisation,
-and so some add-on packages deal with very common ideas. The first is to
-change how LaTeX deals with language-specific typesetting (hyphenation,
-punctuation, quotations, localisation, etc.). Different languages have different
-rules, so it's important to tell LaTeX which one to use. This is handled by the
-`babel` package.
+
+## ലാറ്റെക്കിന്റെ പ്രവർത്തനക്രമത്തെ മാറ്റുന്ന വിധം
+
+ലാറ്റെക്കിന്റെ ‘കാതൽ’ (kernel) ഉപയോക്താവിന്റെ ഭേദഗതികൾക്കു് മിക്കവാറും അപ്രാപ്യമാണു്. അതുകൊണ്ടു് അനുബന്ധ പാക്കേജുകൾ എപ്പോഴും മറ്റു സാധാരണഗതിയിലുള്ള ആശയരൂപങ്ങളെയാണു് കൈവെയ്ക്കാറുള്ളതു്. ഉദാഹരണമായി, ഭാഷാസംബന്ധിയായ ഘടകങ്ങളെ --- തുടർക്കുറി (hyphen), ചിഹ്നനം (puncutation), ഉദ്ധരണി (quotation), പ്രാദേശികത്വം (localisation), തുടങ്ങിയവ --- ലാറ്റെൿ എങ്ങനെ കൈകാര്യം ചെയ്യുന്നു എന്നതു് ഒരു പ്രധാനവിഷയമാണു്. വിവിധ ഭാഷകൾക്കു് മുകളിൽ പറഞ്ഞ ഘടകങ്ങൾ കൈകാര്യം ചെയ്യുവാൻ നിയതമായ നിയമങ്ങളുണ്ടു്, അതുകൊണ്ടു് ലാറ്റെക്കിനെ അക്കാര്യം അറിയിക്കേണ്ടതു് അവശ്യം ആവശ്യമാണു്. ഈ ദൗത്യം നിർവ്വഹിക്കാൻ `babel` എന്ന പാക്കേജ് ഉപയോഗിക്കുന്നു.
 
 ```latex
 \documentclass{article}
@@ -46,18 +42,14 @@ material, and which will be able to give us at least one hyphenation point.
 \end{document}
 ```
 
-Try un-commenting the (clearly misleading) line to load `babel` and see the
-effect. (The standard hyphenation rules are US English.)
+മുകളിൽ കാണിച്ച ഉദാഹരണത്തിൽ ‘ബാബൽ’ പാക്കേജിന്റെ പ്രഖ്യാപനവരിക്കു തുടക്കത്തിലുള്ള ശതമാനചിഹ്നത്തെ (%) മാറ്റിയാൽ ആ വരി സജീവമാകുന്നു. (%-ചിഹ്നം ഒരു വരിയെ നിർജ്ജീവമാക്കാൻ സഹായിക്കുന്ന പ്രത്യേക ചിഹ്നമാണെന്നു് അന്യത്ര പഠിച്ചുകാണുമല്ലോ.) എന്നിട്ടു് ലാറ്റെൿ പ്രവർത്തിപ്പിക്കുകയും ബാബൽ വരുത്തുന്ന മാറ്റങ്ങളെന്തെന്നു വിലയിരുത്തുകയും ചെയ്യുക.
 
-The `babel` package does a lot more than hyphenation, depending on the language
-involved; we've given [some more details](more-06) if you need them.
+തുടർക്കുറി പ്രയോഗം മാത്രമല്ല ബാബൽ പാക്കേജിന്റെ പ്രവർത്തനരംഗം, നമ്മൾ തെരഞ്ഞെടുക്കുന്ന ഭാഷയ്ക്കനുയോജ്യമായി മറ്റു് ഒട്ടനവധി മാറ്റങ്ങൾ വരുത്തുവാനും പ്രാപ്തമാണു്. ഇക്കാര്യം കൂടുതൽ വിശദമായി [മറ്റൊരു പാഠത്തിൽ](more-06) പറയുന്നുണ്ടു്, താല്പര്യമുണ്ടെങ്കിൽ അതൊന്നു സന്ദർശിച്ചാലും.
 
-## Changing design
 
-It's useful to be able to adjust some aspects of design independent of the
-document class. The most obvious one are the page margins. We've just used
-the `geometry` package in the example above, but let's now have an example
-specifically about margins.
+## രൂപകല്പനയിലെ ഭേദഗതികൾ
+
+പ്രമാണവർഗ്ഗങ്ങളെ ആശ്രയിക്കാതെ ഏതാനും രൂപകല്പനാ ഘടകങ്ങൾ പ്രമാണങ്ങളിലുണ്ടു്. അവയിൽപ്പെട്ട ഒന്നാണു് പ്രമാണത്തിന്റെ സീമകൾ (margin). വളരെ ആശാവഹമായ കാര്യമാണു് ഇത്തരം ഘടകങ്ങളെ നമ്മുടെ ഇച്ഛാനുസരണം മാറ്റാൻ കഴിയുക എന്നതു്. മുകളിൽ കാണിച്ച ഉദാഹരണത്തിൽ `geometry` എന്ന പാക്കേജ് ഉപയോഗിച്ചതു് ശ്രദ്ധിച്ചുകാണുമല്ലോ. ഇപ്പോൾ നമുക്കു് പ്രമാണസീമകളെ മാറ്റുന്ന ഒരു ഉദാഹരണം നോക്കാം.
 
 ```latex
 \documentclass{book}
@@ -93,23 +85,19 @@ Text of the second section.
 \end{document}
 ```
 
-You should see the effect here compared to not loading `geometry`.
+ഇപ്പോൾ നിങ്ങൾക്കു ‘ജോമട്രി‘ ഉപയോഗിച്ചും ഉപയോഗിക്കാതെയും ലാറ്റെൿ പ്രവർത്തിപ്പിച്ചു് പ്രമാണത്തിന്റെ ദൃശ്യരൂപത്തിൽ വരുന്ന മാറ്റങ്ങളെ വിലയിരുത്താം.
 
-## Adding new functionality
 
-One of LaTeX's strengths is that you can choose from thousands of packages,
-including ones for writing mathematical text, for hyperlinking, for
-sophisticated capabilities with color, etc. We will see some more common
-packages in later lessons.
+## പുതിയ കർമ്മ പദ്ധതികൾ ചേർക്കുക
 
-## Defining commands
+ഗണിതപാഠം രചിക്കുക, പാഠത്തിൽ ഹൈപ്പർലിങ്ക് സൃഷ്ടിക്കുക, നിറങ്ങൾ ആവശ്യാനുസരണം ഉപയോഗിക്കുക എന്നു തുടങ്ങി  ഉപയോക്താവിന്റെ ഒട്ടനവധി ആവശ്യങ്ങളെ നിറവേറ്റാൻ ആയിരക്കണക്കിനു് പാക്കേജുകൾ ലാറ്റെക്കിൽ ലഭ്യമാണു്. ഇവയിൽ നിന്നു് സാർവ്വജനീനമായി ഉപയോഗിക്കുന്ന ഏതാനും പാക്കേജുകളെപ്പറ്റി നമുക്കു് വേറൊരു പാഠത്തിൽ നിന്നു് മനസ്സിലാക്കാം.
 
-Sometimes you need a command specific to your document, either some
-functionality not found in the available packages or simply a command
-to enter a common expression that is used multiple times.
 
-The following example shows a command to produce keywords with a
-specific style applied.
+## ആജ്ഞകളുടെ നിർവ്വചനം 
+
+ചിലപ്പോൾ നിങ്ങളുടെ പ്രമാണത്തിനു മാത്രമുള്ള ഒരു പ്രത്യേക ആവശ്യം നിറവേറ്റാനുള്ള ആജ്ഞകൾ നിങ്ങൾ തെരഞ്ഞെടുത്ത പ്രമാണവർഗത്തിലോ പാക്കേജുകളിലോ കാണാതെ വരാം. അല്ലെങ്കിൽ ഒരേ വിന്യാസശൈലിയിലുള്ള പ്രയോഗങ്ങൾ പല തവണ ആവർത്തിക്കേണ്ട ആവശ്യം ഉണ്ടാകാം.
+
+ചുവടെ ചേർത്തിരിക്കുന്ന ഉദാഹരണത്തിൽ രണ്ടാമതു പറഞ്ഞ ഒരാവശ്യം നമുക്കു് വന്നുചേർന്നിരിക്കുന്നു. താക്കോൽ പദങ്ങൾ ഒരു പ്രത്യേക ശൈലിയിൽ നമുക്കു് വിന്യസിക്കേണ്ടി വന്നിരിക്കുന്നു. ഈ പരിപാടി എളുപ്പത്തിലാക്കാൻ നമ്മൾ ഒരു പുതിയ ആജ്ഞ നിർവ്വചിക്കുന്നതു് കണ്ടാലും:
 
 ```latex
 \documentclass{article}
@@ -124,18 +112,13 @@ Something about \kw{apples} and \kw{oranges}.
 \end{document}
 ```
 
-In the definition `[1]` denotes the number of arguments (here one)
-and `#1` denotes the first argument that is supplied
-(`apples` or `oranges` in this example). You may have up to nine
-arguments, but it is usually best to have just one argument, or
-sometimes none at all.
 
-Defining commands does not just reduce the typing required to produce
-a document. It helps to separate out the styling information. If it is
-decided to use a different style for keywords, rather than having to
-edit the entire document, you simply need to use a different
-definition. Here we load the `xcolor` package to provide colors, and
-use blue in place of bold in the formatting.
+ആജ്ഞകൾ രണ്ടു് തരത്തിലുണ്ടു് --- വാദങ്ങൾ (arguments) സ്വീകരിക്കുന്നവയും, വേണ്ടാത്തവയും. വാദങ്ങൾ രണ്ടു തരത്തിലുണ്ടു്: (i) നിർബന്ധിതവാദങ്ങൾ (mandatory arguments), (ii) ഐച്ഛികവാദങ്ങൾ  (optional arguments).
+
+മുകളിൽ കാണിച്ച നിർവ്വചനത്തിൽ `[1]` എന്നതു് സൂചിപ്പിക്കുന്നതു് എത്ര വാദങ്ങൾ (arguments) നമ്മൾ നിർവ്വചിച്ച ആജ്ഞ സ്വീകരിക്കും എന്നതാണു്. ഇവിടെ എണ്ണം സൂചിപ്പിക്കുന്നതുപോലെ ഒരു വാദം മാത്രമേ സ്വീകരിക്കുകയുള്ളൂ. `#1` സൂചിപ്പിക്കുന്നതു് പകരം വെക്കേണ്ട പാഠത്തെയാണു്. ഇവിടെ `apples` അല്ലെങ്കിൽ `oranges` എന്ന വാക്കുകളാണു് `#1`-ന്റെ സ്ഥാനത്തു് വരിക. ഇങ്ങനെ ഒരു ആജ്ഞയിൽ ഒമ്പതു് വാദങ്ങൾ വരെ നൽകാവുന്നതാണു്. അത്തരം ആജ്ഞകൾ സങ്കീർണ്ണമായ വിന്യാസപ്രവർത്തനങ്ങളെ ലളിതവൽക്കരിക്കാൻ സഹായിക്കും എന്നു് പറയേണ്ടതില്ലല്ലോ.
+
+
+ആജ്ഞകളുടെ നിർവ്വചനം പാഠനിവേശനത്തിന്റെ ഭാരം കുറയ്ക്കുക മാത്രമല്ല ചെയ്യുന്നതു്. അതു് വിന്യാസവിവരത്തെ പാഠത്തിൽ നിന്നും വേർപെടുത്തുന്നു. പിന്നീടെ എപ്പോഴെങ്കിലും നമുക്കു് താക്കോൽ പദങ്ങളെ വേറൊരു രീതിയിൽ വിന്യസിക്കണമെന്നു തോന്നിയാൽ, മുഴുവൻ പ്രമാണത്തിലും ചെന്നു് തിരുത്തുന്നതിന്നുപകരം ഒരു സ്ഥലത്തു് നിർവചനത്തെ മാത്രം പുതിയരീതിയിൽ മാറ്റിയാൽ മതി. ഇവിടെ നമ്മൾ `xcolor` എന്ന പാക്കേജ് ഉപയോഗിക്കാൻ തീരുമാനിക്കുകയും താക്കോൽ പദങ്ങൾ കനമുള്ള ലിപിയ്ക്കു പകരം നീലനിറത്തിൽ കാണുവാൻ  പാകത്തിനു് പുനർനിർവ്വചിക്കുകയും ചെയ്യുന്നു.
 
 ```latex
 \documentclass{article}
@@ -152,22 +135,17 @@ Something about \kw{apples} and \kw{oranges}.
 \end{document}
 ```
 
-Beware that defining too many commands or defining commands with
-multiple arguments may make the document source harder  to understand
-as it is using an unfamiliar syntax. The ability to define
-document-specific commands should be used with care.
+ഓര്‍ക്കുക: ഒട്ടനവധി ഉപയോക്തൃനിർമ്മിതമായ, ഒന്നിലധികം വാദങ്ങളുള്ള ആജ്ഞകളും മറ്റും പ്രമാണത്തിന്റെ സ്രോതസ്സ് അതിന്റെ കർത്താവൊഴികെ മറ്റുള്ളവർക്കു് വായിച്ചുമനസ്സിലാക്കാൻ പ്രയാസമുണ്ടാക്കുന്നതാണു്. അതുകൊണ്ടു്, അവശ്യം വേണ്ട അവസരങ്ങളിൽ മാത്രം ഈ ആനുകൂല്യങ്ങൾ പ്രയോജനപ്പെടുത്തുക.
 
-## Exercises
 
-Try out writing some text in other European languages and see how `babel`
-affects hyphenation: you can probably find some text on the internet, and guess
-the right options.
+## അഭ്യാസം 
 
-Try altering the margins in the `geometry` example. You can set the individual
-`top`, `bottom`, `left` and `right` margins separately using a comma-separated
-list.
+മറ്റു ചില യൂറോപ്യൻ ഭാഷകളിൽ ഏതാനും വാക്യങ്ങളെഴുതി ‘ബാബൽ’-ന്റെ പ്രവർത്തനക്ഷമത പരിശോധിക്കുക. മറ്റു ഭാഷകളിലെ പാഠം ഇണയത്തിൽ (Internet) നിന്നു എളുപ്പത്തിൽ കണ്ടെത്താവുന്നതാണു്.
 
-Try loading the `lipsum` package and then add the command `\lipsum` to your
-document. Can you guess why this package is useful for making examples?
+പ്രമാണസീമകളെ ‘ജ്യോമട്രി’ പാക്കേജ് ഉപയോഗിച്ചു് മാറ്റി കൂടുതൽ മനസ്സിലാക്കുക. മുകൾ, താഴ്, ഇടതു്, വലതു് എന്നീ എല്ലാ വശങ്ങളിലെയും സീമകളെ മാറ്റാൻ യഥാക്രമം `top`, `bottom`, `left`, `right` എന്ന ഐച്ഛികങ്ങൾ കോമ കൊണ്ടു് വേർതിരിച്ചു് ഒന്നിച്ചു കൊടുക്കാവുന്നതാണു്.
 
-Try altering the definition of `\kw` to achieve a different style.
+`lipsum` എന്ന പാക്കേജ് ഉപയോഗിച്ച്  `\lipsum` എന്ന ആജ്ഞ പ്രയോഗിച്ചു നോക്കിയാലും. എന്നിട്ടു് എങ്ങനെ ഈ പാക്കേജ് ഉദാഹരണങ്ങൾ എളുപ്പത്തിൽ സൃഷ്ടിക്കാൻ സഹായിക്കുന്നു എന്നു് തിരിച്ചറിയുക.
+
+`\kw` എന്ന ആജ്ഞയെ മറ്റൊരു ശൈലിയിൽ വിന്യസിക്കാൻ പാകത്തിനു പുനർനിർവ്വചിക്കുക.
+
+
