@@ -127,74 +127,61 @@ Example text.
 
 ---
 
-## Choosing how to display the output
+## ഫലം പ്രദര്‍ശിപ്പിക്കുന്നതെങ്ങനെ എന്നു് തിരഞ്ഞെടുക്കുന്നത്
 
-If you use the TeXLive.net system, then the PDF
-output from running an example is shown using
-[PDF.js](https://mozilla.github.io/pdf.js/) by default. This provides
-consistent behavior over the widest range of browsers.
+നിങ്ങൾ ടെൿലൈവ്.നെറ്റ് ആണുപയോഗിക്കുന്നതെങ്കിൽ ഉദാഹരണങ്ങൾ പ്രവര്‍ത്തിപ്പിച്ചു ലഭിക്കുന്ന പിഡിഎഫ് ഫലം 
+[PDF.js](https://mozilla.github.io/pdf.js/) ഉപയോഗിച്ചാണ് സാധാരണ പ്രദര്‍ശിപ്പിക്കുക 
+ഏറ്റവുമധികം ബ്രൗസറുകളിൽ കൃത്യമായ രീതിയിൽ ഫലം കാണുവാൻ ഇതു് സഹായിക്കുന്നു.
 
-If you would prefer to use your browser's default PDF reader (either
-its built in one, or an external application that you have configured)
-then add a comment of the form:
+നിങ്ങളുടെ ബ്രൗസറിൽ സ്വതവേയുള്ള പിഡിഎഫ് പ്രദര്‍ശകം (പ്രകൃത്യാലുള്ളതോ, നിങ്ങൾ സ്ഥാപിച്ച മറ്റൊരു പ്രവര്‍ത്തകമോ)
+ഉപയോഗിക്കണമെന്നുണ്ടെങ്കിൽ ചുവടെ കൊടുത്ത തരത്തിൽ ഒരു കമന്റ് ചേര്‍ക്കുക:
 
-`% !TEX ` _any text_ `pdf`
 
-The default behavior can be explicitly specified by using `pdfjs` as
-the final token. For debugging you may sometimes want the log file
-returned, even if the document produces a PDF with
-no errors. This can be specified by using `log` as the final token in
-the comment.
+`% !TEX ` _എന്തെങ്കിലും പാഠം_ `pdf`
 
-As an alternative to using a `% !TeX` comment, you may specify the
-site default return parameter on the [Site Settings](settings)
-page. The Settings are specific to each browser, so for example you
-may choose to use the default `pdfjs` setting on your mobile device,
-but use `pdf` on your desktop browser to use its default PDF rendering.
+സ്വതവേയുള്ള സ്വഭാവം പാലിക്കാൻ ഇതിൽ അവസാനത്തെ അടയാളമായി `pdfjs` ഉപയോഗിച്ച് സ്പഷ്ടമായി
+ആവശ്യപ്പെടാം. പിഡിഎഫ് പ്രമാണം ശരിയായി ലഭിച്ചാലും, പ്രശ്നനിര്‍ദ്ധാരണത്തിനായി ചിലപ്പോൾ ലോഗ് ഫയലും
+ആവശ്യമായി വന്നേക്കാം. അപ്പോൾ കമന്റിൽ അവസാനത്തെ അടയാളമായി `log` എന്നുപയോഗിക്കാം.
 
+ഓരോ പ്രാവശ്യവും `% !TeX` കമന്റ് ഉപയോഗിക്കുന്നതിനു പകരം സ്വതവേയുള്ള സ്വഭാവവിശേഷം [സൈറ്റ് സജ്ജീകരണങ്ങളിൽ](settings)
+നിര്‍ദ്ദേശിക്കാം. സജ്ജീകരണങ്ങൾ ഉപയോഗിക്കുന്ന ബ്രൗസറിൽ ബന്ധിതമാണു്, ഉദാഹരണത്തിനു് മൊബൈൽ
+ഉപകരണത്തിൽ `pdfjs`-ഉം ഡെസ്ൿടോപ്പിൽ സ്ഥാപിച്ച പ്രവര്‍ത്തകം — `pdf`-ഉം സജ്ജീകരിച്ചു വയ്ക്കാം.
 
 ---
 
-## HTML output (make4ht, LaTeXML, lwarp)
+## എച്ടിഎംഎൽ ഫലം (make4ht, LaTeXML, lwarp)
 
-If using the TeXLive.net system, then additional return options,
-`make4ht`, `LaTeXML` or `lwarp` may be specified. These return one or more HTML pages
-in the frame within the page. It may be specified at the same time
-as `xelatex` or `lualatex` as well as the default `pdflatex` processing.
+ടെൿലൈവ്.നെറ്റ് ഉപയോഗിക്കുന്നുവെങ്കിൽ അധികമായി ചില ഐച്ഛികങ്ങൾ, `make4ht`, `LaTeXML` അഥവാ `lwarp`
+എന്നിവ കൂടി നിര്‍ദ്ദേശിക്കാവുന്നതാണ്. ഇവ ഒന്നോ അതിലധികമോ എച്ടിഎംഎൽ താളുകൾ ഇപ്പൊഴുള്ള ചട്ടത്തിനകത്ത്
+ലഭ്യമാക്കും. ഈ നിര്‍ദ്ദേശങ്ങൾ `xelatex`, `lualatex`, സ്വതവേയുള്ള `pdflatex` എന്നീ നിര്‍ദ്ദേശങ്ങളുടെ കൂടെയും
+നല്കാവുന്നതാണു്.
 
-To enable this output, add a comment of the form:
-
+ഈ രൂപത്തിലുള്ള ഫലം ലഭിക്കുവാൻ ചുവടെ കൊടുത്തതു പോലെ ഒരു കമന്റ് ചേര്‍ക്കുക:
 
 ```
 % !TeX make4ht
 ```
 {: .noedit :}
 
+`make4ht`യ്ക്കു പകരം `LaTeXML` എന്നോ `lwarp` എന്നോ ആ സംവിധാനം സ്പഷ്ടമാക്കുവാൻ ഉപയോഗിക്കുക.
 
-Replacing `make4ht` by `LaTeXML` or `lwarp` to specify those systems.
+സ്ഥായിയായി ഉപയോഗിക്കുവാൻ `make4ht`, `LaTeXML` അഥവാ `lwarp` എന്ന ഐച്ഛികങ്ങൾ [സൈറ്റ് സജ്ജീകരണങ്ങളിൽ](settings)
+നിര്‍ദ്ദേശിക്കാം.
 
-
-
-Alternatively you may specify `make4ht`, `LaTeXML` or `lwarp` as the default return option
-on the [Site Settings](settings) page.
-
-
-If using a locally installed TeX system, the same output as the `make4ht` option may be obtained
-by executing
+സ്വയം ഇന്‍സ്റ്റാൾ ചെയ്ത ടെൿ സംവിധാനമുപയോഗിക്കുമ്പോൾ `make4ht` പ്രകാരമുള്ള ഫലം ലഭിക്കാൻ ചുവടെ കൊടുത്തതുപോലെ പ്രയോഗിക്കുക:
 
 ```
 make4ht  document.tex "learnlatex4ht,2,mathml,mathjax,svg"
 ```
 {: .noedit :}
 
-with the addional option `-x` or `-l` if XeLaTeX or LuaLaTeX are specified.
+സീലാറ്റെക്കോ ലുവാലാറ്റെക്കോ കൂടെ ഉപയോഗിക്കാൻ `-x` അഥവാ `-l` എന്നും സ്പഷ്ടമാക്കുക.
 
-When running locally, other configurations would be possible. See the [make4ht
-manual](https://texdoc.org/pkg/make4ht).
+ഇത്തരത്തിൽ പ്രവര്‍ത്തിപ്പിക്കുന്ന അവസരത്തിൽ ഇതര സമ്മിശ്രണങ്ങളും സാധ്യമാണ്. കൂടുതലറിയാൻ [make4ht കൈപ്പുസ്തകം](https://texdoc.org/pkg/make4ht)
+കാണുക.
 
-
-For `LaTeXML` to run locally, you would need to install LaTeXML (it is not part of TeX Live or MiKTeX)
-and use
+`LaTeXML` പ്രവര്‍ത്തിപ്പിക്കണമെങ്കിൽ LaTeXML ഇന്‍സ്റ്റാൾ ചെയ്ത് (ഇതു് ടെൿലൈവ്, മിൿടെൿ എന്നിവയുടെ ഭാഗമല്ല) ചുവടെ കൊടുത്തതു
+പോലെ ഉപയോഗിക്കുക:
 
 ```
 latexml document.tex > document.xml
@@ -204,21 +191,16 @@ latexmlpost --format=html5 \
 ```
 {: .noedit :}
 
-Many other LaTeXML configurations are possible,
-[as described in the manual](https://dlmf.nist.gov/LaTeXML/manual/).
+[കൈപ്പുസ്തകത്തിൽ വിശദീകരിച്ച പോലെ](https://dlmf.nist.gov/LaTeXML/manual/) മറ്റനവധി സമ്മിശ്രണങ്ങളും സാദ്ധ്യമാണു്.
 
-
-The `lwarp` configuration is not documented here, it is somewhat experimental and subject to change.
-The current version can be seen at the
-[source repository](https://github.com/davidcarlisle/latexcgi/blob/main/lwarp/latexcgilwarp).
+`lwarp` സമ്മിശ്രണം ഇവിടെ വിശദീകരിക്കുന്നില്ല, അത് പരീക്ഷണാത്മകവും മാറാവുന്നതുമാണ്. നിലവിലുള്ള പതിപ്പ് 
+[ഉറവയിൽ](https://github.com/davidcarlisle/latexcgi/blob/main/lwarp/latexcgilwarp) കാണാം.
 
 
 ---
 
-[^1]: Note that during development of the site we have also used 
-      [LaTeX.Online](https://latexonline.cc/) and
-      [LaTeX-on-HTTP](https://github.com/YtoTech/latex-on-http)
-      and we thank the developers of those services for making updates to enable
-      the examples on this site to be available at an early stage.
-
+[^1]: വെബ്‌സൈറ്റിന്റെ നിര്‍മ്മിതിയിൽ ഞങ്ങൾ [LaTeX.Online](https://latexonline.cc/),
+      [LaTeX-on-HTTP](https://github.com/YtoTech/latex-on-http) എന്നിവയുടെ സേവനം
+      പ്രയോജനപ്പെടുത്തിയിട്ടുണ്ട്, ഈ സൈറ്റിന്റെ പ്രാരംഭഘട്ടത്തിൽ ഉദാഹരണങ്ങൾ പ്രവര്‍ത്തിപ്പിക്കാനാവശ്യമായ
+      പുതുക്കലുകൾ നടത്തിയതിനു് ഇവ വികസിപ്പിച്ചവരോടുള്ള കടപ്പാട് അറിയിക്കുന്നു.
 
