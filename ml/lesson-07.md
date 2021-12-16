@@ -1,19 +1,19 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "Including graphics and positioning"
-description: "This lesson shows how you can include external graphics files into your document, how to change their appearance, and how to make them float automatically to the proper location in the PDF."
+lang: "ml"
+title: "ചിത്രസംയോജനവും സ്ഥാനനിര്‍ണ്ണയവും"
+description: "ബാഹ്യമായ ഒരു ചിത്രം എങ്ങനെ പ്രമാണത്തിൽ ചേര്‍ക്കാമെന്നും അതിന്റെ ബാഹ്യരൂപങ്ങൾ മാറ്റാമെന്നും പിഡിഎഫിൽ അനുയോജ്യമായ സ്ഥാനത്തേയ്ക്കു നീക്കാമെന്നും ഈ പാഠത്തിൽ പരിചയപ്പെടാം."
 toc-anchor-text: "Using graphics"
-toc-description: "Appearance and positioning of graphics."
+toc-description: "ചിത്രസംയോജനവും സ്ഥാനനിര്‍ണ്ണയവും."
 ---
 
-# Including Graphics and positioning
+# ചിത്രസംയോജനവും സ്ഥാനനിര്‍ണ്ണയവും
 
 <span
-  class="summary">This lesson shows how you can include external graphics files into your document, how to change their appearance, and how to position or float them automatically.</span>
-
-To bring in graphics from outside LaTeX, use the `graphicx`
-package, which adds the command `\includegraphics` to LaTeX.
+  class="summary">ബാഹ്യമായ ഒരു ചിത്രം എങ്ങനെ പ്രമാണത്തിൽ ചേര്‍ക്കാമെന്നും അതിന്റെ ബാഹ്യരൂപങ്ങൾ മാറ്റാമെന്നും പിഡിഎഫിൽ അനുയോജ്യമായ സ്ഥാനത്തേയ്ക്കു യാന്ത്രികമായി നീക്കാമെന്നും ഈ പാഠത്തിൽ പരിചയപ്പെടാം.</span>
+  
+ ലാറ്റെക്കിനു വെളിയിൽ നിന്നും ചിത്രം കൊണ്ടുവന്നു ചേര്‍ക്കാൻ `graphicx` പാക്കേജിലെ
+ `\includegraphics` എന്ന ആജ്ഞ കൊണ്ടു സാധിക്കാം.
 
 ```latex
 \documentclass{article}
@@ -29,29 +29,28 @@ is an imported PDF.
 \end{document}
 ```
 
-You can include EPS, PNG, JPG, and PDF files.
-If you have more than one version of a graphic then you can write,
-for instance, `example-image.png`. (The `graphicx` package will try to
-guess the extension if you do not give one.)
+EPS, PNG, JPG, PDF പ്രമാണരൂപങ്ങൾ നമുക്ക് ഉള്‍ക്കൊള്ളിക്കാം.
+ഒരേ പേരിലുള്ള ഒന്നിലധികം ചിത്രരൂപങ്ങളുണ്ടെങ്കിൽ, ഉദാഹരണത്തിനു് `example-image.png`
+എന്നെഴുതാം. (ഒന്നും പറഞ്ഞില്ലെങ്കിൽ വാലറ്റം ഏതെന്ന് ഊഹിക്കാൻ `graphicx` പാക്കേജ് ശ്രമിക്കും.)
 
-You'll notice we've used a new environment here, `center`, to place the image
-horizontally centered on the page. [A bit later](lesson-11), we'll talk more
-about spacing and positioning.
+`center` എന്ന ഒരു പുതിയ പരിസരം ചിത്രത്തെ തിരശ്ചീനമായി താളിന്റെ മദ്ധ്യത്തിൽ നിര്‍ത്താൻ ഉപയോഗിച്ചിരിക്കുന്നത്
+നിങ്ങൾ ശ്രദ്ധിച്ചിരിക്കും. [അല്പം കഴിഞ്ഞ്](lesson-11) അകലം നല്കുന്നതിനെപ്പറ്റിയും സ്ഥാനം
+നിര്‍ണ്ണയിക്കുന്നതിനെപ്പറ്റിയും നാം കൂടുതൽ ചര്‍ച്ച ചെയ്യും.
 
-## Altering graphic appearance
+## ചിത്രത്തിന്റെ ബാഹ്യരൂപങ്ങളിൽ മാറ്റം വരുത്തുന്നത്
 
-The `\includegraphics` command has many options to control
-the size and shape of the included images and to trim down material. Some of
-these are used a lot, so they are worth being aware of.
+ഉള്‍ച്ചേര്‍ക്കുന്ന ചിത്രത്തിന്റെ വലിപ്പവും രൂപവും നിയന്ത്രിക്കാനും വെട്ടിയൊതുക്കാനുമായി `\includegraphics`
+എന്ന ആജ്ഞയ്ക്ക് ധാരാളം ഐച്ഛികങ്ങളുണ്ട്. ഏറെ ഉപയോഗിക്കപ്പെടുന്ന ചിലതിനെപ്പറ്റി അറിഞ്ഞിരിക്കുന്നത്
+ഉപകാരപ്പെടും.
 
-The most obvious thing to set is the `width` or the `height` of an
-image, which are often given relative to the `\textwidth` or `\linewidth` and
-`\textheight`. The difference between `\textwidth` and `\linewidth` is subtle
-and often the result is the same. `\textwidth` is the width of the text block on
-the physical page, whereas `\linewidth` is the _current_ width, which might
-locally be different (the difference is most obvious with the class option
-`twocolumn`). LaTeX will automatically scale the image so that the aspect
-ratio stays correct.
+പ്രകടമായും ക്രമീകരിക്കേണ്ടത് പലപ്പോഴും `\textwidth`, `\linewidth`,
+`\textheight` എന്നിവയ്ക്ക് ആപേക്ഷികമായി ചിത്രത്തിന്റെ വീതി `width` അല്ലെങ്കിൽ ഉയരം `height`
+ആയിരിക്കും. `\textwidth`, `\linewidth` എന്നിവ തമ്മിലുള്ള വ്യതാസം സൂക്ഷ്മമാണ്, പലപ്പോഴും
+ഇവയുടെ ഫലം ഒന്നു തന്നെയായിരിക്കും. `\textwidth` എന്നത് ഭൗതികമായ താളിലെ പാഠഖണ്ഡത്തിന്റെ
+വീതിയും, `\linewidth` എന്നത് _നിലവിലെ_ വീതിയുമാണ് (ഈ വ്യത്യാസം `twocolumn` എന്ന
+പ്രമാണവര്‍ഗ്ഗ ഐച്ഛികത്തിൽ വളരെ പ്രകടമാണ്). വീക്ഷണാനുപാതം കൃത്യമാവുന്ന തരത്തിൽ 
+ചിത്രത്തിന്റെ വിസ്താരം ലാറ്റെൿ സ്വയം ക്രമീകരിക്കും.
+
 
 ```latex
 \documentclass{article}
@@ -69,8 +68,8 @@ Some text
 \end{document}
 ```
 
-You can also `scale` images, or rotate them by an `angle`. The other thing you
-might want to do is to `clip` and `trim` an image.
+ചിത്രങ്ങളുടെ വിസ്താരം `scale` ഉപയോഗിച്ച് മാറ്റുകയോ, ഒരു കോണ്‍ `angle` ആധാരമാക്കി കറക്കുകയോ ചെയ്യാൻ സാധിക്കും.
+ഒരു ചിത്രത്തെ `clip` ഉപയോഗിച്ച് മുറിക്കുവാനും `trim` ഉപയോഗിച്ച് വെട്ടിയൊതുക്കാനും മറ്റും സാദ്ധ്യമാണ്.
 
 ```latex
 \documentclass{article}
