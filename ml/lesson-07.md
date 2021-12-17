@@ -68,8 +68,8 @@ Some text
 \end{document}
 ```
 
-ചിത്രങ്ങളുടെ വിസ്താരം `scale` ഉപയോഗിച്ച് മാറ്റുകയോ, ഒരു കോണ്‍ `angle` ആധാരമാക്കി കറക്കുകയോ ചെയ്യാൻ സാധിക്കും.
-ഒരു ചിത്രത്തെ `clip` ഉപയോഗിച്ച് മുറിക്കുവാനും `trim` ഉപയോഗിച്ച് വെട്ടിയൊതുക്കാനും മറ്റും സാദ്ധ്യമാണ്.
+ചിത്രത്തിന്റെ വിസ്താരം `scale` ഉപയോഗിച്ച് മാറ്റുകയോ, ഒരു കോണ്‍ `angle` ആധാരമാക്കി ചിത്രം കറക്കുകയോ ചെയ്യാൻ സാധിക്കും.
+ഒരു ചിത്രത്തെ `clip` ഉപയോഗിച്ച് മുറിക്കുവാനും `trim` ഉപയോഗിച്ച് വെട്ടിയൊതുക്കാനും മറ്റും സാധിക്കും.
 
 ```latex
 \documentclass{article}
@@ -83,12 +83,12 @@ Some text
 \end{document}
 ```
 
-## Making images float
+## ചിത്രങ്ങളെ പരത്തിവയ്ക്കുന്നത്
 
-Traditionally in typesetting, particularly with technical documents,
-graphics may move to another spot in the document.
-This is called a *float*. Images are normally included as floats so they do
-not leave large gaps in the page.
+പാഠവിന്യാസത്തിൽ പരമ്പരാഗതമായി, പ്രത്യേകിച്ച് സാങ്കേതിക പ്രമാണങ്ങളിൽ, ചിത്രങ്ങൾ പ്രമാണത്തിലെ
+മറ്റൊരു ഭാഗത്തേയ്ക്ക് നീക്കാറുണ്ട്. ഇതിനെയാണ് *പരത്തിവയ്ക്കുക* (float) എന്നുകൊണ്ടുദ്ദേശിക്കുന്നത്.
+താളിൽ ഒരുപാട് ശൂന്യസ്ഥലം വരുന്നത് ഒഴിവാക്കുവാൻ ഇങ്ങനെയാണ് സാധാരണയായി ചിത്രങ്ങൾ ഉള്‍പ്പെടുത്താറ്.
+
 
 ```latex
 \documentclass{article}
@@ -110,38 +110,36 @@ Test location.
 \end{document}
 ```
 
-Here LaTeX moves the graphic and the caption
-away from the `Test location` text to the top of the second page,
-because there isn't room for it on the bottom of the first page.
-The `ht` influences where LaTeX can place the float; these two
-letters mean that it can go where it is in the source (next to
-`Test location`) or to the top of a page. You can use up to four position
-specifiers
+ഒന്നാമത്തെ താളിനറ്റത്ത് ആവശ്യത്തിനു് സ്ഥലമില്ലാത്തതിനാൽ ഇവിടെ ചിത്രത്തെയും ശീര്‍ഷകത്തെയും
+`Test location` എന്ന പാഠഖണ്ഡത്തിനടുത്തു നിന്നു മാറ്റി രണ്ടാമത്തെ താളിന്റെ മുകൾ ഭാഗത്താണു്
+ലാറ്റെൿ പ്രതിഷ്ഠിക്കുന്നത്. `ht` എന്നിവ ലാറ്റെൿ ഫ്ലോട്ടിനെ എവിടെ പ്രതിഷ്ഠിക്കുന്നു എന്നതിനെ സ്വാധീനിക്കുന്നു.
+ഈ രണ്ടക്ഷരങ്ങൾ നിര്‍ദ്ദേശിക്കുന്നത് പരാമര്‍ശിച്ചതിനു സമീപത്തോ (`Test location`-നു ചാരെ)
+അല്ലെങ്കിൽ താളിന്റെ മുകൾ ഭാഗത്തോ ചിത്രത്തെ സ്ഥാപിക്കാമെന്നാണ്. നാലോളം സ്ഥാനനിര്‍ണ്ണയ
+നിര്‍ദ്ദേശങ്ങൾ നമുക്കു് നല്കാം
 
-- `h` 'Here' (if possible)
-- `t` Top of the page
-- `b` Bottom of the page
-- `p` A dedicated page only for floats
+- `h` 'ഇവിടെ' (സാദ്ധ്യമെങ്കിൽ)
+- `t` താളിന്റെ മുകള്‍ ഭാഗത്ത്
+- `b` താളിന്റെ താഴ് ഭാഗത്ത്
+- `p` ഫ്ലോട്ടുകള്‍ക്കു മാത്രമായ ഒരു താളിൽ
 
-[Later](lesson-09), we will see how to cross-reference floats so you can point
-to them from your text.
+ഫ്ലോട്ടുകളെ പാഠഖണ്ഡത്തിൽ നിന്ന് എങ്ങനെ പരാമര്‍ശിക്കാമെന്നു് നാം [പിന്നീട്](lesson-09) പരിചയപ്പെടും.
 
-You'll probably spot that we've centered the image here using `\centering`
-rather than the `center` environment. Inside a float, you should use
-`\centering` if you want to horizontally center content; this avoids both
-the float and `center` environment adding extra vertical space.
+നമ്മൾ ചിത്രത്തെ മദ്ധ്യത്തായി വിന്യസിക്കാൻ `center` പരിസരത്തിനു പകരം `\centering` ഉപയോഗിച്ചത്
+ഒരുപക്ഷേ നിങ്ങൾ ശ്രദ്ധിച്ചു കാണും. ഫ്ലോട്ടിനകത്ത് ചിത്രത്തെ തിരശ്ചീനമായി മദ്ധ്യത്തിൽ സ്ഥാപിക്കാൻ `\centering`
+ആണുപയോഗിക്കേണ്ടത്. ഇങ്ങനെ ചെയ്യുന്നത് ഫ്ലോട്ടും `center` പരിസരവും ചേര്‍ന്ന് ലംബമായി ശൂന്യസ്ഥലം
+കൂട്ടുന്നത് ഒഴിവാക്കാൻ സഹായിക്കും.
 
-## Exercises
 
-Try including an image you have created, replacing the 'standard' ones we have
-used in the demonstration.
+## അഭ്യാസം
 
-Explore what you can do using the `height`, `width`, `angle` and `scale` keys.
+ഉദാഹരണങ്ങളിൽ മാതൃകയായി ഉപയോഗിച്ച ചിത്രങ്ങള്‍ക്കു പകരം നിങ്ങളുണ്ടാക്കിയ ഒരു ചിത്രം ഉള്‍ക്കൊള്ളിക്കാൻ ശ്രമിക്കുക.
 
-Use the `width` key to set the size of a graphic relative to `\textwidth` and
-another graphic relative to `\linewidth`. Try out how they behave with or
-without the `twocolumn` option.
+`height`, `width`, `angle`, `scale` എന്നീ സൂചകങ്ങളുപയോഗിച്ച് എന്തെല്ലാം സാദ്ധ്യമാണെന്നു് ഒര
+പര്യവേക്ഷണം നടത്തുക.
 
-Use `lipsum` to make a reasonably long demonstration, then try out placing
-floats using the different position specifiers. How do different
-specifiers interact?
+`width` സൂചകമുപയോഗിച്ച് `\textwidth`-നു് ആപേക്ഷികമായി ഒരു ചിത്രത്തിന്റെ വലിപ്പവും,
+`\linewidth`-നു് ആപേക്ഷികമായി മറ്റൊരു ചിത്രത്തിന്റെ വലിപ്പവും ക്രമീകരിക്കുക. `twocolumn` എന്ന
+പ്രമാണവര്‍ഗ്ഗ ഐച്ഛികം ഉപയോഗിച്ചും ഉപയോഗിക്കാതെയും ഫലം എങ്ങനെ വ്യത്യാസപ്പെടുന്നുവെന്നു് പരീക്ഷിക്കുക.
+
+`lipsum` ഉപയോഗിച്ച് നിര്‍മ്മിച്ച സാമാന്യം ദീര്‍ഘമായ ഒരു മാതൃകയിൽ, വ്യത്യസ്ത സ്ഥാനനിര്‍ണ്ണയ സൂചകങ്ങളുപയോഗിച്ച്
+ഫ്ലോട്ടുകളെ സ്ഥാപിച്ചു നോക്കുക. വിവിധ സൂചകങ്ങൾ എങ്ങനെ പ്രതിപ്രവര്‍ത്തിക്കുന്നു?
