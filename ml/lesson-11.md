@@ -1,26 +1,25 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "Formatting: fonts and spacing"
-description: "This lesson shows how to change the spacing elements in a document and how to add explicit formatting instructions to the LaTeX source."
-toc-anchor-text: "Fonts & spacing"
-toc-description: "Text formatting for visual presentation."
+lang: "ml"
+title: "മുദ്രണം: അക്ഷരരൂപങ്ങളും ശൂന്യസ്ഥലവും"
+description: "ഒരു പ്രമാണത്തിലെ സ്ഥലഘടകങ്ങളെ മാറ്റുന്നതെങ്ങനെ എന്നും രൂപഘടന വ്യത്യാസപ്പെടുത്താനുള്ള നിര്‍ദ്ദേശങ്ങൾ ലാറ്റെൿ ഉറവയിൽ സ്പഷ്ടമായി ചേര്‍ക്കുന്നതെങ്ങനെ എന്നും ഈ പാഠത്തിൽ പരിചയപ്പെടാം."
+toc-anchor-text: "അക്ഷരരൂപങ്ങളും ശൂന്യസ്ഥലവും"
+toc-description: "ദൃശ്യരൂപത്തിനു വേണ്ട പാഠമുദ്രണം."
 ---
 
-# Formatting: fonts and spacing
+# രൂപഘടന: അക്ഷരരൂപങ്ങളും ശൂന്യസ്ഥലവും
 
 <span
-  class="summary">This lesson shows how to change the spacing elements in a document and how to add explicit formatting instructions to the LaTeX source.</span>
+  class="summary">ഒരു പ്രമാണത്തിലെ സ്ഥലഘടകങ്ങളെ മാറ്റുന്നതെങ്ങനെ എന്നും രൂപഘടന വ്യത്യാസപ്പെടുത്താനുള്ള നിര്‍ദ്ദേശങ്ങൾ ലാറ്റെൿ ഉറവയിൽ സ്പഷ്ടമായി ചേര്‍ക്കുന്നതെങ്ങനെ എന്നും ഈ പാഠത്തിൽ പരിചയപ്പെടാം.</span>
 
-We have already seen that a blank line in your input will generate a new
-paragraph in LaTeX. This shows up as the paragraph will start with an
-indent.
+ലാറ്റെക്കിൽ ഒരു ഒഴിഞ്ഞ വരി ചേര്‍ക്കുന്നത് പുതിയ ഖണ്ഡിക തുടങ്ങുമെന്ന് നാം മുമ്പ് കണ്ടിട്ടുണ്ട്.
+ഖണ്ഡികയുടെ തുടക്കത്തിൽ ഇന്‍ഡെന്റ് വന്നിരിക്കുന്നതും കാണാം.
 
-## Paragraph spacing
 
-One common style is to have no indents for paragraphs, but instead
-to have a 'blank line' between them. We can achieve that using the `parskip`
-package.
+## ഖണ്ഡികയുടെ അകലം
+
+വളരെ സാധാരണമായ ഒരു ശൈലിയാണു് ഇന്‍ഡെന്റിനു പകരം ഖണ്ഡികകള്‍ക്കിടയിൽ ഒരു ഒഴിഞ്ഞ
+വരി ഉപയോഗിക്കുക എന്നതു്. `parskip` പാക്കേജ് ഉപയോഗിച്ച് ഈ ശൈലി നിസ്സാരമായി നടപ്പിലാക്കാം.
 
 ```latex
 \documentclass{article}
@@ -32,31 +31,28 @@ package.
 \end{document}
 ```
 
-## Forcing a new line
+## പുതിയ വരി പ്രാബല്യത്തിലാക്കുവാൻ
 
-Most of the time, you should not force a new line in LaTeX: you almost
-certainly want a new paragraph or to use `parskip`, as we've just seen,
-to put a 'blank line' between paragraphs.
+മിക്ക സന്ദര്‍ഭങ്ങളിലും ലാറ്റെക്കിൽ ഒരു ഒഴിഞ്ഞ വരി നിര്‍ബന്ധിച്ചു ചേര്‍ക്കുന്നത് ഒഴിവാക്കുക; കാരണം
+നിങ്ങള്‍ക്ക് മിക്കവാറും ഖണ്ഡികാ വിടവോ അല്ലെങ്കിൽ ഇപ്പോൾ കണ്ടതു പോലെ ഒഴിഞ്ഞ വരി ചേര്‍ക്കാൻ
+`parskip` ഉപയോഗിക്കുകയോ വേണ്ടി വരും.
 
-There are a _few_ places where you use `\\` to start a new line without
-starting a new paragraph:
+എന്നാൽ _ചില_ സന്ദര്‍ഭങ്ങളിൽ ഒരു ഖണ്ഡിക ആരംഭിക്കാതെ പുതിയ വരി `\\` ഉപയോഗിച്ച് തുടങ്ങേണ്ടതായി വരും:
 
-- At the end of table rows
-- Inside the `center` environment
-- In poetry (the `verse` environment)
+- പട്ടികയുടെ ഒരു വരി അവസാനിപ്പിക്കാൻ
+- `center` പരിസരത്തിനകത്ത്
+- പദ്യരൂപങ്ങളിൽ (`verse` പരിസരം)
 
-Almost always, if you are not in one of those special places, you should
-_not_ use `\\`.
+ഇത്തരം അവസരങ്ങളിലല്ലാതെ ഏതാണ്ടൊരിക്കലും നിങ്ങൾ `\\` _ഉപയോഗിക്കരുത്_.
 
-## Adding explicit space
+## അകലം സ്പഷ്ടമായി ചേര്‍ക്കുന്നത്
 
-We can insert a thin space (about half the normal thickness) using
-`\,`. In math mode, there are also other commands: `\.`, `\:` and `\;`,
-and one for a negative space: `\!`.
+കനം കുറഞ്ഞ ഒരു അകലം (സാധാരണ അകലത്തിന്റെ പകുതിയോളം വരുന്ന) ചേര്‍ക്കാൻ നമുക്ക്
+`\,` ഉപയോഗിക്കാം. ഗണിതരീതിയിൽ മറ്റ് ആജ്ഞകളുണ്ട്: `\.`, `\:`, `\;` എന്നിവ കൂടാതെ
+ന്യൂനസ്ഥലത്തിനു് ഒരെണ്ണവും: `\!`.
 
-Very rarely, for example when creating a title page, you might need to
-add explicit horizontal or vertical space. We can use `\hspace` and `\vspace`
-for that.
+വളരെ അപൂര്‍വമായി, ഉദാഹരണത്തിന് ഒരു ശീര്‍ഷക താൾ ഉണ്ടാക്കുമ്പോഴോ മറ്റോ, തിരശ്ചീനമോ ലംബമോ ആയ
+അകലം സ്പഷ്ടമായി ചേര്‍ക്കേണ്ടി വരാറുണ്ട്. `\hspace`, `\vspace` എന്ന ആജ്ഞകൾ ഇതിനായി ഉപയോഗിക്കാം.
 
 ```latex
 \documentclass{article}
@@ -70,15 +66,13 @@ Even more text.
 \end{document}
 ```
 
-## Explicit text formatting
+## സ്പഷ്ടമായ പാഠമുദ്രണം
 
-We wrote [in lesson 3](lesson-03) that most of the time logical structure is
-preferable. But sometimes you want to make text bold, or italic, or monospaced,
-etc. There are two types of command for this: ones for short pieces of text,
-and ones for 'running' material.
+മിക്ക സന്ദര്‍ഭങ്ങളിലും പ്രമാണത്തിന്റെ യുക്തിഭദ്രമായ ഘടനയാണ് അഭികാമ്യം എന്നു് നാം [മൂന്നാമത്തെ പാഠത്തിൽ](lesson-03) കണ്ടു.
+എന്നാൽ ചിലപ്പോഴെങ്കിലും പാഠഭാഗങ്ങളെ കട്ടി കൂട്ടിയോ, ചരിച്ചോ, നിശ്ചിതവീതിയിലോ വിന്യസിക്കേണ്ടതായി വരാം.
+ഇതിനുപകരിക്കുന്ന ആജ്ഞകൾ രണ്ടു തരത്തിലുണ്ട്: ചെറിയ പാഠഖണ്ഡങ്ങള്‍ക്കു് പറ്റിയതും, നീണ്ട പാഠഭാഗങ്ങള്‍ക്കു് അനുയോജ്യമായതും.
 
-For short bits of text, we use `\textbf`, `\textit`, `\textrm`, `\textsf`,
-`\texttt` and `\textsc`.
+ചെറിയ പാഠഖണ്ഡങ്ങള്‍ക്കു് ഉപയോഗിക്കാവുന്നതാണ് `\textbf`, `\textit`, `\textrm`, `\textsf`, `\texttt`, `\textsc` എന്നിവ.
 
 ```latex
 \documentclass{article}
@@ -89,11 +83,11 @@ Let's have some font fun: \textbf{bold}, \textit{italic}, \textrm{roman},
 \end{document}
 ```
 
-For running text, we use commands that alter the font setup; the commands
-here are for example `\bfseries` and `\itshape`. Because these don't 'stop',
-we need to place them in a _group_ if we want to prevent them from applying to
-the whole document. LaTeX environments are groups, as are table cells,
-or we can use `{...}` to make an explicit group.
+നീണ്ട പാഠങ്ങളിൽ അക്ഷരസജ്ജീകരണങ്ങൾ ആകമാനം മാറ്റം വരുത്താവുന്ന ആജ്ഞകൾ ഉപയോഗിക്കണം;
+ഉദാഹരണത്തിനു് `\bfseries`, `\itshape` എന്നിവ. ഈ ആജ്ഞകൾ ഒരിക്കലും സ്വയം 'തീരാത്തതിനാൽ'
+പ്രമാണത്തിലാകമാനം ബാധകമാകാതിരിക്കാൻ ഇവയെ ഒരു _ഗണത്തിനകത്ത്_ (group) നല്കിയിരിക്കണം.
+ലാറ്റെൿ പരിസരങ്ങൾ, പട്ടികയിലെ അറകൾ എന്നിവയൊക്കെ ഓരോ ഗണങ്ങളാണു്, അങ്ങനെയല്ലാത്തവയെ
+സ്പഷ്ടമായി ഒരു ഗണത്തിനകത്താക്കുവാൻ `{...}` ഉപയോഗിക്കാം.
 
 ```latex
 \documentclass{article}
@@ -108,14 +102,16 @@ This text is italic.
 So it this: the effect is not limited to a paragraph.
 
 }
+
+This text is not italic.
 \end{document}
 ```
 
-We can set font size in a similar way; these commands all work on an ongoing
-basis. The sizes we set are relative: `\huge`, `\large`, `\normalsize`,
-`\small` and `\footnotesize` are common. It's important to finish a paragraph
-_before_ changing the font size back; see how we add an explicit `\par`
-(paragraph break) here.
+അക്ഷരങ്ങളുടെ വലിപ്പം നമുക്ക് സമാനരീതിയിൽ സജ്ജീകരിക്കാം; ഈ ആജ്ഞകളെല്ലാം തന്നെ തുടരടിസ്ഥാനത്തിൽ
+പ്രവര്‍ത്തിക്കും. നാം സജ്ജീകരിക്കുന്ന വലിപ്പം ആപേക്ഷികമാണു്: `\huge`, `\large`, `\normalsize`,
+`\small`, `\footnotesize` എന്നിവയാണു് സാധാരണം. അക്ഷരങ്ങളുടെ വലിപ്പം തിരിച്ചു മാറ്റുന്നതിനു _മുമ്പ്_
+ആ ഖണ്ഡിക അവസാനിപ്പിക്കേണ്ടത് അവശ്യമാണ്; ഇവിടെ സ്പഷ്ടമായി ഒരു `\par` (ഖണ്ഡിക മുറിക്കാനുള്ള) ആജ്ഞ
+നല്കിയതു് ശ്രദ്ധിക്കുക.
 
 ```latex
 \documentclass{article}
@@ -132,12 +128,11 @@ Normal text
 \end{document}
 ```
 
-## Exercises
+## അഭ്യാസം
 
-Experiment with manual formatting: create a `titlepage` environment and
-try inserting different spaces and font changes. What happens when we
-combine font changes? How does this compare to math mode?
+നിങ്ങൾ തന്നെ പാഠത്തിന്റെ രൂപഘടന മാറ്റുന്നതു് പരീക്ഷിക്കുക: ഒരു `titlepage` പരിസരം
+നിര്‍മ്മിച്ച് അതിനുള്ളിൽ വിവിധ അകലങ്ങളും അക്ഷരരൂപ വ്യത്യാസങ്ങളും ഉള്‍ക്കൊള്ളിക്കുക. അക്ഷരരൂപ
+വ്യത്യാസങ്ങൾ ഒരുമിച്ചുപയോഗിക്കുമ്പോൾ എന്തു സംഭവിക്കുന്നു? ഇതു് ഗണിതരീതിയുമായി എങ്ങനെ താരതമ്യപ്പെടുത്താം?
 
-What happens if you change the font size of a large paragraph (try with
-`\tiny` then with `\huge`) but don't issue a final `\par` before closing
-the group?
+ഒരു വലിയ ഖണ്ഡികയിലെ അക്ഷരങ്ങളുടെ വലിപ്പം വ്യത്യാസപ്പെടുത്തുമ്പോൾ (`\tiny` ആദ്യവും പിന്നീട് `\huge`
+ഉപയോഗിച്ചും) ഒടുവിലത്തെ `\par` ആ ഗണം തീരുന്നതിനു മുമ്പ് കൊടുത്തില്ലെങ്കിൽ എന്തു സംഭവിക്കും?
