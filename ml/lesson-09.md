@@ -1,25 +1,24 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "Cross-referencing"
-description: "This lesson shows how to refer to numbered elements in a document, like figures, tables and sections."
-toc-anchor-text: "Cross-referencing"
-toc-description: "Refering to figures, tables, etc."
+lang: "ml"
+title: "പ്രതിനിര്‍ദേശങ്ങള്‍"
+description: "ചിത്രങ്ങൾ, പട്ടികകൾ, ഖണ്ഡങ്ങൾ മുതലായ എണ്ണമുള്ള ഭാഗങ്ങളെ എങ്ങനെ പ്രതിനിര്‍ദേശിക്കാമെന്നു് ഈ പാഠത്തിൽ പരിചയപ്പെടാം."
+toc-anchor-text: "പ്രതിനിര്‍ദേശങ്ങള്‍""
+toc-description: "ചിത്രങ്ങൾ, പട്ടികകൾ മുതലായവയുടെ പ്രതിനിര്‍ദേശം."
 ---
 
-# Cross-referencing
+# പരാമര്‍ശങ്ങള്‍"
 
 <span
-  class="summary">This lesson shows how to refer to numbered elements in a document, like figures, tables and sections.</span>
+  class="summary">ചിത്രങ്ങൾ, പട്ടികകൾ, ഖണ്ഡങ്ങൾ മുതലായ എണ്ണമുള്ള ഘടകങ്ങളെ എങ്ങനെ പ്രതിനിര്‍ദേശിക്കാമെന്നു് ഈ പാഠത്തിൽ പരിചയപ്പെടാം.</span>
+  
+എത്ര വലിപ്പമുള്ള ഒരു പ്രമാണമെഴുതിയാലും അതിലെ ചിത്രങ്ങൾ, പട്ടികകൾ, സമവാക്യങ്ങൾ മുതലായ അക്കമുള്ള ഘടകങ്ങളെ നിങ്ങള്‍ക്കു് പരാമര്‍ശിക്കേണ്ടതായി വരും.
+ഭാഗ്യവശാൽ ഇവയുടെ ശരിയായ അക്കങ്ങൾ ലാറ്റെൿ യാന്ത്രികമായി സ്വയം ഉപയോഗിച്ചു കൊള്ളും, നാം കാര്യങ്ങൾ ശരിയായി സജ്ജീകരിക്കണമെന്നേയുള്ളൂ.
 
-When you are writing a document of any length, you'll want to refer to numbered
-items such as figures, tables or equations. Luckily, LaTeX can automatically add
-the right numbers; we just have to set things up. 
+## `\label`, `\ref` സംവിധാനം
 
-## The `\label` and `\ref` mechanism
-
-To have LaTeX remember a spot in your document you have to label it, and then 
-in other places, you refer to it.
+നിങ്ങളുടെ പ്രമാണത്തിലെ ഒരു കൃത്യസ്ഥാനം ലാറ്റെകിന് ഓര്‍ത്തു വയ്ക്കാൻ നിങ്ങൾ അവിടം ഒരു അടയാളം (label) ചാര്‍ത്തണം.
+എന്നിട്ടു് മറ്റിടങ്ങളിൽ ഈ അടയാളത്തിനെ പ്രതിനിര്‍ദേശം (refer) ചെയ്താൽ മതി.
 
 ```latex
 \documentclass{article}
@@ -48,51 +47,44 @@ In subsection~\ref{subsec:labelone} is equation~\ref{eq:labeltwo}.
 \end{document}
 ```
 
-There are two `\label{...}` commands, one after the subsection
-and one inside the equation environment.
-They are associated with the last sentence's `\ref{...}` commands.
-When you run LaTeX, it saves information about the labels to an auxiliary file.
-For `\label{subsec:labelone}`, LaTeX knows that it is now in a subsection and
-so it saves the subsection's number.
-For `\label{eq:labeltwo}`, LaTeX knows that the most recent environment
-of interest is an equation so it saves the information for that equation.
-When you ask for the reference, LaTeX gets it from the auxiliary file.
+ഇവിടെ രണ്ടു് `\label{...}` ആജ്ഞകളുണ്ട്: ഒന്നു് ഉപഖണ്ഡത്തിനു ശേഷം, മറ്റൊന്ന് equation പരിസരത്തിനകത്ത്.
 
-The `subsec:` and `eq:` aren't used by LaTeX;
-rather, it just keeps track of what it has most
-recently processed.
-But when you are writing these help you remember what the label
-is about.
+ഇവ രണ്ടും അവസാന വാക്യത്തിലെ `\ref{...}` ആജ്ഞകളിൽ ബന്ധിച്ചിരിക്കുന്നു.
+ലാറ്റെൿ പ്രവര്‍ത്തിക്കുമ്പോൾ, അടയാളങ്ങളെ സംബന്ധിച്ച വിവരങ്ങളെല്ലാം ഒരു താത്കാലിക സഹായ ഫയലിൽ എഴുതുന്നു.
+`\label{subsec:labelone}` എന്നു കാണുമ്പോൾ ഇപ്പോള്‍ ഒരു ഉപഖണ്ഡത്തിന്നു് (subsection) അകത്താണെന്നു്
+ലാറ്റെക്കിനറിയാം, അതിനാൽ ആ ഉപഖണ്ഡത്തിന്റെ അക്കം സൂക്ഷിച്ചു വയ്ക്കുന്നു.
+`\label{eq:labeltwo}` എന്നു കാണുമ്പോൾ ഏറ്റവുമടുത്തു കണ്ട തല്പര പരിസരം equation ആണെന്നറിയാം, അതിനാൽ
+ആ സമവാക്യത്തെപ്പറ്റിയുള്ള വിവരം സൂക്ഷിച്ചു വയ്ക്കുന്നു.
+നിങ്ങൾ പ്രതിനിര്‍ദേശത്തിന് ആവശ്യപ്പെടുമ്പോൾ ലാറ്റെൿ ഈ താത്കാലിക സഹായ ഫയലിൽ നിന്നും അത് ലഭ്യമാക്കുന്നു.
 
-You may see references that show in an output PDF
-as boldface double question marks, **??**.
-The explanation is that because of this auxiliary file work,
-the first time that you compile a document the label has not
-yet been saved.
-Run LaTeX one more time and you'll be all set.
-(Usually while writing you will run LaTeX several times anyway,
-so in practice this is not a bother.)
+അടയാളത്തിൽ കൊടുത്ത `subsec:`, `eq:` എന്നിവ ലാറ്റെക്കിനെ സംബന്ധിച്ചിടത്തോളം പ്രസക്തമോ നിര്‍ബന്ധമോ അല്ല,
+അതു് ഏറ്റവുമടുത്ത് പരിചരിച്ച കാര്യങ്ങളുടെ വിവരം സൂക്ഷിച്ചു വയ്ക്കുന്നതേയുള്ളൂ.
+പക്ഷേ നിങ്ങൾ പ്രമാണമെഴുതിക്കൊണ്ടിരിക്കുമ്പോൾ ഓരോ അടയാളവും എന്തിനെ കുറിക്കുന്നതായിരുന്നു എന്ന്
+എളുപ്പം ഓര്‍ത്തു വയ്ക്കാൻ നിങ്ങളെ സഹായിക്കുന്നു.
 
-Notice the tie (`~`) characters before the references.
-You don't want a line break between `subsection` and its number, or
-between `equation` and its number.
-Putting in a tie means LaTeX won't break the line there.
+നിങ്ങൾ പ്രതിനിര്‍ദ്ദേശം ചെയ്തിരിക്കുന്നിടത്ത് PDF പ്രമാണത്തിൽ കനത്തിൽ ചോദ്യചിഹ്നങ്ങൾ **??** കണ്ടേക്കാം.
+ഇതിന്റെ വിശദീകരണമെന്തെന്നാൽ, താത്കാലിക സഹായ ഫയലുപയോഗിച്ചുള്ള പ്രവര്‍ത്തനരീതി കാരണം ആദ്യത്തെ
+പ്രാവശ്യം പ്രവര്‍ത്തിപ്പിക്കുമ്പോൾ അടയാളങ്ങൾ സൂക്ഷിക്കപ്പെട്ടിരിക്കയില്ല എന്നതാണു്. ലാറ്റെൿ ഒന്നു കൂടി പ്രവര്‍ത്തിപ്പിച്ചാൽ
+എല്ലാ കാര്യങ്ങളും ശരിയായി വരുന്നതാണ്. (സാധാരണ ഗതിയിൽ പ്രമാണമെഴുത്തിനിടയിൽ നിങ്ങൾ പലവട്ടം ലാറ്റെൿ
+പ്രവര്‍ത്തിപ്പിക്കും, അതുകൊണ്ട് ഇതൊരു ബുദ്ധിമുട്ടാവാറില്ല).
 
-## Where to put `\label`
+പ്രതിനിര്‍ദേശ ആജ്ഞയ്ക്കു മുമ്പുള്ള കുടുക്ക് (`~`) അക്ഷരങ്ങളെ ഒന്നു ശ്രദ്ധിക്കുക.
+`subsection`-നും അതിന്റെ അക്കത്തിനുമിടയിലോ `equation`-നും അതിന്റെ അക്കത്തിനുമിടയിലോ വരി മുറിയുവാൻ
+നിങ്ങളാഗ്രഹിക്കില്ല. ഇതിനിടയിൽ വച്ച് ലാറ്റെൿ വരി മുറിക്കാതിരിക്കാനാണ് ഒരു കുടുക്ക് ഇട്ടു വയ്ക്കുന്നത്.
 
-The `\label` command always refers to the previous numbered entity:
-a section, an equation, a float, etc. That means that `\label` always has to
-come _after_ the thing you want to refer to. In particular, when you create
-floats, the `\label` has to come _after_ (or better, in), the `\caption` command,
-but within the float environment.
+## അടയാളം (`\label`) എവിടെ വയ്ക്കണം
 
-## Exercises
+`\label` ആജ്ഞ എല്ലായ്പോഴും അതിനു് തൊട്ടു മുമ്പ് എണ്ണപ്പെട്ട വസ്തുവിനെയാണ് പരാമര്‍ശത്തിനു് ബന്ധപ്പെടുത്തുന്നത്:
+ഒരു ഖണ്ഡം, ഒരു ഗണിതസമവാക്യം, ഒരു ഫ്ലോട്ട്, മുതലായവ. അതായത് `\label` എല്ലായ്പോഴും അത് അടയാളപ്പെടുത്തേണ്ട
+വസ്തുവിന് _ശേഷം_ വരണം. പ്രത്യേകിച്ചു ഫ്ലോട്ടുകള്‍ക്ക് `\label` നിര്‍ബന്ധമായും അതിന്റെ `\caption` ആജ്ഞയ്ക്കു പിറകിൽ
+(അതിനകത്തെങ്കിൽ കൂടുതൽ നല്ലത്) നല്കണം, തീര്‍ച്ചയായും ഫ്ലോട്ട് പരിസരത്തിനകത്തു തന്നെ വരികയും വേണം.
 
-Try adding new numbered parts (sections, subsections, enumerated lists) to
-the test document and finding out how many runs are needed to make `\label`
-commands work.
+## അഭ്യാസം
 
-Add some floats and see what happens when you put `\label` _before_ the
-`\caption` instead of after; can you predict the result?
+പരീക്ഷണ പ്രമാണത്തിനകത്തു് പുതിയ അക്കമുള്ള ഭാഗങ്ങൾ (ഖണ്ഡങ്ങൾ, ഉപഖണ്ഡങ്ങൾ, അക്കസൂചി) ചേര്‍ക്കുകയും
+`\label` ആജ്ഞ ശരിയായി പ്രവര്‍ത്തിക്കാൻ എത്ര പ്രാവശ്യം ലാറ്റെൿ പ്രവര്‍ത്തിപ്പിക്കണമെന്നും പരീക്ഷിക്കുക്ക.
 
-What happens if you put a `\label` for an equation _after_ the `\end{equation}`?
+ചില ഫ്ലോട്ടുകൾ ഉള്‍ച്ചേര്‍ത്ത് `\label` ആജ്ഞ അവയുടെ `\caption`-നും ശേഷം കൊടുക്കുന്നതിനു പകരം
+ _മുമ്പ്_ കൊടുത്തു നോക്കുക; ഇതിന്റെ ഫലം എന്തായിരിക്കുമെന്നു ഊഹിക്കാൻ കഴിയുമോ?
+
+ഒരു ഗണിതസമവാക്യത്തിന്റെ  `\end{equation}`-നു _ശേഷം_ `\label` കൊടുത്താൽ എന്തു സംഭവിക്കും?
