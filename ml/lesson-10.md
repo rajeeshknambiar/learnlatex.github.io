@@ -1,29 +1,67 @@
----
+<!---
 layout: "lesson"
 lang: "en"
 title: "Mathematics"
 description: "This lesson presents LaTeX's math mode and how you can type inline and display formulas, the extensions provided by the amsmath package, and how to change fonts in math."
 toc-anchor-text: "Mathematics"
 toc-description: "Math mode and mathematical notation."
+
+(binomial) ദ്വിപദം,
+(brace) വക്രാവരണചിഹ്നം,
+(cube root) ഘനമൂലം,
+(denomenator) ഛേദം,
+(differential) ഭേദസൂചകം,
+(display) പ്രദർശനം, 
+(equation) സമവാക്യം, 
+(formula) സൂത്രവാക്യം, 
+(fraction) ഭിന്നസംഖ്യ,
+(integral) സമാകലം,
+(integration) സമാകലനം,
+(limits) സീമ,
+(manual) കൈവേല,
+(mode) രീതി, 
+(notation) സംജ്ഞ, 
+(numerator) അംശം,
+(parenthesis) ആവരണചിഹ്നം, 
+(prefix) ഉപസർഗ്ഗം,
+(product) ഗുണിതഫലം,
+(square bracket) കോഷ്ഠചിഹ്നം, 
+(square root) വർഗ്ഗമൂലം,
+(square) വർഗ്ഗം,
+(subscript) കീഴ്ക്കുറിപ്പു്, 
+(suffix) പരപ്രത്യയം,
+(superscript) മേൽക്കുറിപ്പു്, 
+(symbol) ചിഹ്നം, 
+(text mode പാഠരീതി, inline)
+(variable) ചരം,
+(math mode) ഗണിതരീതി
+--->
+
+---
+layout: "lesson"
+lang: "ml"
+title: "ഗണിതം"
+description: "ഈ പാഠത്തിൽ ലാറ്റെക്കിന്റെ ഗണിതരീതിയെക്കുറിച്ചും എങ്ങനെ ഗണിത സൂത്ര/സമവാക്യങ്ങളും സംജ്ഞകളും പ്രദർശനരീതിയിലും (display mode) പാഠരീതിയിലും (inline mode within text) നിവേശനം ചെയ്തു് വിന്യസിക്കാമെന്നും `amsmath` എന്ന പാക്കേജ് നൽകുന്ന അന്യത്ര കർമ്മപദ്ധതികളെക്കുറിച്ചും നമുക്കു് പഠിക്കാം."
+toc-anchor-text: "ഗണിതം"
+toc-description: "ഗണിതരീതിയും ഗണിത ചിഹ്നങ്ങളും."
 ---
 
-# Mathematics
 
-<span
-  class="summary">This lesson presents LaTeX's math mode and how you can type inline and display formulas, the extensions provided by the `amsmath` package, and how to change fonts in math.</span>
+# ഗണിതം 
 
-Typesetting complex mathematics is one of the greatest strengths of LaTeX. You
-can mark up mathematics in a logical way in what is known as 'math mode'.
+<span class="summary">ഈ പാഠത്തിൽ ലാറ്റെക്കിന്റെ ഗണിതരീതിയെക്കുറിച്ചും എങ്ങനെ ഗണിത സൂത്ര/സമവാക്യങ്ങളും സംജ്ഞകളും പ്രദർശനരീതിയിലും (display mode) പാഠരീതിയിലും (inline mode within text) നിവേശനം ചെയ്തു് വിന്യസിക്കാമെന്നും `amsmath` എന്ന പാക്കേജ് നൽകുന്ന അന്യത്ര കർമ്മപദ്ധതികളെക്കുറിച്ചും നമുക്കു് പഠിക്കാം.</span>
 
-## Math mode
+ഗണിതപാഠം വിന്യസിക്കുക എന്നതു് ലാറ്റെക്കിന്റെ ശക്തികേന്ദ്രങ്ങളിലൊന്നാണു്. നിങ്ങൾക്കു് ഗണിതപാഠം താർക്കികഭദ്രതയോടെ ലാറ്റെക്കിന്റെ ഗണിതരീതി പ്രയോജനപ്പെടുത്തി വളരെ വേഗം നിവേശിക്കാൻ കഴിയും. 
 
-In math mode, spaces are ignored and the correct spacing between characters is
-(almost always) applied.
 
-There are two forms of math mode:
+## ഗണിതരീതി
 
-* inline
-* display
+ഗണിതരീതിയിൽ, ശൂന്യസ്ഥലം എപ്പോഴും അവഗണിക്കപ്പെടുകയും ശരിയായ രീതിയിൽ ശൂന്യസ്ഥലം വേണ്ട സ്ഥലത്തു് വേണ്ട രീതിയിൽ ലഭ്യമാക്കിക്കൊള്ളുകയും ചെയ്യും. 
+
+ഗണിതരീതി രണ്ടു് തരത്തിലുണ്ടു്:
+
+* പാഠരീതി (inline)
+* പ്രദർശനരീതി (display)
 
 ```latex
 \documentclass{article}
@@ -41,38 +79,19 @@ See how the paragraph continues after the display.
 \end{document}
 ```
 
-You may see 'LaTeX-like' mathematical input in other places, for example
-the MathJax system for placing equations in web pages. These systems often
-accept slight variations on LaTeX's syntax as they do not actually use LaTeX
-'behind the scenes'.
+ലാറ്റെക്കിലേതു് പോലുള്ള ഗണിതനിവേശനം നിങ്ങൾ ഒരുപക്ഷെ മറ്റു സ്ഥലങ്ങളിലും കണ്ടിരിക്കാം. ഉദാഹരണമായി, മാത്ജാക്സ് എന്ന വെബ് പേജുകളിൽ ഗണിതം വിന്യസിക്കാൻ ഉപയോഗിക്കുന്ന സംപ്രദായത്തിൽ. ഈ സംപ്രദായത്തിൽ ലാറ്റെക്കിൻ്റേതുപോലെയുള്ള പദഘടന (syntax) ആണെങ്കിലും, പലപ്പോഴും അല്പം വ്യതിയാനങ്ങളോടുള്ള നിവേശനരീതിയും സ്വീകാര്യമാണു്. എന്നാലും അണിയറയിൽ, ലാറ്റെൿ ആയിരിക്കില്ല ഉപയോഗിക്കുന്നതു് എന്നതായിരിക്കും കാരണം. 
 
-<p
-  class="hint">Our examples are all <i>correct</i> LaTeX. If you see something different in
-another context, it might be because the example is not really using LaTeX.</p>
 
-### Inline math mode and mathematical notation
+### ഗണിതത്തിലെ പാഠരീതിയും ഗണിതസംജ്ഞകളും 
 
-As you can see above, inline math mode is marked using a pair of dollar
-symbols (`$...$`). It is also possible to use the notation `\( ... \)`.
-Simple expressions are entered without any special markup, and you'll see
-that the math is spaced out nicely and has letters in italic.
+മുകളിൽ ചേർത്തിരിക്കുന്ന ഉദാഹരണത്തിൽ, പാഠരീതിയിൽ ഗണിതത്തെ ഒരു ജോടി ഡോളർ (`$...$`) ചിഹ്നങ്ങൾക്കുള്ളിലാണു് നിവേശിച്ചിരിക്കുന്നതെന്നു് കാണാം. ഡോളറിനു് പകരം `\( ... \)` എന്ന സംജ്ഞാരീതിയും നമുക്കു് അവലംബിക്കാവുന്നതാണു്. ലളിതമായ ഗണിതാവിഷ്ക്കാരങ്ങൾ ഇങ്ങനെയാണു് നിവേശനം ചെയ്യാറുള്ളതു്. അതിൽ ഗണിത സംജ്ഞകളും ചിഹ്നങ്ങളും ശുചിയായ രീതിയിൽ വിന്യസിച്ചിരിക്കുന്നതു് നമുക്കു് കാണാം, മാത്രവുമല്ല, അക്ഷരങ്ങൾ മാത്രം ചരിഞ്ഞ ലിപിയിലാണെന്നതും പ്രത്യേകം പ്രസ്താവ്യമാണു്. 
 
-Inline math mode restricts vertical size of the expression so that as
-far as possible the formula does not disturb the linespacing of the
-paragraph.
+പാഠരീതിയിൽ ഗണിത സംജ്ഞകളുടെ ഉയരം, താഴ്ച എന്നിവ എപ്പോഴും നിയന്ത്രിതമായിരിക്കുന്നതിനാൽ വരികൾക്കിടക്കുള്ള വിടവു് ഒരിക്കലും സ്പർശിക്കാതെ സ്വാഭാവികമായും ഏകതാനമായും വർത്തിക്കാൻ സഹായിക്കുന്നു.  
 
-Note that _all_ mathematics should be marked up as math, even if it is
-a single character  use `... $2$ ...`   not `... 2 ...` otherwise, for
-example, when you need a negative number and need math to get a minus
-sign the `... $-2$ ...` may use math digits which may not be the same
-font as the text digits (depending on the document class).
-Conversely
-beware of math mode constructs appearing in plain text copied from
-elsewhere such as  monetary values using `$` or filenames using `_` (which
-may be marked up as `\$` and `\_` respectively).
 
-We can easily add superscripts and subscripts; these are marked using `^` and
-`_`, respectively.
+_എല്ലാ_ ഗണിതവും ഗണിതമായി തന്നെ അടയാളപ്പെടുത്തണം, അത് `... $2$ ...` എന്ന രീതിയിൽ ഒറ്റ അക്ഷരം ആണെങ്കിൽ പോലും, ഒരിക്കലും `... 2 ...` എന്നു പാടില്ല തന്നെ. അതുകൂടാതെ, ഉദാഹരണത്തിന്, നിങ്ങൾക്ക് ഒരു ന്യൂന അക്കം ആവശ്യമുള്ളപ്പോൾ `... $-2$ ...` എന്ന രീതിയിൽ നിവേശിക്കേണ്ടതു് ന്യൂനചിഹ്നം ലഭിക്കാൻ ആവശ്യമാണ്, പാഠത്തിനുപയോഗിക്കുന്ന അതേ ഫോണ്ട് ആയിരിക്കില്ല (പ്രമാണവർഗ്ഗത്തെ ആശ്രയിച്ച്) ഗണിത അക്കങ്ങൾ ഉപയോഗിക്കുന്നതു്. നേരെമറിച്ച്, മറ്റെവിടെയെങ്കിലും നിന്ന് പകർത്തിയ ശുദ്ധ പാഠത്തിൽ ഗണിതരീതിയിലുള്ള ഘടനകൾ ഉണ്ടെങ്കിൽ   സൂക്ഷിക്കുക, ഉദാഹരണത്തിനു്, `$` ഉപയോഗിച്ചുള്ള സാമ്പത്തിക വിവരങ്ങൾ അല്ലെങ്കിൽ `_` ഉപയോഗിച്ചുള്ള ഫയൽനാമങ്ങൾ എന്നിവ (അവ യഥാക്രമം `\$`, `\_` എന്നിങ്ങനെ അടയാളപ്പെടുത്തണം).
+
+നമുക്കു് ഗണിതസൂത്രവാക്യങ്ങളിലുള്ള മേൽക്കുറിപ്പു് (superscript), കീഴ്ക്കുറിപ്പു് (subscript) എന്നിവ എളുപ്പത്തിൽ ചേർക്കാൻ കഴിയും; ഇവ യഥാക്രമം `^`, `_` എന്നിവ ഉപയോഗിച്ചു് അടയാളപ്പെടുത്തുക.
 
 ```latex
 \documentclass{article}
@@ -82,13 +101,10 @@ Superscripts $a^{b}$ and subscripts $a_{b}$.
 \end{document}
 ```
 
-(You might see examples where simple super- and subscripts are entered without
-braces, but that is not the official syntax and can go wrong; always use
-braces.)
 
-There are a _lot_ of specialist math mode commands. Some of them are quite
-easy, for example `\sin` and `\log` for sine and logarithm or `\theta` for the
-Greek letter.
+വക്രാവരണചിഹ്നങ്ങൾ (braces) ഇല്ലാതെതന്നെ ലളിതമായ മേൽ/കീഴ്ക്കുറിപ്പുകൾ നിവേശനം ചെയ്തിരിക്കുന്നതു് നിങ്ങൾ ശ്രദ്ധിച്ചിരിക്കും. എന്നാൽ അതൊരിക്കലും ഔദ്യോഗിക പദഘടന അല്ലെന്ന കാര്യം അറിയുക. അതുകൊണ്ടു്  മേൽ/കീഴ്ക്കുറിപ്പുകൾക്കു ചുറ്റും വക്രാവരണചിഹ്നങ്ങൾ ഉണ്ടായിരിക്കുന്നതാണു് എപ്പോഴും സുരക്ഷിതം. 
+
+വിശേഷപ്പെട്ട ഗണിതരീതിക്കു് വേണ്ട വളരെയധികം ആജ്ഞകൾ ലാറ്റെൿ ലഭ്യമാക്കിയിട്ടുണ്ടു്. അവയിൽ പലതും പഠിക്കാനും ഉപയോഗിക്കാനും വളരെയധികം എളുപ്പമാണു്. ഉദാഹരണത്തിനു്, `\sin`, `\log` എന്നിവ യഥാക്രമം സൈൻ (sine), ലോഗരിതം എന്നിവയെ വിന്യസിക്കാനും, `\theta` എന്നതു് ഗ്രീക്കുലിപിയിലെ അക്ഷരമായ തീറ്റ നിവേശിക്കാനും ഉള്ളതാണു്. 
 
 ```latex
 \documentclass{article}
@@ -98,29 +114,16 @@ Some mathematics: $y = 2 \sin \theta^{2}$.
 \end{document}
 ```
 
-We cannot cover all the standard LaTeX math mode commands here, but there are
-many online resources listing the standard set. You can look up commands for
-math mode symbols using the
-[Detexify](https://detexify.kirelabs.org/classify.html) tool.
+ലാറ്റെക്കിലെ അടിസ്ഥാന ഗണിതസംബന്ധിയായ എല്ലാ ആജ്ഞകളും നമുക്കിവിടെ നിരത്തുവാൻ കഴിയില്ല. പക്ഷെ അനവധി സൈറ്റുകളും മറ്റു് ഓൺലൈൻ സംരംഭങ്ങളും ഇവയെ ലഭ്യമാക്കുന്നുണ്ടു്. നിങ്ങൾക്കു് ഈ [കണ്ണി](https://detexify.kirelabs.org/classify.html) പരിശോധിക്കാവുന്നതാണു്.
 
 
-### Display mathematics
+## പ്രദർശന ഗണിതം (Display math)
 
-You can use exactly the same commands for display math mode as for
-inline work. Display math mode is set centered by default and is meant
-for larger equations that are 'part of a paragraph'. Note that
-display math environments do not allow a paragraph to end within the
-mathematics, so you may not have blank lines within the source of the
-display.
+പ്രദർശനരീതിയിലും പാഠരീതിയിലും ഒരേ ഗണിത ആജ്ഞകൾ നമുക്കു് ഉപയോഗിക്കാവുന്നതാണു്. പ്രദർശനരീതിയിൽ ഗണിതപാഠത്തെ ലാറ്റെൿ സ്വതവേ തിരശ്ചീനമായി വരിയുടെ മദ്ധ്യത്തിൽ അണിനിരത്തുന്നു, വലിയ സമവാക്യങ്ങൾ അതുൾക്കൊള്ളുന്ന ഖണ്ഡികയുടെ ഭാഗമായി കരുതപ്പെടുകയും ചെയ്യുന്നു. പ്രദർശനരീതിയിൽ ഒരിക്കലും ഒരു ഖണ്ഡിക അവസാനിക്കാനോ, ശൂന്യവരിയുണ്ടാവാനോ പാടില്ല എന്ന കാര്യം ഇവിടെ പ്രത്യേകം ശ്രദ്ധിക്കേണ്ടതാണു്. 
 
-The paragraph should always be started _before_ the display so do not
-leave a blank line before the display math environment. If you need
-several lines of mathematics, do not use consecutive display math
-environments (this produces inconsistent spacing); use one of the
-multi-line display environments such as `align` from the `amsmath`
-package described later.
+ഖണ്ഡികകൾ എപ്പോഴും പ്രദർശന സമവാക്യങ്ങൾക്കു് മുമ്പു് തുടങ്ങിയിരിക്കണം, അതുപോലെ, സമവാക്യ പരിസരത്തിനു് മുമ്പു് ശൂന്യവരികൾ ഒഴിവാക്കാനും പ്രത്യേകം ശ്രദ്ധിക്കുക. ഒന്നിൽക്കൂടുതൽ സമവാക്യങ്ങൾ ഉണ്ടെങ്കിൽ അവ തുടരെത്തുടരെ വെവ്വേറെ സമവാക്യപരിസരങ്ങളിൽ നിവേശിക്കേണ്ട കാര്യമില്ല. അങ്ങനെ ചെയ്താൽ രണ്ടു് സമവാക്യങ്ങൾക്കിടക്കുള്ള വിടവു് ഗണിത മുദ്രണസൗന്ദര്യത്തിനു് അനുയോജ്യമല്ലാത്ത രീതിയിൽ കൂടുതലായിരിക്കും. അതുകൊണ്ടു്, ഈ ആവശ്യത്തിലേയ്ക്കു് ലാറ്റെക്കിൽ ലഭ്യമായിട്ടുള്ള `align` പോലുള്ള ഒന്നിലധികം സമവാക്യങ്ങൾക്കു് വേണ്ടിയുള്ള പരിസരങ്ങൾ (multi-line equation environments) ഉപയോഗിക്കുക.  `amsmath` പാക്കേജിലുള്ള ഈ പരിസരത്തെക്കുറിച്ചു് അല്പം കഴിഞ്ഞു് നമ്മൾ പരിചയപ്പെടുന്നുണ്ടു്. 
 
-It's particularly useful for integrations, for example:
+മുകളിൽ പറഞ്ഞ കാര്യങ്ങൾ സമാകലനം (integration) പോലുള്ളവയടങ്ങുന്ന സമവാക്യങ്ങൾ നിവേശിക്കുമ്പോൾ കൂടുതൽ പ്രസക്തമാണു്. ചുവടെ ചേർത്തിരിക്കുന്ന ഉദാഹരണം കണ്ടാലും: 
 
 ```latex
 \documentclass{article}
@@ -133,15 +136,10 @@ A paragraph about a larger equation
 \end{document}
 ```
 
-Notice here how sub-/superscript notation is used to set the limits on the
-integration.
+സമാകലനം അടങ്ങുന്ന സമവാക്യങ്ങൾ വിന്യസിക്കുമ്പോൾ സീമകൾ (limits) നിവേശിക്കുന്നതു് കീഴ്/മേൽക്കുറിപ്പുകൾ (sub/superscripts) ഉപയോഗിച്ചാണു്. 
 
-We've added one piece of manual spacing here: `\,` makes a thin space before the
-`dx`.
-Formatting of the differential operator varies: some publishers use an upright
-'d' whilst others use an italic '_d_'. One way to write your source to allow you to
-handle either is to create a command `\diff` that you can adjust as required,
-[for example](http://www.tug.org/TUGboat/tb41-1/tb127gregorio-math.pdf)
+`dx` എന്ന ഗണിതസംജ്ഞയ്ക്കു മുന്നിൽ `\,` എന്ന ആജ്ഞ ചെറു അകലം വിടാനായി നമ്മൾ ചേർത്തതു് ശ്രദ്ധിച്ചിരിക്കുമല്ലോ. ഇവിടെ ഭേദസൂചകമായ 'd'-യെ വിന്യസിക്കുന്നരീതി പ്രസാധകർക്കിടയിൽ യോജിപ്പില്ലാത്ത ഒന്നാണു്, ചിലർ നിവർന്ന (upright) അക്ഷരങ്ങളും ചിലർ ചരിഞ്ഞ അക്ഷരങ്ങളും ഉപയോഗിക്കുന്നു. അത്തരം പരസ്പരവിരുദ്ധങ്ങളായ ആവശ്യമുണ്ടാവുമ്പോൾ, എളുപ്പത്തിൽ കൈകാര്യം ചെയ്യാൻ `\diff` എന്ന ഒരു ആജ്ഞ നിർവ്വചിക്കുകയാണു് വേണ്ടതു്. അപ്പോൾ അന്തിമമായ ആവശ്യമനുസരിച്ചു് ഈ ആജ്ഞയെ ഒരു സ്ഥലത്തുമാത്രം പുനർ നിർവചിച്ചാൽ മതിയാകും. [ഉദാഹരണത്തിനു്, ഇതു് കാണുക](http://www.tug.org/TUGboat/tb41-1/tb127gregorio-math.pdf).
+
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
@@ -155,8 +153,7 @@ A paragraph about a larger equation
 \end{document}
 ```
 
-You often want a numbered equation, which is created using the `equation`
-environment. Let's try the same example again:
+നമുക്കു് എണ്ണമുള്ള ഒരു സമവാക്യം സൃഷ്ടിക്കേണ്ട ആവശ്യമുണ്ടാവുകയാണെങ്കിൽ, `equation` എന്ന പരിസരം ഉപയോഗിക്കുക. ചുവടെയുള്ള ഉദാഹരണത്തിൽ ഈ പരിസരത്തിലെ പ്രയോഗം കാണുക:
 
 ```latex
 \documentclass{article}
@@ -169,19 +166,11 @@ A paragraph about a larger equation
 \end{document}
 ```
 
-The equation number is incremented automatically and may be a simple
-number as in this example or may be prefixed by section number, so
-(2.5) for the 5th equation in section 2. The details of the formatting
-are set up by the document class and not described here.
+സമവാക്യത്തിൻ്റെ നമ്പർ യാന്ത്രികമായി അധികരിച്ചുകൊള്ളും. സാധാരണയായി, ഈ ഉദാഹരണത്തിൽ കണ്ടതുപോലെ വെറും ഒരു അക്കം മാത്രമായിരിക്കും, അല്ലെങ്കിൽ സമവാക്യമുൾക്കൊള്ളുന്ന ഖണ്ഡത്തിന്റെ നമ്പർ കൂടി ഉപസർഗ്ഗമായി ചേർത്തുകൊണ്ടു് `2.5` എന്ന രീതിയും അവലംബിക്കാറുണ്ടു്. ഇതിൽ ഏതു് രീതിയാണ് വേണ്ടതെന്നു് തെരഞ്ഞെടുക്കുന്നതു് പ്രമാണവർഗ്ഗത്തെ ആശ്രയിച്ചിരിക്കും. 
 
+## `amsmath` എന്ന പാക്കേജ്
 
-## The `amsmath` package
-
-Mathematical notation is very rich, and this means that the tools built
-into the LaTeX kernel can't cover everything. The `amsmath` package
-extends the core support to cover a lot more ideas.
-The [`amsmath` User Guide](http://texdoc.org/pkg/amsmath)
-contains many more examples than we can show in this lesson.
+ഗണിതസംജ്ഞകളും ചിഹ്നങ്ങളും വളരെ വിപുലമായതിനാൽ, ലാറ്റെക്കിന്റെ കാതലിൽ ലഭ്യമായ ആജ്ഞകൾ മാത്രം ഉപയോഗിച്ചു് എല്ലാ ചിഹ്നങ്ങളും സംജ്ഞകളും നമുക്കു് പ്രാപ്യമല്ല. ലാറ്റെക്കിന്റെ ഈ പരിമിതിയെ മറികടന്നു് വിഭവശേഷി വർദ്ധിപ്പിക്കാനായി രചിക്കപ്പെട്ട പാക്കേജാണു് `amsmath`. ഈ പാക്കേജിന്റെ സഹായവിവരണമായ [`amsmath` User Guide](http://texdoc.org/pkg/amsmath)-ൽ പുതുതായി ലഭ്യമാക്കിയ മുഴുവൻ ആജ്ഞകളെയും പരിസരങ്ങളെയും കുറിച്ചു് വിശദമായി ചർച്ചചെയ്യുന്നു, കൂടാതെ ഗണിതമുദ്രണത്തിൽ അറിഞ്ഞിരിക്കേണ്ട ചില സൂക്ഷ്മഘടകങ്ങളെയും പരിചയപ്പെടുത്തുന്നു. 
 
 ```latex
 \documentclass{article}
@@ -197,17 +186,11 @@ Solve the following recurrence for $ n,k\geq 0 $:
 \end{document}
 ```
 
-The `align*` environment makes the equations line up on the ampersands, the `&`
-symbols, just like a table. Notice how we've used `\quad` to insert a bit of
-space, and `\text` to put some normal text inside math mode. We've also used
-another math mode command, `\binom`, for a binomial.
+`align*` എന്ന ഗണിതപരിസരം ഒന്നിലധികം സമവാക്യങ്ങളെ `&` എന്ന ചിഹ്നമുപയോഗിച്ചു് വരിവരിയായി പട്ടികയിൽ പംക്തികളെന്നപോലെ അണിനിരത്താൻ സഹായിക്കുന്നു. ഇവിടെ `\quad` എന്ന ആജ്ഞയുപയോഗിച്ചു് എങ്ങനെയാണു് തിരശ്ചീനമായി അകലം സൃഷ്ടിക്കുന്നതെന്നും മനസ്സിലാക്കുക. ഗണിതത്തിനുള്ളിൽ ഗണിതമല്ലാത്ത പാഠം നിവേശിക്കാൻ `\text` എന്ന ആജ്ഞയുടെ പ്രയോജനവും തിരിച്ചറിയുക.   `\binom` എന്ന ആജ്ഞയുപയോഗിച്ചു് ദ്വിപദം (binomial) നിർമ്മിക്കുന്ന രീതിയും ഈ ഉദാഹരണത്തിൽ കാണിച്ചിട്ടുണ്ടു്. 
 
-Notice that here we used `align*`, and the equation didn't come out numbered.
-Most math environments number the equations by default, and the starred variant
-(with a `*`) disables numbering.
+`align*` പരിസരത്തിന്റെ ഏറ്റവും വലിയ സവിശേഷത, അതു് സമവാക്യങ്ങളുടെ ക്രമനമ്പറുകളെ നിരോധിക്കുന്നു എന്നതാണു്. ഈ നക്ഷത്രചിഹ്നം (`*`) ഇല്ലാത്ത `align` പരിസരമായിരുന്നുവെങ്കിൽ സമവാക്യങ്ങളുടെ ക്രമനമ്പർ കൃത്യമായി അധികരിച്ചുകൊണ്ടു് പ്രദർശിപ്പിക്കുമായിരുന്നു. ഇതിൽനിന്നും നക്ഷത്രചിഹ്നങ്ങളുള്ള പരിസരം ക്രമനമ്പർ നിരോധിക്കുകയും `*` ഇല്ലാത്തവ ക്രമനമ്പർ അനുവദിക്കുകയും ചെയ്യുന്നു എന്ന സാമാന്യതത്വം മനസ്സിലാക്കുക. 
 
-The package also has several other convenient environments, for
-example for matrices.
+`amsmath` പാക്കേജ് വിവിധതരം മാട്രിക്സുകൾ നിർമ്മിക്കാനും സഹായിക്കുന്നു.
 
 ```latex
 \documentclass{article}
@@ -234,21 +217,17 @@ d & e & f
 \end{document}
 ```
 
-## Fonts in math mode
+## ഗണിതരീതിയും ലിപിസഞ്ചയങ്ങളും 
 
-Unlike normal text, font changes in math mode often convey very specific meaning.
-They are therefore often written explicitly. There are a set of commands you need
-here:
+ഗണിതപാഠത്തിൽ ലിപിമാറ്റം സാധാരണപാഠത്തിലില്ലാത്ത അർത്ഥവിശേഷങ്ങൾ ഉദ്ദേശിച്ചുകൊണ്ടുള്ളതാണു്. ആയതിനാൽ അതിന്റെ കൃത്യതയ്ക്കായി ഒരുപിടി ആജ്ഞകൾ ലാറ്റെക്കിൽ ലഭ്യമാണു്. അവ ചുവടെ ചേർക്കുന്നു:
 
-- `\mathrm`: roman (upright)
-- `\mathit`: italic spaced as 'text'
-- `\mathbf`: boldface
-- `\mathsf`: sans serif
-- `\mathtt`: monospaced (typewriter)
-- `\mathbb`: double-struck (blackboard bold) (provided by the `amsfonts` package)
+- `\mathrm`: റോമൻ  (നിവർന്നതു്)
+- `\mathit`: ചരിഞ്ഞതു് (അക്ഷരങ്ങൾ തമ്മിലുള്ള അകലം സാധാരണപാഠത്തിലേതുപോലെ)
+- `\mathbf`: കനമുള്ളതു്
+- `\mathsf`: അലങ്കാരവരയില്ലാത്തതു് (sans serif)
+- `\mathtt`: നിശ്ചിതവീതിയുള്ളതു് (monospaced) 
+- `\mathbb`: ഇരട്ടവരയുള്ളതു്  (double-struck, `amsfonts` ലഭ്യമാക്കുന്നു)
 
-Each of these takes Latin letters as an argument, so for example we might
-write a matrix as
 
 ```latex
 \documentclass{article}
@@ -258,14 +237,9 @@ The matrix $\mathbf{M}$.
 \end{document}
 ```
 
-Note that the default math italic separates letters so that they may
-be used to denote a product of variables. Use `\mathit` to make a word italic.
+ഗണിതരീതിയിൽ ലാറ്റെൿ സ്വതേ നൽകുന്ന ചരിഞ്ഞ അക്ഷരങ്ങൾക്കിടയ്ക്കു് കാണുന്ന അകലം ഗണിതവിധികൾക്കു് അനുസൃതമായിട്ടുള്ളതാണു്. അതുകൊണ്ടു് ചരങ്ങളും (variables) അവ തമ്മിലുള്ള ഗുണിതഫലങ്ങളും സൂചിപ്പിക്കുവാൻ അതാണു് ഉപയോഗിക്കേണ്ടതു്. മറിച്ചു് ഒരു വാക്കു് സാധാരണ പാഠത്തിലേതുപോലെ ചരിഞ്ഞ അക്ഷരങ്ങളിൽ വിന്യസിക്കണമെങ്കിൽ `\mathit` എന്ന ആജ്ഞ ഉപയോഗിക്കുക. 
 
-The `\math..` font commands use fonts specified for math
-use. Sometimes you need to embed a word that is part of the outer
-sentence structure and needs the current text font, for that you can
-use `\text{...}` (which is provided by the `amsmath` package) or
-specific font styles such as `\textrm{..}`.
+ഗണിതലിപി സംബന്ധിയായ `\math..`-ൽ തുടങ്ങുന്ന ആജ്ഞകൾ ഗണിതപാഠത്തിൽ മാത്രം ഉപയോഗിക്കുക. ഗണിതേതരപാഠത്തിൽ നിന്നും ഒരു വാക്കു് ചിലപ്പോൾ ഗണിതത്തിനകത്തു് ഉപയോഗിക്കേണ്ടി വരികയും, നിലവിലെ പാഠത്തിലെ ലിപി തന്നെവേണമെന്ന നിഷ്ക്കർഷയുണ്ടാവുയും ചെയ്യുമ്പോൾ `amsmath` പാക്കേജ് നൽകുന്ന `\text{...}`, അല്ലെങ്കിൽ `\textrm{..}` എന്നീ ആജ്ഞകളിൽ ഒന്നു് ഉപയോഗിക്കുക. 
 
 ```latex
 \documentclass{article}
@@ -273,31 +247,23 @@ specific font styles such as `\textrm{..}`.
 \usepackage{amsmath}
 \begin{document}
 
-$\text{bad use } size  \neq \mathit{size} \neq \mathrm{size} $
+<!---$\text{bad use } size  \neq \mathit{size} \neq \mathrm{size} $
 
 \textit{$\text{bad use } size \neq \mathit{size} \neq \mathrm{size} $}
 
 \end{document}
 ```
 
+മറ്റു ചിഹ്നങ്ങൾ കനത്ത ലിപിയിൽ വേണമെങ്കിൽ, അതിനു വേണ്ട [ആജ്ഞകൾ പരിചയപ്പെടാൻ](more-10) കാണുക. 
 
-If you need to make other
-symbols bold, [see the extra details](more-10).
+## അഭ്യാസം 
 
-## Exercises
+ചില ലളിതമായ ഗണിതപാഠങ്ങൾ നിവേശിക്കുകയും ഗണിതരീതി പരിചയപ്പെടാൻ വേണ്ട പരീക്ഷണങ്ങൾ നടത്തുകയും ചെയ്യുക. ഗണിത പാഠരീതിയും ഗണിത പ്രദർശനരീതിയും മാറിമാറി ചെയ്തുനോക്കുക.
 
-Try out some basic math mode work: take the examples and switch between
-inline and display math modes. Can you see what effect this has.
+ഗ്രീൿ അക്ഷരങ്ങൾ (ചെറുതും വലുതും) മാറിമാറിയുപയോഗിച്ചു് വിന്യസിക്കുക. അവയുടെ ആജ്ഞകൾ ഊഹിച്ചു നോക്കുക. 
 
-Try adding other Greek letters, both lower- and uppercase. You should be
-able to guess the names.
+ലിപിമാറ്റത്തിനുള്ള ആജ്ഞകൾ പരീക്ഷിക്കുക. അവ ഒന്നിന്റെയുള്ളിൽ മറ്റൊന്നു് നൽകുമ്പോൾ എന്തു മാറ്റം വരുന്നുവെന്നതു് പരീക്ഷിച്ചറിയുക.
 
-Experiment with the font changing commands: what happens when you try to
-nest them?
+പ്രദർശനരീതിൽ ലാറ്റെൿ സ്വതേ സമവാക്യങ്ങളെ മദ്ധ്യഭാഗത്താണു് അണിനിരത്തുന്നതു്. പ്രമാണവർഗ്ഗത്തിന്റെ ഐച്ഛികമായി `[fleqn]` ചേർക്കുക, എന്നിട്ടു് ഉദാഹരണങ്ങളിൽ കാണുന്ന സമവാക്യങ്ങൾ വീണ്ടും വിന്യസിച്ചു് മാറ്റങ്ങൾ തിരിച്ചറിയുക.
 
-Displayed math is centered by default; try adding the document class
-option `[fleqn]` (flush
-left equation) option to some of the above examples to see a different
-layout. Similarly equation numbers are usually on the
-right. Experiment with adding the `[leqno]` (left equation numbers)
-document class option.
+സമവാക്യങ്ങളുടെ ക്രമനമ്പറുകൾ സ്വതേ വിന്യസിക്കുന്നതു് വലത്തെ അറ്റത്താണു്. `[leqno]` എന്ന ഐച്ഛികം പ്രമാണവർഗ്ഗത്തിനു് നൽകി വീണ്ടും വിന്യസിക്കുക. ക്രമനമ്പറുകൾക്കു് സ്ഥാനചലനം സംഭവിക്കുന്നതു് മനസ്സിലാക്കുക.
