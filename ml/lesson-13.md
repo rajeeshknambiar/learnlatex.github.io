@@ -1,13 +1,13 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "Structuring longer documents"
-description: "This lesson shows how LaTeX allows you to split your sources into smaller, more manageable files, and how this can make building a long document easier and faster."
-toc-anchor-text: "Structuring sources"
-toc-description: "Spliting up sources in a controlled way."
+lang: "ml"
+title: "ദീര്‍ഘമായ പ്രമാണങ്ങളുടെ ഘടന"
+description: "നമ്മുടെ സ്രോതസ്സ് എങ്ങനെ കുറേക്കൂടി ചിട്ടയായി  ചെറിയ ഫയലുകളാക്കി ഭിന്നിക്കാമെന്നും; ഇപ്രകാരം ചെയ്യുന്നതു് ദീര്‍ഘമായ പ്രമാണങ്ങളുടെ നിര്‍മ്മാണം എളുപ്പവും വേഗമുള്ളതുമാക്കുന്നെന്നും ലാറ്റെൿ ഇതെങ്ങനെ അനുവദിക്കുന്നുവെന്നും ഈ പാഠത്തിൽ പരിചയപ്പെടാം. "
+toc-anchor-text: "സ്രോതസ്സിന്റെ ഘടന"
+toc-description: "നിയന്ത്രിതരീതിയിൽ സ്രോതസ്സിനെ കഷണങ്ങളാക്കുന്നത്"
 ---
 
-# Structuring longer documents
+# ദീര്‍ഘമായ പ്രമാണങ്ങളുടെ ഘടന
 
 <script>
 runlatex.preincludes = {
@@ -26,24 +26,23 @@ runlatex.preincludes = {
 </script>
 
 <span
-  class="summary">This lesson shows how LaTeX allows you to split your sources into smaller, more manageable files, and how this can make building a long document easier and faster.</span>
+  class="summary">നമ്മുടെ സ്രോതസ്സ് എങ്ങനെ കുറേക്കൂടി ചിട്ടയായി  ചെറിയ ഫയലുകളാക്കി ഭിന്നിക്കാമെന്നും; ഇപ്രകാരം ചെയ്യുന്നതു് ദീര്‍ഘമായ പ്രമാണങ്ങളുടെ നിര്‍മ്മാണം എളുപ്പവും വേഗമുള്ളതുമാക്കുന്നെന്നും ലാറ്റെൿ ഇതെങ്ങനെ അനുവദിക്കുന്നുവെന്നും ഈ പാഠത്തിൽ പരിചയപ്പെടാം. </span>
 
-When you are writing a longer document, you’ll likely want to split up
-the source into multiple files. For example, it's very common to have
-one 'main'/'root' file, then one source file per chapter (for a book or thesis),
-or per significant section (for a long article).
+നിങ്ങൾ ഒരു ദീര്‍ഘമായ പ്രമാണം എഴുതുമ്പോൾ അതിന്റെ സ്രോതസ്സ് കുറേ ചെറിയ ഫയലുകളാക്കി തിരിക്കുന്നതാവും അഭികാമ്യം.
+ഉദാഹരണത്തിനു് ഒരു 'പ്രധാന'/'മൂല' ഫയലും ഓരോ അദ്ധ്യായത്തിനും ഓരോ ഫയലും (ഒരു പുസ്തകത്തിനോ പ്രബന്ധത്തിനോ),
+അല്ലെങ്കിൽ ഓരോ പ്രധാന ഖണ്ഡത്തിനും (ദീര്‍ഘമായ ഒരു ലേഖനത്തിനു്) എന്ന വിധത്തിൽ.
 
-## Structuring your sources
 
-LaTeX allows us to split up sources in a controlled way. There are two important
-commands here, `\input` and `\include`. We can use `\input` to make a file work
-'as though it was typed in here', so it can be used for (essentially) any
-material. The `\include` command works for chapters only: it starts a new page
-and makes some internal adjustments. But it has a big advantage: it allows us to
-be selective in which chapters to include, so you can work on part of your
-document rather than the whole thing.
+## സ്രോതസ്സുകളുടെ ഘടന
 
-A longer document might therefore look something like the following:
+സ്രോതസ്സുകളെ നിയന്ത്രിതരീതിയിൽ കഷണങ്ങളാക്കുന്നതു് ലാറ്റെൿ അനുവദിക്കുന്നുണ്ടു്. അതിനുള്ള രണ്ടു് പ്രധാന ആജ്ഞകളാണ്
+`\input`, `\include` എന്നിവ. `\input` ഉപയോഗിച്ചാൽ ആ ഫലയിനെ 'ഇവിടെ ടൈപ്പു് ചെയ്തതു പോലെ' കരുതും,
+ആയതിനാൽ ഈ ആജ്ഞ ഏതാണ്ട് എല്ലായിടത്തും ഉപയോഗിക്കാം. `\include` ആജ്ഞ അദ്ധ്യായങ്ങള്‍ക്കു മാത്രമേ ഉപയുക്തമാകൂ:
+ഒരു പുതിയ താൾ തുടങ്ങുകയും ആന്തരികമായി ചില ക്രമീകരണങ്ങൾ നടപ്പിലാക്കുകയും ചെയ്യും. പക്ഷേ ഇതിനൊരു വലിയ പ്രയോജനമുണ്ട്:
+ഏതൊക്കെ അദ്ധ്യായങ്ങൾ തിരഞ്ഞെടുത്ത് ഉള്‍പ്പെടുത്തണമെന്നു് തീരുമാനിക്കാൻ നമ്മെ അനുവദിക്കുന്നു; അപ്പോൾ പ്രമാണം മുഴുവനായും
+രേഖീയമായി എഴുതുന്നതിനു പകരം ഖണ്ഡങ്ങളായും എഴുതാം.
+
+അപ്പോൾ ദീര്‍ഘമായ ഒരു പ്രമാണം കാണാൻ ഏകദേശം ഇതുപോലെയിരിക്കും:
 
 <!-- pre0 {% raw %} -->
 ```latex
@@ -89,57 +88,57 @@ A longer document might therefore look something like the following:
 ```
 <!-- {% endraw %} -->
 
-We'll look at the various aspects of this file below. (The various support files
-are at the end of this page.)
+ഈ ഫയലിന്റെ വിവിധ ഭാഗങ്ങളെ നാം വിശദമായി ചുവടെ പരിഗണിക്കും. (വിവിധ സഹായ ഫയലുകൾ ഈ താളിന്റെ അവസാനം
+ചേര്‍ത്തിട്ടുണ്ടു്.)
 
-## Using `\input`
+## `\input` ഉപയോഗിക്കുന്നതു്
 
-The `\input` command is good for parts of a long file that are _not_ separate
-chapters. In the example, we have used it to separate out the front- and
-backcovers, keeping the main file short and clear, and also meaning we could
-re-use the covers in another document. We've also used it for the 'non-chapter'
-sections at the start of our 'book': things like the preface. Again, this is
-to help keep the main file clear.
+ഒരു നീണ്ട പ്രമാണത്തിന്റെ, വിഭിന്ന അദ്ധ്യായങ്ങൾ _അല്ലാത്ത_ ഭാഗങ്ങൾ  തയ്യാറാക്കാന്‍ `\input` ആജ്ഞ അനുയോജ്യമാണു്.
+തന്നിട്ടുള്ള ഉദാഹരണത്തിൽ മുന്‍–പിൻ ചട്ടകൾ വേറിട്ടു നിര്‍ത്തുവാൻ സാധിച്ചത് ആവിധമാണു്, ഇതു് പ്രധാന ഭാഗത്തെ ചെറുതും
+വ്യക്തവുമാക്കി നിലനിര്‍ത്താൻ മാത്രമല്ല, ഈ ചട്ടകൾ നമുക്കു് മറ്റൊരു പ്രമാണത്തിൽ പുനരുപയോഗിക്കാനും സഹായിക്കുന്നു.
+നമ്മുടെ 'പുസ്തകത്തിന്റെ'  തുടക്കത്തിലെ ആമുഖം പോലുള്ള 'അദ്ധ്യായങ്ങളല്ലാത്ത' ഖണ്ഡങ്ങളെയും ഇങ്ങനെ വേര്‍തിരിച്ചിട്ടുണ്ട്.
+ഇതും, പ്രധാന ഫയലിനെ വ്യക്തമാക്കി നിര്‍ത്തുവാൻ വേണ്ടിയാണു് പ്രയോഗിച്ചിട്ടുള്ളതു്.
 
-## Using `\include` and `\includeonly`
 
-The `\include` command is good for chapters, so we have used it for each full
-chapter; it always starts a new page. We have selected which chapters will
-actually be typeset using `\includeonly`, which as you can see takes a
-comma-separated list of file names. When you use `\includeonly`, you can shorten
-how long your typesetting takes and produce a 'selective' PDF for proofreading.
-In addition, the key advantage of `\includeonly` is that LaTeX will use all of
-the cross reference information from the `.aux` files of other included files.
+## `\include`, `\includeonly` എന്നിവ ഉപയോഗിക്കുന്നതു്
 
-## Creating a table of contents
+`\include` ആജ്ഞ ഏറ്റവും അനുയോജ്യമായതു് അദ്ധ്യായങ്ങള്‍ക്കാണു്, അതുകൊണ്ടു തന്നെ ഓരോ മുഴുവൻ അദ്ധ്യായങ്ങളും
+നാം ഇങ്ങനെയാണു് ചേര്‍ത്തിരിക്കുന്നതു്; അതെല്ലായ്പോഴും ഒരു പുതിയ താൾ ആരംഭിക്കുകയും ചെയ്യുന്നു. ശരിക്കും ഏതൊക്കെ
+അദ്ധ്യായങ്ങൾ പാഠത്തിൽ വിന്യസിക്കപ്പെടണമെന്നു് തിരഞ്ഞെടുത്തിരിക്കുന്നതു്  `\includeonly` ആജ്ഞ വഴിയാണു്,
+നിങ്ങള്‍ക്കു കാണാം അല്പവിരാമമിട്ടു വേര്‍തിരിച്ച ഫലയുകളുടെ ഒരു സൂചികയാണു് അതിനു നല്കേണ്ടത്. `\includeonly`
+ഉപയോഗിക്കുമ്പോൾ പാഠവിന്യാസത്തിനെടുക്കുന്ന സമയം ചുരുക്കാനും ശുദ്ധിപരിശോധനയ്ക്കായി 'തിരഞ്ഞെടുത്ത' ഭാഗങ്ങൾ
+മാത്രമുള്ള  ഒരു പിഡിഎഫ് നിര്‍മ്മിക്കാനും സാധിക്കും. `\includeonly`-ന്റെ മറ്റൊരാനുകൂല്യം പ്രതിനിര്‍ദ്ദേശത്തിനു വേണ്ട
+വിവരങ്ങൾ ഉള്‍ക്കൊള്ളിച്ച മറ്റു ഫയലുകളുടെ `.aux` സഹായ ഫയലിൽ നിന്നും താനേ എടുത്തുകൊള്ളുമെന്നതാണു്.
 
-The `\tableofcontents` command uses the information from sectioning
-commands to populate the table of contents.  It has its own auxiliary
-file, with extension `.toc`, so you may need to run LaTeX twice to
-resolve the information. The table is generated automatically from the
-section titles. There are similar commands for `\listoffigures` and
-`\listoftables`, which work from the float environment captions, and
-use files with extension `.lof` and `.lot` respectively.
 
-## Splitting the document into parts
+## ഉള്ളടക്കത്തിന്റെ നിര്‍മ്മാണം
 
-The `\frontmatter`, `\mainmatter`, and `\backmatter` commands
-affect the formatting.
-For instance, `\frontmatter` changes the page numbering to
-Roman numbers.
-The `\appendix` command changes the numbering to `A`, `B`, etc.,
-so for instance in the first chapter after `\appendix`,
-the header says `Appendix A`.
+ഭാഗങ്ങൾ തിരിക്കാനുള്ള (sectioning) ആജ്ഞകളിൽ നിന്നുള്ള വിവരങ്ങൾ ഉപയോഗിച്ചാണു് `\tableofcontents`
+ആജ്ഞ വിഷയാനുക്രമണിക അഥവാ ഉള്ളടക്കം നിര്‍മ്മിക്കുന്നതു്.  `.toc` എന്ന വാലറ്റത്തോടുകൂടിയ അതിന്റേതായ ഒരു സഹായക
+ഫയൽ  ആണു് ഇതിന്നുപയോഗിക്കുന്നത്, അതുകൊണ്ടു് ലാറ്റെൿ രണ്ടുവട്ടം പ്രവര്‍ത്തിപ്പിച്ചാലേ വിവരം സ്പഷ്ടമായി ലഭ്യമാകൂ.
+ഈ സൂചിക, തലക്കെട്ടുകളിൽ നിന്നു് താനേ നിര്‍മ്മിക്കപ്പെടുന്നതാണു്. തത്തുല്യമായി, `\listoffigures`, `\listoftables`
+എന്ന ആജ്ഞകളുമൂണ്ട്. അവയ്ക്കു വേണ്ട വിവരങ്ങൾ ഫ്ലോട്ടുകളുടെ ശീര്‍ഷകങ്ങളിൽ നിന്നാണു് ലഭിക്കുന്നത്, ആ സഹായക ഫയലുകളുടെ
+വാലറ്റങ്ങൾ യഥാക്രമം `lof`, `lot` എന്നാണു്.
 
-## Exercises
 
-Experiment with the basic structure of the demonstration document,
-try adding and removing entries for `\includeonly` and see the effect.
+## പ്രമാണത്തെ പല ഭാഗങ്ങളായി വിഭജിക്കുവാൻ
 
-Add some floats and produce a list of figures and tables.
-If using a locally installed LaTeX, do you see
-how many LaTeX runs are required? (The online systems re-run LaTeX
-"behind the scenes" so the additional required runs are not so obvious.)
+`\frontmatter`, `\mainmatter`, `\backmatter` എന്നീ ആജ്ഞകൾ പ്രമാണത്തിന്റെ രൂപഘടനയെ
+സ്വാധീനിക്കും. ഉദാഹരണത്തിനു്, `\frontmatter` എന്നതു് താളിന്റെ അക്കങ്ങളെ റോമൻ സംഖ്യകളായി ചിത്രീകരിക്കും.
+`\appendix` ആജ്ഞ, ഖണ്ഡങ്ങളുടെ നമ്പർ `A`, `B` എന്നിങ്ങനെയാക്കും; ഉദാഹരണത്തിനു്  `\appendix`ആജ്ഞയ്ക്കു
+ശേഷമുള്ള ആദ്യത്തെ ഖണ്ഡത്തിന്റെ ശീര്‍ഷകമായി `Appendix A` എന്നാവും പ്രത്യക്ഷപ്പെടുക.
+
+
+## അഭ്യാസം
+
+പ്രദര്‍ശന പ്രമാണത്തിന്റെ അടിസ്ഥാന ഘടനയെ മാറ്റിക്കൊണ്ടുള്ള പരീക്ഷണങ്ങൾ നടത്തുക. `\includeonly` ആജ്ഞയിൽ
+നിന്നു് ഉള്ളടക്കം ചേര്‍ക്കുകയും എടുത്തു മാറ്റുകയും ചെയ്യുമ്പോൾ എന്തു് ഫലമാണുളവാകുന്നതെന്നു് നിരീക്ഷിക്കുക.
+
+ചില ഫ്ലോട്ടുകൾ ചേര്‍ത്തു് ചിത്രങ്ങളുടെയും പട്ടികകളുടെയും സൂചികകൾ നിര്‍മ്മിക്കുക. നിങ്ങളൂടെ കംപ്യൂട്ടറിൽ ഇന്‍സ്റ്റാൾ ചെയ്ത ലാറ്റെൿ
+പതിപ്പാണുപയോഗിക്കുന്നതെങ്കിൽ എത്രവട്ടം ലാറ്റെൿ പ്രവര്‍ത്തിപ്പിക്കണമെന്നു് ശ്രദ്ധിച്ചുവോ? (ഓണ്‍ലൈൻ ലാറ്റെൿ സംവിധാനങ്ങൾ
+"തിരശ്ശീലയ്ക്കു പിറകിൽ" ലാറ്റെൿ ഒന്നിലധികം തവണ താനേ പ്രവര്‍ത്തിപ്പിക്കും, അതിനാൽ അധികം ആവശ്യമായി വരുന്ന പ്രവര്‍ത്തനങ്ങൾ
+അത്രയെളുപ്പം വ്യക്തമല്ല).
+
 
 ----
 
