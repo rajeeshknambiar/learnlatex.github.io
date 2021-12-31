@@ -1,48 +1,48 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "What LaTeX is and how it works"
-description: "This lesson explains the basics of what LaTeX is and how it works in contrast to common word processors such as Microsoft Word or LibreOffice Writer."
-toc-anchor-text: "LaTeX basics"
-toc-description: "What LaTeX is and how it works."
+lang: "ml"
+title: "ലാറ്റെൿ എന്താണു്, അതെങ്ങനെ പ്രവര്‍ത്തിക്കുന്നു"
+description: "ലാറ്റെക്കിന്റെ അടിസ്ഥാനപാഠങ്ങളും, മൈക്രോസ്ഫ്റ്റ് വേഡോ ലിബ്രെഒഫീസ് റൈറ്ററോ പോലുള്ള മറ്റു സാധാരണ വേഡ് പ്രൊസസ്സറുകളെ അപേക്ഷിച്ച് എങ്ങനെ പ്രവര്‍ത്തിക്കുന്നുവെന്നും ഈ പാഠത്തിൽ പരിചയപ്പെടാം."
+toc-anchor-text: "ലാറ്റെൿ അടിസ്ഥാനപാഠങ്ങൾ"
+toc-description: "ലാറ്റെൿ എന്താണു്, അതെങ്ങനെ പ്രവര്‍ത്തിക്കുന്നു."
 ---
 
-# LaTeX basics
+# ലാറ്റെൿ അടിസ്ഥാനപാഠങ്ങൾ
 
 <span
-  class="summary">This lesson explains the basics of what LaTeX is and how it works in contrast to common word processors such as Microsoft Word or LibreOffice Writer.</span>
+  class="summary">ലാറ്റെക്കിന്റെ അടിസ്ഥാനപാഠങ്ങളും, മൈക്രോസ്ഫ്റ്റ് വേഡോ ലിബ്രെഒഫീസ് റൈറ്ററോ പോലുള്ള മറ്റു സാധാരണ വേഡ് പ്രൊസസ്സറുകളെ അപേക്ഷിച്ച് എങ്ങനെ പ്രവര്‍ത്തിക്കുന്നുവെന്നും ഈ പാഠത്തിൽ പരിചയപ്പെടാം.</span>
 
-Unlike common word processors such as Microsoft Word or LibreOffice Writer, LaTeX
-usually does not provide WYSIWYG ('What You See Is What You Get'). With LaTeX
-one takes plain text and enriches it with markup. This markup tells LaTeX
-about the logical meaning of certain elements of the text, similar to the way
-HTML does.
+മൈക്രോസ്ഫ്റ്റ് വേഡോ ലിബ്രെഒഫീസ് റൈറ്ററോ പോലുള്ള മറ്റു സാധാരണ വേഡ് പ്രൊസസ്സറുകളിൽ നിന്നു് വ്യത്യസ്തമായി,
+ലാറ്റെൿ പൊതുവേ WYSIWYG ('What You See Is What You Get') തരത്തിലല്ല പ്രവര്‍ത്തിക്കുന്നതു്.
+ലാറ്റെക്കിൽ ഒരു വെറും ടെക്സ്റ്റ് ഫയലിൽ ഉള്ളടക്കം എഴുതി അതിൽ ‘മാര്‍ക്കപ്പ്’ വഴി രൂപഘടന ആവശ്യപ്പെടുകയാണു്
+ചെയ്യുന്നതു്. ഈ മാര്‍ക്കപ്പ്, എച്ടിഎംഎൽ ചെയ്യുന്നതു പോലെ പാഠത്തിലെ ചില ഭാഗങ്ങളുടെ യുക്തിസഹമായ ഉദ്ദേശ്യം
+എന്താണെന്നു് ലാറ്റെക്കിനു പറഞ്ഞു കൊടുക്കുകയാണു് ചെയ്യുന്നതു്.
 
-Take for example the element `<h2>` indicating a new section in an HTML document.
-LaTeX also has a command for this; here one would use the `\section` command.
+എച്ടിഎംഎൽ പ്രമാണങ്ങളിൽ ഒരു പുതിയ ഖണ്ഡത്തിനെ സൂചിപ്പിക്കാനുപയോഗിക്കുന്ന `<h2>` എന്ന ഘടകം
+ഉദാഹരണമായെടുക്കുക. ലാറ്റെക്കിലും ഇതിനു തത്തുല്യമായ ആജ്ഞയുണ്ട്; ഇവിടെ `\section` എന്ന ആജ്ഞയാണു്
+ഉപയോഗിക്കേണ്ടതു്.
 
-## The LaTeX workflow
+## ലാറ്റെൿ പ്രവര്‍ത്തനരീതി
 
-Because LaTeX files are not the document itself but rather instructions
-on what each part of the document should be, you don't normally give other
-people your LaTeX file itself. Instead, after writing your LaTeX _source_, you
-run LaTeX on the file (normally using a program called `pdflatex`) to
-create a PDF file. This PDF is then what you send to others.
+ലാറ്റെൿ ഫയലുകൾ നമുക്കാവശ്യമുള്ള അന്തിമപ്രമാണമല്ല, പകരം പ്രമാണത്തിന്റെ ഓരോ ഭാഗവും എന്തു് ആണെന്നുള്ള
+നിര്‍ദ്ദേശങ്ങളാണ്. സാധാരണഗതിയിൽ ലാറ്റെൿ ഫയലുകളല്ല നിങ്ങൾ മറ്റുള്ളവര്‍ക്കു് നല്കുന്നതു്, പകരം നിങ്ങളുടെ
+ലാറ്റെൿ _സ്രോതസ്സ്_ എഴുതിയതിനു ശേഷം ആ ഫയലിൽ ലാറ്റെൿ (പൊതുവേ `pdflatex` എന്ന പ്രോഗ്രാം)
+പ്രവര്‍ത്തിപ്പിക്കുക വഴി ലഭിക്കുന്ന പിഡിഎഫ് പ്രമാണമാണു്. 
 
-Different people use different ways to describe this process. As using LaTeX
-is a bit like programming, it's often called 'compiling' your document, although
-'typesetting' is more accurate.
+പലരും പലരീതിയിലാണ് ഈ പ്രക്രിയയെ വിശേഷിപ്പിക്കാറ്. ലാറ്റെൿ ഉപയോഗിക്കുന്നതു് ഏറെക്കുറെ പ്രോഗ്രാമിങ് പോലെ
+ആയതിനാൽ പലപ്പോഴും പ്രമാണം ‘കംപൈൽ’ ചെയ്യുക എന്നു വിളിക്കപ്പെടാറുണ്ട്; ‘പാഠവിന്യാസം’ ചെയ്യുക
+എന്നതാവും കുറേക്കൂടി ഉചിതം.
 
-## Multiple LaTeX runs
+## ലാറ്റെൿ പലതവണ പ്രവര്‍ത്തിപ്പിക്കുന്നത്
 
-For simple files, you only need to typeset your file once to get the completed
-PDF. But once you start adding more complicated things, like cross-references,
-citations, figures, and tables of contents, you might need to run LaTeX more
-than once. We'll tell you when that's the case.
+ലളിതമായ പ്രമാണങ്ങള്‍ക്കു് ഒറ്റ തവണ പ്രമാണസ്രോതസ് (ലാറ്റെൿ ഫയൽ) പാഠവിന്യാസം നടത്തിയാൽ തന്നെ
+പൂര്‍ണ്ണമായ പിഡിഎഫ് ലഭിക്കും. പക്ഷേ പ്രതിനിര്‍ദ്ദേശങ്ങൾ (cross-references), ഉദ്ധരണികൾ (citations),
+ചിത്രങ്ങൾ, ഉള്ളടക്കസൂചിക മുതലായ കുറച്ചുകൂടി സങ്കീര്‍ണ്ണമായ പ്രവൃത്തികൾ ചെയ്യേണ്ടി വരുമ്പോൾ ലാറ്റെൿ ഒന്നിലധികം
+തവണ പ്രവര്‍ത്തിപ്പിക്കേണ്ടി വരും. അവയെപ്പറ്റി പഠിക്കുമ്പോൾ വിശദമായി പറഞ്ഞു തരാം.
 
-## LaTeX or pdfLaTeX or ...
 
-In the [next lesson](lesson-02), we are going to see that LaTeX is not a
-single program. To keep things simple, we are going to focus on one particular
-LaTeX Program, pdfLaTeX, for creating your PDFs. We will look at some other
-programs, and why you might want to use them, later in the course.
+## ലാറ്റെക്കാണോ പിഡിഎഫ്‌ലാറ്റെക്കാണോ അതോ...
+
+[അടുത്ത പാഠത്തിൽ](lesson-02), ലാറ്റെൿ എന്നത് ഒരൊറ്റ പ്രോഗ്രാം അല്ല എന്നു് നമ്മൾ കാണും. ഇപ്പോള്‍ കാര്യങ്ങൾ
+ലളിതമാക്കാനായി പിഡിഎഫ് നിര്‍മ്മിക്കുന്നതിനു് നമ്മൾ pdfLaTeX എന്ന ഒരു പ്രത്യേക ലാറ്റെക് പ്രോഗ്രാമിൽ ശ്രദ്ധ
+കേന്ദ്രീകരിക്കുകയാണു്. മറ്റു ചില പ്രോഗ്രാമുകളും അവ നിങ്ങള്‍ക്കു് എന്തിനാവശ്യം വരുമെന്നും നമ്മൾ പിന്നീടു് പഠിക്കും.
