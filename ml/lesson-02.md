@@ -1,63 +1,58 @@
 ---
 layout: "lesson"
 lang: "en"
-title: "Working with LaTeX"
-description: "This lesson explains what a TeX system is and which are the most common ones, it lists some of the text editors usually used with LaTeX, and the online systems which have integrated editors."
-toc-anchor-text: "Working with LaTeX"
-toc-description: "TeX systems and LaTeX text editors."
+title: "ലാറ്റെൿ ഉപയോഗിക്കുന്നത്"
+description: "ഒരു ടെൿ സംവിധാനം എന്താണെന്നും പ്രചാരത്തിലുള്ള ചിലവ ഏതെന്നും, ലാറ്റെക്കിന്റെ കൂടെ ഉപയോഗിക്കുന്ന ചില ടെക്സ്റ്റ് എഡിറ്റർ ഏതൊക്കെയെന്നും, എഡിറ്റർ ഉള്‍ച്ചേര്‍ത്തിട്ടുള്ള ചില ഓണ്‍ലൈൻ സംവിധാനങ്ങൾ ഏതെന്നും ഈ പാഠത്തിൽ പരിചയപ്പെടാം."
+toc-anchor-text: "ലാറ്റെൿ ഉപയോഗിക്കുന്നത്"
+toc-description: "ടെൿ സംവിധാനവും ലാറ്റെൿ ടെക്സ് എഡിറ്ററും."
 ---
 
-# Working with LaTeX
+# ലാറ്റെൿ ഉപയോഗിക്കുന്നത്
 
 <span
-  class="summary">This lesson explains what a TeX system is and which are the most common ones, it lists some of the text editors usually used with LaTeX, and the online systems which have integrated editors.</span>
+  class="summary">ഒരു ടെൿ സംവിധാനം എന്താണെന്നും പ്രചാരത്തിലുള്ള ചിലവ ഏതെന്നും, ലാറ്റെക്കിന്റെ കൂടെ ഉപയോഗിക്കുന്ന ചില ടെക്സ്റ്റ് എഡിറ്റർ ഏതൊക്കെയെന്നും, എഡിറ്റർ ഉള്‍ച്ചേര്‍ത്തിട്ടുള്ള ചില ഓണ്‍ലൈൻ സംവിധാനങ്ങൾ ഏതെന്നും ഈ പാഠത്തിൽ പരിചയപ്പെടാം.</span>
+  
+മറ്റനവധി കംപ്യൂട്ടർ പ്രോഗ്രാമുകളിൽ നിന്നു് വ്യത്യസ്തമായി, ലാറ്റെൿ എന്നതു് 'സകലതും' ഉള്‍ക്കൊള്ളുന്ന ഒരൊറ്റ പ്രയോഗമല്ല.
+പകരം, ഒരുമിച്ചു പ്രവര്‍ത്തിക്കുന്ന ഒരു കൂട്ടം വേറിട്ട പ്രോഗ്രാമുകളാണു്. നിങ്ങള്‍ക്കാവശ്യം വരുന്ന രണ്ടു് കാര്യങ്ങളായി ഇവയെ വിഭാഗീകരിക്കാം:
 
+- ഒരു _ടെൿ സംവിധാനം_
+- ഒരു ടെക്സ്റ്റ് എഡിറ്റർ (മിക്കവാറും ലാറ്റെക്കിനു്് അനുയോജ്യമായതു്)
 
-Unlike many computer programs, LaTeX is not a single application containing
-'everything' in one. Instead, there are separate programs that work together.
-We can divide those up into two things you actually need:
+## ലാറ്റെൿ സംവിധാനങ്ങൾ
+ലാറ്റെൿ ഉപയോഗിക്കുന്നതിനാവശ്യമായ കാതലായ ഭാഗം ഒരു ടെൿ സംവിധാനം പ്രാപ്യമായിരിക്കുക എന്നതാണു്.
+ഒരു ടെൿ സംവിധാനം എന്നാൽ ലാറ്റെൿ പ്രവര്‍ത്തിപ്പിക്കാനാവശ്യമായ 'തിരശ്ശീലയ്ക്കു പിന്നിലുള്ള' ഒരു കൂട്ടം പ്രോഗ്രാമുകളും ഫയലുകളുമാണു്,
+പക്ഷേ സാധാരണഗതിയിൽ ഇവ നിങ്ങൾ നേരിട്ട് പ്രവര്‍ത്തിപ്പിക്കേണ്ടി വരില്ല.
 
-- A _TeX system_
-- A text editor (often a LaTeX-specific one)
+നിലവിൽ ലഭ്യമായിട്ടുള്ള രണ്ടു് പ്രധാന ടെൿ സംവിധാനങ്ങൾ [മിൿടെൿ](https://miktex.org/), [ടെൿ ലൈവ്](https://tug.org/texlive)
+എന്നിവയാണു്. രണ്ടും വിന്‍ഡോസ്, മാൿഓഎസ്, ലിനക്സ് എന്നിവയ്ക്കു വേണ്ടി ലഭ്യമാണു്്. മിൿടെക്കിനു് വിന്‍ഡോസ് പശ്ചാത്തലമുണ്ട്,
+മാൿഓഎസിൽ ടെൿ ലൈവ് ലഭ്യമാക്കിയിരിക്കുന്നത് [മാൿടെൿ](http://www.tug.org/mactex/) എന്ന ഒരു വലിയ ശേഖരത്തിന്റെ
+കൂടെയാണു്. ഓരോ സംവിധാനത്തിനും [അതിന്റേതായ ആനുകൂല്യങ്ങളൂണ്ട്](https://tex.stackexchange.com/questions/20036),
+ഒരുവേള [ലാറ്റെൿ പദ്ധതിയിൽ നിന്നുള്ള ഉപദേശം](https://www.latex-project.org/get/) നിങ്ങള്‍ക്കുപകാരപ്പെട്ടേക്കും.
 
-## LaTeX systems
+ഏതു സംവിധാനം തിരഞ്ഞെടുക്കണമെന്ന് ആശയക്കുഴപ്പമുണ്ടെങ്കിൽ,ട െൿ ലൈവ് എല്ലാ പ്രമുഖ ഓപ്പറേറ്റിങ് പ്രവര്‍ത്തകങ്ങളിലും
+ലഭ്യമായതിനാലും മികച്ച പ്രവര്‍ത്തനശേഷി ഉള്ളതിനാലും, ഞങ്ങളുടെ ശുപാര്‍ശ ടെൿ ലൈവ് ഇന്‍സ്റ്റാൾ ചെയ്യുവാനാണു്.
 
-The core of working with LaTeX is having a TeX system available. A TeX system is a set
-of 'behind the scenes' programs and files that are needed to make LaTeX work, but
-most of the time you don't directly 'run' this.
+## എഡിറ്ററുകൾ
 
-There are two major TeX systems available today,
-[MiKTeX](https://miktex.org/) and [TeX Live](https://tug.org/texlive). Both
-are available for Windows, macOS and Linux.
-MiKTeX has a strong background on Windows;
-on macOS, TeX Live is bundled into a larger collection called [MacTeX](http://www.tug.org/mactex/).
-There are [advantages to each
-system](https://tex.stackexchange.com/questions/20036), and you might want to
-look at [some more advice from the LaTeX
-Project](https://www.latex-project.org/get/).
+ലാറ്റെൿ ഫയലുകൾ വെറും സാധാരണ പാഠം (text) ആയതിനാൽ അവ്വ ഏതു ടെക്സ്റ്റ് എഡിറ്റർ ഉപയോഗിച്ചും നിര്‍മ്മിക്കുകയോ
+തിരുത്തുകയോ ചെയ്യാം. എന്നിരുന്നാലും, ലാറ്റെക്കുമായി യോജിച്ചു പ്രവര്‍ത്തിക്കാൻ രൂപകല്പന ചെയ്തിട്ടുള്ള എഡിറ്റർ
+ഉപയോഗിക്കുന്നതാണ് സൗകര്യപ്രദം; കാരണം ഒറ്റ ക്ലിക്ക് വഴി പ്രമാണങ്ങൾ കംപൈൽ ചെയ്യുക, അവിടെത്തന്നെ
+പിഡിഎഫ് കാണുവാൻ സാധിക്കുക, സിന്റാക്സ് തെളിച്ചു കാണിക്കുക മുതലായ സൗകര്യങ്ങൾ അവയിലുണ്ട്.
+എല്ലാ ആധുനിക ലാറ്റെൿ എഡിറ്ററുകളും പ്രദാനം ചെയ്യുന്ന ഏറ്റവും പ്രയോജനകരമായ ഒരു സൗകര്യം സിന്‍ൿടെൿ
+ആണ്: പ്രമാണത്തിന്റെ ഉറവയിൽ ക്ലിക്ക് ചെയ്ത് പിഡിഎഫിൽ യഥാസ്ഥാനത്തു ചെല്ലുവാനോ, പിഡിഎഫിൽ നിന്നു്
+തിരിച്ച് ഉറവയിലെ സ്ഥാനത്തു വരുവാനോ ഉള്ള സൗകര്യം.
 
-As TeX Live is available on all common platforms, and as it has some performance
-advantages, we recommend that if you are unsure which system to install, you
-choose TeX Live.
-
-## Editors
-
-LaTeX files are simply plain text, so they can be edited with any text editor.
-However, it's most convenient to have an editor that is designed to work with
-LaTeX, as they provide features like one-click compilation of your files,
-built-in PDF viewers, and syntax highlighting. A really useful feature in all
-modern LaTeX editors is SyncTeX: the ability to click on your source and go
-straight to your PDF, or back the other way.
-
-There are many more LaTeX editors than we can hope to list here: there is a
-[comprehensive list on
-StackExchange](https://tex.stackexchange.com/questions/339/latex-editors-ides).
-A basic editor, [TeXworks](https://tug.org/texworks), is included in TeX Live
-and MiKTeX on Windows and Linux, and [TeXShop](https://pages.uoregon.edu/koch/texshop/)
-is included in MacTeX.
+ഇവിടെ പരാമര്‍ശിക്കുവാൻ സാധിക്കുന്നതിലധികം ലാറ്റെൿ എഡിറ്ററുകളുണ്ട്: [സ്റ്റാൿഎക്സ്ചേഞ്ചിൽ സമഗ്രമായ ഒരു
+പട്ടികയുണ്ട്](https://tex.stackexchange.com/questions/339/latex-editors-ides).
+[ടെൿവര്‍ക്സ്](https://tug.org/texworks) എന്നൊരു ലളിതമായ എഡിറ്റർ വിന്‍ഡോസിലും ലിനക്സിലും
+ടെൿ ലൈവിന്റെയും മിൿടെക്കിന്റെയും കൂടെ വരുന്നുണ്ടു്, [ടെൿഷോപ്പ്](https://pages.uoregon.edu/koch/texshop/)
+മാൿടെക്കിന്റെ കൂടെ ലഭ്യമാണു്.
 
 <p 
-  class="hint">Whichever editor you pick, we recommend you install it <i>after</i> your TeX system, so that the editor can 'find' the TeX system and set itself up correctly.</p>
+  class="hint">നിങ്ങൾ ഏതു് എഡിറ്റർ തിരഞ്ഞെടുത്താലും, അതു് നിങ്ങള്‍ തിരഞ്ഞെടുത്ത ടെൿ സംവിധാനം ഇന്‍സ്റ്റാൾ
+  ചെയ്തതിനു <i>ശേഷം</i> ഇന്‍സ്റ്റാൾ ചെയ്യാൻ ഞങ്ങൾ ശുപാര്‍ശ ചെയ്യുന്നു, അതുവഴി എഡിറ്ററിനു് ടെൿ സംവിധാനം
+  'കണ്ടെത്താൻ' സാധിക്കുകയും ശരിയായ ക്രമീകരണങ്ങൾ ചെയ്യുവാനും സാധിക്കും.
+  </p>
 
 ## Working online
 
