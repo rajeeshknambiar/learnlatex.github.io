@@ -51,44 +51,37 @@ toc-description: "ടെൿ സംവിധാനവും ലാറ്റെൿ
 <p 
   class="hint">നിങ്ങൾ ഏതു് എഡിറ്റർ തിരഞ്ഞെടുത്താലും, അതു് നിങ്ങള്‍ തിരഞ്ഞെടുത്ത ടെൿ സംവിധാനം ഇന്‍സ്റ്റാൾ
   ചെയ്തതിനു <i>ശേഷം</i> ഇന്‍സ്റ്റാൾ ചെയ്യാൻ ഞങ്ങൾ ശുപാര്‍ശ ചെയ്യുന്നു, അതുവഴി എഡിറ്ററിനു് ടെൿ സംവിധാനം
-  'കണ്ടെത്താൻ' സാധിക്കുകയും ശരിയായ ക്രമീകരണങ്ങൾ ചെയ്യുവാനും സാധിക്കും.
+  'കണ്ടെത്താൻ' സാധിക്കുകയും അതിനനുസരിച്ചുള്ള ക്രമീകരണങ്ങൾ ശരിപ്പെടുത്തുകയും ചെയ്യും.
   </p>
 
-## Working online
+## ഓണ്‍ലൈൻ പ്രവര്‍ത്തനം
 
-There are several powerful online sites that allow you to avoid
-the need to install a TeX system and LaTeX editor at all. These websites
-work by letting you edit your files in the webpage, then they run LaTeX
-behind the scenes, and display the PDF that is produced.
+ടെൿ സംവിധാനമോ ലാറ്റെൿ എഡിറ്ററോ ഇന്‍സ്റ്റാൾ ചെയ്യുന്നതിനു പകരം അനവധി ഓണ്‍ലൈൻ സൈറ്റുകൾ ഇതേ
+സൗകര്യം ഒരുക്കുന്നുണ്ട്. ഈ വെബ്‌സൈറ്റുകൾ വഴി നിങ്ങളുടെ പ്രമാണങ്ങൾ ഒരു വെബ് പേജിൽ എഴുതി, തിരശ്ശീലയ്ക്കു
+പിറകിൽ ലാറ്റെൿ പ്രവര്‍ത്തിപ്പിച്ച്, നിര്‍മ്മിച്ച പിഡിഎഫ് പ്രമാണം നിങ്ങള്‍ക്കു കാണിച്ചു തരും.
 
-Some of these sites combine LaTeX with features similar to a word processor,
-whereas others are more focused on letting you see the LaTeX code and
-so are closer to having a local installation.
+ഇതിൽ ചില സൈറ്റുകൾ ലാറ്റെക്കിനോടു കൂടെ വേഡ് പ്രൊസസ്സറുകള്‍ക്കു സമാനമായ സൗകര്യങ്ങൾ ലഭ്യമാക്കുന്നവയാണു്,
+മറ്റു ചിലവ ലാറ്റെൿ കോഡ് കാണിച്ചു തരികയും നിങ്ങളുടെ കംപ്യൂട്ടറിൽ ലാറ്റെൿ ഇന്‍സ്റ്റാൾ ചെയ്തതു പോലെ ഉപയോഗിക്കുന്നതിൽ
+ശ്രദ്ധ കേന്ദ്രീകരിക്കുന്നവയുമാണു്.
 
-There are systems that let you run LaTeX without needing to be logged in, and we
-are using one of those,
-[TeXLive.net](https://texlive.net), to let you
-edit and test the examples we give. For more complete work, the best online
-systems require that you register before you use them. That lets you save your
-work but also helps the sites not get overloaded. We have set up links so you
-can edit our examples using [Overleaf](https://www.overleaf.com), one of the
-major websites for LaTeX online. There are of course others:
-[Papeeria](https://papeeria.com/) is an example.
+ചില സംവിധാനങ്ങൾ ലോഗിൻ ചെയ്യാതെ തന്നെ ലാറ്റെൿ പ്രവര്‍ത്തിപ്പിക്കാൻ സാധിക്കുന്നവയാണു്, ഉദാഹരണത്തിനു് ഞങ്ങൾ ഉപയോഗിക്കുന്ന
+[ടെൿലൈവ്.നെറ്റ്](https://texlive.net), അതു വഴി ഞങ്ങൾ തന്നിരിക്കുന്ന ഉദാഹരണങ്ങളെല്ലാം തിരുത്താനും പരീക്ഷിക്കാനും സാധിക്കും.
+കൂടുതൽ പൂര്‍ണ്ണമായ പ്രവൃത്തികള്‍ക്ക്, മികച്ച ചില വെബ്‌സൈറ്റുകൾ ഉപയോഗിക്കുവാൻ രജിസ്റ്റർ ചെയ്യണം. ഇവ പ്രമാണങ്ങളിൽ നിങ്ങൾ
+വരുത്തുന്ന മാറ്റങ്ങൾ സൂക്ഷിക്കാനും മറ്റു സൈറ്റുകള്‍ക്കു മേലുള്ള ജോലിഭാരം കുറയ്ക്കാനും സഹായിക്കും. ഞങ്ങളുടെ ഉദാഹരണങ്ങൾ തിരുത്തുവാൻ
+ഒരു പ്രമുഖ ഓണ്‍ലൈൻ ലാറ്റെൿ വെബ്‌സൈറ്റായ [ഓവര്‍ലീഫ്](https://www.overleaf.com) ഉപയോഗിക്കുന്നതിനുള്ള കണ്ണികൾ ക്രമീകരിച്ചിട്ടുണ്ട്.
+തീര്‍ച്ചയായും മറ്റു ചിലവയുമുണ്ട്, ഉദാഹരണത്തിന് [പേപീരിയ](https://papeeria.com/).
 
-## Working with others
+## മറ്റുള്ളവരുമായി സഹകരിച്ചു പ്രവര്‍ത്തിക്കുവാൻ
 
-If you are planning to send your LaTeX sources to destinations which process
-them, such as publishers, conference organisers or pre-print servers
-(e.g. arXiv), you should check what restrictions they impose.
+പ്രസാധകർ, പ്രബന്ധാവതരണ സംഘാടകർ, arXiv പോലുള്ള മുദ്രണപൂര്‍വ്വ സെര്‍വ്വറുകൾ മുതലായ പ്രമാണങ്ങൾ പ്രസിദ്ധീകരിക്കുന്നവര്‍ക്കു്
+താങ്കളുടെ ലാറ്റെൿ ഉറവകൾ അയച്ചു കൊടുക്കുവാൻ ഉദ്ദേശിക്കുന്നുണ്ടെങ്കിൽ അവരുടെ നിബന്ധനകളും നിയന്ത്രണങ്ങളും പരിശോധിക്കുക.
 
-## Exercise
+## അഭ്യാസം
 
-Get yourself set up with a local LaTeX installation _or_ an account with
-an online LaTeX service. If you are using a local installation, you'll need
-to pick an editor too: we recommend starting with either TeXworks or TeX Shop
-(see above), then looking at other editors later once you know how _you_
-work best with LaTeX.
+ഒന്നുകിൽ നിങ്ങളുടെ കംപ്യൂട്ടറിൽ ലാറ്റെൿ ഇന്‍സ്റ്റാൾ ചെയ്യുകയോ അല്ലെങ്കിൽ ഒരു ഓണ്‍ലൈൻ ലാറ്റെൿ സേവനത്തിൽ അംഗത്വം
+എടുക്കുകയോ ചെയ്യുക. നിങ്ങളുടെ കംപ്യൂട്ടറിൽ ലാറ്റെൿ ഇന്‍സ്റ്റാൾ ചെയ്തതാണെങ്കിൽ ഒരു എഡിറ്റർ കൂടെ തിരഞ്ഞെടുക്കണം: ഞങ്ങളുടെ
+ശുപാര്‍ശ ടെൿവര്‍ക്സ് അല്ലെങ്കിൽ ടെൿഷോപ്പ് ഉപയോഗിക്കാനാണ് (മുമ്പ് വിവരിച്ചതു നോക്കുക), _നിങ്ങള്‍_ ലാറ്റെൿ എത്ര നന്നായി
+പ്രവര്‍ത്തിപ്പിക്കുന്നു എന്ന് നിങ്ങൾ തന്നെ മനസ്സിലാക്കിയതിനു ശേഷം പിന്നീട് മറ്റു എഡിറ്ററുകളെ പരീക്ഷിക്കുക.
 
-You'll be able to [run all of our other exercises in your browser](help.md), but we want
-to help you get working with real documents, so now is a great time to get
-yourself ready.
+[ഞങ്ങളുടെ എല്ലാ അഭ്യാസങ്ങളും വെബ് ബ്രൗസറിൽ പ്രവര്‍ത്തിപ്പിക്കാൻ]() നിങ്ങള്‍ക്കു സാധിക്കും, പക്ഷേ ശരിക്കുള്ള പ്രമാണങ്ങൾ
+നിര്‍മ്മിക്കാൻ നിങ്ങളെ സഹായിക്കുകയാണ് ഞങ്ങളുടെ ആഗ്രഹം, അതിനാവശ്യമായ തയ്യാറെടുപ്പുകൾ നടത്താൻ പറ്റിയ സമയമാണിത്.
