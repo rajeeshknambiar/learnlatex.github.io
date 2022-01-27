@@ -1,13 +1,21 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "Citations and references"
-description: "This lesson show the basics of reference databases. Learn how to build your own databases and how to use them in documents using the two major workflows available."
-toc-anchor-text: "Citations & references"
-toc-description: "Working with reference databases."
+lang: "ml"
+title: "അവലംബങ്ങളും പരാമര്‍ശങ്ങളും"
+description: "അവലംബ സഞ്ചയങ്ങളുടെ അടിസ്ഥാനപാഠങ്ങൾ ഈ അദ്ധ്യായത്തിൽ പരിചയപ്പെടാം. ലഭ്യമായ രണ്ടു പ്രമുഖ പ്രവര്‍ത്തനരീതികളുപയോഗിച്ച് നിങ്ങള്‍ക്കാവശ്യമുള്ള അവലംബ സഞ്ചയങ്ങൾ നിര്‍മ്മിക്കുന്നതെങ്ങനെയെന്നും പ്രമാണങ്ങളിൽ അവ എങ്ങനെ പ്രയോജനപ്പെടുത്താമെന്നും പഠിക്കാം."
+toc-anchor-text: "അവലംബങ്ങളും പരാമര്‍ശങ്ങളും"
+toc-description: "അവലംബ സഞ്ചയങ്ങളുടെ പ്രയോഗം."
 ---
 
-# Citations and references
+<!--
+(workflow) പ്രവര്‍ത്തനരീതി
+(reference database) അവലംബ സഞ്ചയം
+(manual/manually) മാനുഷികപ്രയത്നം
+(process) പരിവര്‍ത്തനം/പ്രക്രിയ
+-->
+
+
+# അവലംബങ്ങളും (citations) പരാമര്‍ശങ്ങളും (references)
 
 <script>
 runlatex.preincludes = {
@@ -21,13 +29,13 @@ runlatex.preincludes = {
 </script>
 
 <span
-  class="summary">This lesson show the basics of reference databases. Learn how to build your own databases and how to use them in documents using the two major workflows available.</span>
+  class="summary">അവലംബ സഞ്ചയങ്ങളുടെ അടിസ്ഥാനപാഠങ്ങൾ ഈ അദ്ധ്യായത്തിൽ പരിചയപ്പെടാം. ലഭ്യമായ രണ്ടു പ്രമുഖ പ്രവര്‍ത്തനരീതികളുപയോഗിച്ച് നിങ്ങള്‍ക്കാവശ്യമുള്ള അവലംബ സഞ്ചയങ്ങൾ നിര്‍മ്മിക്കുന്നതെങ്ങനെയെന്നും പ്രമാണങ്ങളിൽ അവ എങ്ങനെ പ്രയോജനപ്പെടുത്താമെന്നും പഠിക്കാം.</span>
 
-For bibliographic citations, while you can include reference sources directly in
-your document, usually you will get that information from one or more external
-files. Such a file is a database of references, containing the information in a
-processing-friendly format. Using one or more reference databases lets you
-re-use information and avoid manual formatting.
+ഗ്രന്ഥസൂചി അവലംബങ്ങൾക്കു് ആവശ്യമുള്ള പരാമര്‍ശ സ്രോതസ്സുകൾ നിങ്ങള്‍ക്കു് നേരിട്ട് പ്രമാണത്തിൽ ചേര്‍ക്കാമെങ്കിലും
+സാധാരണ അത്തരം വിവരങ്ങൾ ഒന്നോ അതില്‍ക്കൂടുതലോ ബാഹ്യ ഫയലുകളിൽ നിന്നാണു് ലഭ്യമാക്കാറ്.
+പരിവര്‍ത്തനസൗഹൃദമായ തരത്തിലുള്ള വിവരഘടനയുള്ള അവലംബസ്രോതസ്സുകളുടെ സഞ്ചയമാണ് അത്തരമൊരു ഫയൽ.
+ഒന്നോ അതില്‍ക്കൂടുതലോ അവലംബ സഞ്ചയങ്ങൾ വഴി വിവരങ്ങൾ പുനരുപയോഗിക്കാനും രൂപഘടന മാറ്റുന്നതിനു്
+മാനുഷികപ്രയത്നം ഒഴിവാക്കാനും സഹായിക്കുന്നു.
 
 ## Reference databases
 
