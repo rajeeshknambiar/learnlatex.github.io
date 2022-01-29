@@ -37,11 +37,11 @@ runlatex.preincludes = {
 ഒന്നോ അതില്‍ക്കൂടുതലോ അവലംബ സഞ്ചയങ്ങൾ വഴി വിവരങ്ങൾ പുനരുപയോഗിക്കാനും രൂപഘടന മാറ്റുന്നതിനു്
 മാനുഷികപ്രയത്നം ഒഴിവാക്കാനും സഹായിക്കുന്നു.
 
-## Reference databases
+## അവലംബ സഞ്ചയങ്ങൾ
 
-Reference databases are normally referred to as 'BibTeX files' and have the
-extension `.bib`. They contain one or more entries, one for each reference, and
-within each entry there are a series of fields. Let us look at an example.
+അവലംബ സഞ്ചയങ്ങൾ സാധാരണ അറിയപ്പെടുന്നതു് 'ബിബ്ടെൿ ഫയലുകൾ' എന്നാണു്, അവയുടെ വാലറ്റം
+`.bib` എന്നായിരിക്കും. ഒന്നിലധികം അവലംബങ്ങളും, ഓരോ അവലംബത്തിനും ഒരു ഉള്ളടക്കവും, അവയ്ക്കുള്ളിൽ
+ഒരുപറ്റം അംഗങ്ങളും അടങ്ങിയതാവും ഒരു സഞ്ചയം. ഒരുദാഹരണം നോക്കാം.
 
 <!-- {% raw %} -->
 ```bibtex
@@ -68,33 +68,31 @@ within each entry there are a series of fields. Let us look at an example.
 ```
 <!-- {% endraw %} -->
 
+ഏറ്റവും സാധാരണമായ രണ്ടു തരങ്ങളായ ലേഖനത്തിനും പുസ്തകത്തിനും വേണ്ട ഉള്ളടക്കങ്ങളാണു് ഇവ.
+ഓരോ അവലംബത്തിന്റെയും തരം ആരംഭിക്കുന്നതു് `@` വച്ചാണു്, അതിനുള്ളിലെ എല്ലാ വിവരവും ഒരു ജോടി
+വക്രാവരണചിഹ്നങ്ങള്‍ക്കകത്താണു്.
 
-This is an entry for an article and another for a book; these are by far the most common
-types. Each database entry type starts with `@`, as shown, and all of the
-information then sits within a brace pair.
+അവലംബത്തിന്റെ 'മേല്‍വിലാസം' ആയ 'സൂചകനാമം' എന്നതൊഴിച്ച്, നമുക്കാവശ്യമുള്ള മറ്റെല്ലാ
+വിവരഘടകങ്ങളും സൂചകം-ഉള്ളടക്കം എന്ന രീതിയിലാണു് നല്കുക. 'സൂചകനാമം' എന്തുവേണമെങ്കിലും
+നല്കാം, അതൊരു 'മേല്‍വിലാസം' മാത്രമാണു്, പക്ഷേ പ്രചാരത്തിലുള്ള രീതിയനുസരിച്ച് ഗ്രന്ഥകര്‍ത്താവിന്റെ
+പേരും പ്രസിദ്ധീകരിച്ച വര്‍ഷവും ചേര്‍ത്ത ഒരു മേല്‍വിലാസമാണു് നമ്മളുപയോഗിച്ചതു്.
 
-The various fields we need are given in key-value format, apart from what is
-known as the 'key': the 'name' of the citation. You can use whatever you like,
-as it's just a label, but above we've chosen to use the name of an author plus
-the year: this is a common approach.
+കൃത്യമായി ഏതു വിവരഘടകങ്ങളാണു് നല്കേണ്ടതു് എന്നതു് അവലംബത്തിന്റെ തരം അനുസരിച്ചിരിക്കും, പക്ഷേ
+മിക്കതും എളുപ്പം സ്പഷ്ടമാണു്. `author` എന്ന വിവരഘടകത്തിനകത്തു് ഓരോ ആള്‍ക്കാരുടെ പേരുകളും
+`and` ഉപയോഗിച്ചു് വേര്‍തിരിച്ചിരിക്കുന്നതു് ശ്രദ്ധിച്ചിരിക്കുമല്ലോ. ഇതു് _അത്യാവശ്യമാണു്_, എന്തെന്നാൽ
+ഉള്ളടക്കം വിന്യസിക്കുന്നതിന്റെ രീതിയ്ക്ക് കൃത്യമായും ഏതു ഗ്രന്ഥകര്‍ത്താവ് ഏതാണു് എന്നറിയേണ്ടതുണ്ട്.
+ലേഖനശീര്‍ഷകത്തിലെ ചില വാക്കുകൾ പ്രത്യേകമായും വക്രാവരണചിഹ്നങ്ങള്‍ക്കകത്താണെന്നതും ശ്രദ്ധിച്ചിരിക്കും,
+ഇതു വലിയക്ഷരങ്ങളെ ചെറിയക്ഷരങ്ങളായി തനിയെ മാറ്റുന്നതു് തടയുവാനാണു്.
 
-Exactly which fields you need to give depends on the type of entry, but most of
-these are quite obvious. You might notice that in the `author` field, each entry
-is separated by `and`. This is _essential_: the format of the _output_ needs to
-know which author is which. You might also notice that in the article title,
-some entries are in an extra set of braces; these are there to prevent any
-case-changing being applied.
+`.bib` പ്രമാണങ്ങളെ സ്വയം നിര്‍മ്മിക്കുന്നതും തിരുത്തുന്നതും വിരസമായ ജോലിയാണു്, മിക്കവരും ഇതിനനുയോജ്യമായ
+ഒരു എഡിറ്റർ ഉപയോഗിക്കാറാണു് പതിവ്. [ജാബ്റെഫ്](https://www.jabref.org) വളരെ പ്രചാരമുള്ളതും
+എല്ലാ ഓപ്പറേറ്റിങ് പ്രവര്‍ത്തകങ്ങളിലും ലഭ്യമായതുമാണു്, കൂടാതെ മറ്റനവധി സംവിധാനങ്ങളുമുണ്ട്. അവലംബത്തിന്റെ
+DOI (Digital Object Identifier) ലഭ്യമാണെങ്കിൽ അതിന്റെ ബിബ്ടെൿ ഉള്ളടക്കം എളുപ്പത്തിൽ കിട്ടാൻ
+[doi2bib](https://doi2bib.org) ഉപയോഗിച്ചു നോക്കാവുന്നതാണു്; പക്ഷേ ഉള്ളടക്കം ശരിയാണെന്നു്
+ഉറപ്പുവരുത്തുക!
 
-Editing `.bib` files by hand is rather tedious, so most people use a dedicated
-editor. [JabRef](https://www.jabref.org) is widely used and cross-platform,
-but there are several other interfaces available.
-If the reference contains a DOI (Digital Object Identifier), you may want to
-try [doi2bib](https://doi2bib.org) to easily get the BibTeX entry. But make sure
-to check if the entry is correct!
-
-Here, we will use the short
-example database above for our demonstrations: we have 'saved' it as
-`learnlatex.bib`.
+മുകളിൽ കാണിച്ച ചെറു സഞ്ചയം നമ്മുടെ പ്രവര്‍ത്തനത്തിനുപയോഗിക്കാം, അതിനെ `learnlatex.bib`
+എന്ന പേരിൽ സൂക്ഷിച്ചിട്ടുണ്ടു്.
 
 ## Transferring information from the database
 
