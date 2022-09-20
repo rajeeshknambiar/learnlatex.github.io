@@ -1,40 +1,37 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "Selecting fonts and using Unicode engines"
-description: "This lesson gives context on how LaTeX interprets Unicode input and how that affects what you type and the fonts you use. Learn about Unicode and OpenType fonts support."
-toc-anchor-text: "Fonts & Unicode engines"
-toc-description: "Selecting fonts and file encoding."
+lang: "ml"
+title: "അക്ഷരസഞ്ചയങ്ങൾ തിരഞ്ഞെടുക്കുന്നതും യുണികോഡ് എന്‍ജിനുകൾ ഉപയോഗിക്കുന്നതും"
+description: "ലാറ്റെൿ എങ്ങനെയാണ് യുണിക്കോഡ് ഇന്‍പുട് മനസ്സിലാക്കുന്നതെന്നും നിങ്ങൾ ടൈപ്പു ചെയ്യുന്നതിനെയും ലിപികൾ ഉപയോഗിക്കുന്നതിനെയും അതെങ്ങനെ സ്വാധീനിക്കുന്നു എന്നുമുള്ള പശ്ചാത്തലം ഈ പാഠം നല്കുന്നു. യുണികോഡിനെപ്പറ്റിയും ഓപ്പണ്‍ടൈപ് അക്ഷരസഞ്ചയങ്ങളെപ്പറ്റിയും മനസ്സിലാക്കാം."
+toc-anchor-text: "അക്ഷരസഞ്ചയങ്ങളും യുണികോഡ് എന്‍ജിനുകളും"
+toc-description: "അക്ഷരസഞ്ചയങ്ങളുടെ തിരഞ്ഞെടുപ്പും ഫയൽ എന്‍കോഡിങും."
 ---
 
-# Fonts and Unicode engines
+# അക്ഷരസഞ്ചയങ്ങളും യുണികോഡ് എന്‍ജിനുകളും
 
 <span
-  class="summary">This lesson gives context on how LaTeX interprets Unicode input and how that affects what you type and the fonts you use. Learn about Unicode and OpenType fonts support.</span>
+  class="summary">ലാറ്റെൿ എങ്ങനെയാണ് യുണിക്കോഡ് ഇന്‍പുട് മനസ്സിലാക്കുന്നതെന്നും നിങ്ങൾ ടൈപ്പു ചെയ്യുന്നതിനെയും ലിപികൾ ഉപയോഗിക്കുന്നതിനെയും അതെങ്ങനെ സ്വാധീനിക്കുന്നു എന്നുമുള്ള പശ്ചാത്തലം ഈ പാഠം നല്കുന്നു. യുണികോഡിനെപ്പറ്റിയും ഓപ്പണ്‍ടൈപ് അക്ഷരസഞ്ചയങ്ങളെപ്പറ്റിയും മനസ്സിലാക്കാം.</span>
 
-When TeX and LaTeX first started being widely used they largely only handled
-European languages out of the box, although there was some capability for using
-other alphabets such as Greek and Russian.
+റ്റെൿ, ലാറ്റെൿ എന്നിവ വ്യാപകമായി ഉപയോഗിക്കപ്പെടാൻ തുടങ്ങുന്ന സമയത്ത് യൂറോപ്യൻ ഭാഷകള്‍ക്കുള്ള പിന്തുണ മാത്രമേ
+ലഭ്യമായിരുന്നുള്ളൂ, റഷ്യനും ഗ്രീക്കും പോലുള്ള മറ്റു ചില ലിപികളുപയോഗിക്കാനുള്ള പരിമിതമായ ശേഷിയും.
 
-## Accents and accented letters
+## യൂറോപ്യൻ ഭാഷകളിലുള്ള ഉച്ചാരണചിഹ്നങ്ങളും അവയുള്ള അക്ഷരങ്ങളും
 
-Originally, accents and accented letters were typed using control sequences or
-macros such as `\c{c}` for ‘ç’ and `\'e` for ‘é’. While some people continue to
-use these input methods because they can be easier to type, others wanted to be
-able to use the keys on their keyboards to input such symbols directly.
+ആദ്യകാലത്തു്, യൂറോപ്യൻ ഭാഷകളിലുള്ള ഉച്ചാരണചിഹ്നങ്ങളും അവയുള്ള അക്ഷരങ്ങളും കമാന്‍ഡുകളോ മാക്രോകളോ ഉപയോഗിച്ചാണു്
+ഇൻപുട് ചെയ്തിരുന്നതു്, ഉദാ: ‘ç’ എന്നതിനു് `\c{c}`, ‘é’ എന്നതിനു് `\'e` മുതലായവ. ടൈപ്പ് ചെയ്യാനുള്ള സൗകര്യം
+കാരണം ചിലർ ഇപ്പൊഴും ഈ രീതി പിന്തുടരുന്നുവെങ്കിലും മറ്റു ചിലർ അവരുടെ കീബോഡിൽ ലഭ്യമായ അത്തരം ചിഹ്നങ്ങൾ
+നേരിട്ടുപയോഗിക്കാൻ താത്പര്യപ്പെടും.
 
-Before Unicode, LaTeX provided support for many types of *file encoding* that
-allowed text to be written in various languages natively — for example, using
-the `latin1` encoding French users could write ‘`déjà vu`’ and LaTeX would
-internally translate the accented letters into TeX commands to produce the
-correct output.
+യുണികോഡിനു മുമ്പുള്ള കാലത്ത് വിവിധ ഭാഷകളിൽ പാഠം നേരിട്ടെഴുതാവുന്ന പല *ഫയൽ എന്‍കോഡിങ്* തരങ്ങളും ലാറ്റെൿ
+പിന്തുണച്ചിരുന്നു — ഉദാഹരണത്തിനു് ഫ്രഞ്ചുകാർ `latin1` എന്‍കോഡിങ് ഉപയോഗിച്ച് ‘`déjà vu`’ എന്നെഴുതുന്നതു്
+ലാറ്റെൿ ആന്തരികമായി ചിഹ്നങ്ങളുള്ള അക്ഷരങ്ങളെ ടെൿ കമാന്‍ഡായി മാറ്റി ശരിയായ ഔട്ട്പുട് കാണിക്കും.
 
-This approach is still in use in modern LaTeX when using the `pdflatex` engine.
-By default all files are assumed to be Unicode (UTF-8 encoded) unless otherwise
-specified. Although this engine is limited to 8-bit fonts, most European
-languages can be supported.
+ആധുനിക ലാറ്റെക്കിൽ  ഈ സമീപനം ഇപ്പൊഴും `pdflatex`  എന്‍ജിനുപയോഗിക്കുമ്പോൾ ലഭ്യമാണു്.
+മറുവിധം നിര്‍ദ്ദേശിച്ചില്ലെങ്കിൽ എല്ലാ ഫയലുകളും  സ്വതവേ യുണികോഡ്  (UTF-8 എൻകോഡിങ്) പിന്തുടരുന്നുവെന്നു്
+അനുമാനിക്കപ്പെടും. ഈ എന്‍ജിനു് 8-ബിറ്റ് അക്ഷരസഞ്ചയങ്ങളുടെ പരിമിതിയുണ്ടെങ്കിലും  മിക്ക യൂറോപ്യൻ
+ഭാഷകളെയും പിന്തുണയ്ക്കാനാകും.
 
-## Font selection
+##അക്ഷരസഞ്ചയങ്ങളുടെ തിരഞ്ഞെടു
 
 Font selection with `pdflatex` uses the robust LaTeX font selection scheme, and
 nowadays there are many fonts ready-to-use in a standard LaTeX distribution. For
