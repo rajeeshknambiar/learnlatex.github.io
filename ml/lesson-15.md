@@ -1,34 +1,34 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "Dealing with errors"
-description: "This lesson shows some common errors in LaTeX documents, what they mean, and how to work around them."
-toc-anchor-text: "Error handling"
-toc-description: "Dealing with unexpected behaviors."
+lang: "ml"
+title: "പ്രശ്നങ്ങൾ കൈകാര്യം ചെയ്യുന്ന രീതി"
+description: "ലാറ്റെൿ പ്രമാണങ്ങളിൽ പതിവായ ചില പ്രശ്നങ്ങളും അവയുടെ അര്‍ത്ഥവും പരിഹാരമാര്‍ഗ്ഗങ്ങളും ഈ പാഠത്തിൽ പരിചയപ്പെടാം."
+toc-anchor-text: "പ്രശ്നനിർദ്ധാരണം"
+toc-description: "അപ്രതീക്ഷിത പ്രശ്നങ്ങളെ കൈകാര്യം ചെയ്യുന്നത്."
 ---
 
-# Dealing with errors
+# പ്രശ്നങ്ങൾ കൈകാര്യം ചെയ്യുന്ന രീതി
 
 <span
-  class="summary">This lesson shows some common errors in LaTeX documents, what they mean, and how to work around them.</span>
+  class="summary">ലാറ്റെൿ പ്രമാണങ്ങളിൽ കാണാവുന്ന പൊതുവായ ചില പ്രശ്നങ്ങളും അവയുടെ അര്‍ത്ഥവും പരിഹാരമാര്‍ഗ്ഗങ്ങളും ഈ പാഠത്തിൽ പരിചയപ്പെടാം.</span>
 
-Unlike a typical word processing system, LaTeX has an Edit/Run/View cycle
-closer to working with programming language compilers, and as in programming
-users may make errors in their input and so need to deal with error messages
-reported by the system.
+സാധാരണ വേഡ് പ്രൊസസ്സറുകളിൽ നിന്നു് വ്യത്യസ്തമായി, പ്രോഗ്രാമിങ് ഭാഷകളുടെ കംപൈലറിനു
+സമാനമായ തിരുത്തു്/പരിവര്‍ത്തനം/കാഴ്ച എന്ന രീതിയാണു് ലാറ്റെക്കിനുള്ളതു്. പ്രോഗ്രാമിങിലേതു പോലെ
+ഇന്‍പുട്ടിൽ തെറ്റുകൾ വരുമ്പോൾ ലഭിക്കുന്ന പ്രശ്നസന്ദേശങ്ങളെ മനസ്സിലാക്കി പ്രശ്നം പരിഹരിക്കാവുന്നതാണു്.
 
-## Common errors
 
-This page gives examples of several common errors. Each error example has some discussion about the form of the error
-message.
+## പതിവു പ്രശ്നങ്ങൾ
 
-It may be instructive to try the examples but also use the
-edit features to try to fix the documents and test that you can
-resolve the errors.
+ചില പതിവു പ്രശ്നങ്ങളുടെ ഉദാഹരണങ്ങൾ ഈ താളിൽ വിശദീകരിക്കുന്നുണ്ട്. ഓരോ ഉദാഹരണത്തിലും
+പ്രശ്നസന്ദേശത്തിന്റെ മാതൃകയെപ്പറ്റിയും ചര്‍ച്ച ചെയ്യുന്നുണ്ട്.
+
+ഊ ഉദാഹരണങ്ങൾ ഉപയോഗിച്ചു നോക്കുകയും പ്രമാണം തിരുത്തി അതിലെ പ്രശ്നങ്ങൾ പരിഹരിക്കാൻ
+ശ്രമിക്കുകയും ചെയ്യുന്നതു് വിജ്ഞാനപ്രദമായിരിക്കും.
+
 
 ### pdflatex not found
 
-A common first error that people see when starting is:
+തുടക്കത്തിൽ തന്നെ:
 
 ```
 'pdflatex' is not recognized as an internal or external command,
@@ -36,22 +36,22 @@ operable program or batch file.
 ```
 {: .noedit :}
 
-on Windows or
+എന്നു വിന്‍ഡോസിലും
 
 ```
 bash: pdflatex: command not found
 ```
 {: .noedit :}
 
-on Linux.
+എന്നു ഗ്നു/ലിനക്സിലും പലരും കാണുന്ന ഒരു പ്രശ്നസന്ദേശമാണിതു്.
 
-This is
-not a TeX error but an operating system error saying that TeX is not
-installed or not found.  A common mistake is to install an _editor_
-such as TeXworks or TeXShop but without installing a TeX system such as
-TeX Live or MiKTeX.
+ഇതു് ഒരു ടെൿ പ്രശ്നമല്ല, പകരം ഓപ്പറേറ്റിംഗ് പ്രവര്‍ത്തകത്തിൽ ടെൿ ഇന്‍സ്റ്റാൾ ചെയ്യാതിരിക്കുകയോ
+എവിടെയാണു് ഇന്‍സ്റ്റാൾ ചെയ്തെന്നു് അറിയാതിരിക്കുകയോ ഉള്ള പ്രശ്നമ്മാണു്. ഒരു സാധാരണ പിഴവു്
+ടെൿവര്‍ക്സ് അല്ലെങ്കിൽ ടെൿഷോപ് പോലെ ഒരു _എഡിറ്റർ_ മാത്രം ഇന്‍സ്റ്റാൾ ചെയ്യുകയും ടെൿലൈവോ
+മിൿടെക്കോ പോലെ ഒരു ടെൿ സംവിധാനം ഇന്‍സ്റ്റാൾ ചെയ്യാൻ വിട്ടുപോവുകയും ചെയ്യുക എന്നതാണു്.
 
-### Anatomy of a TeX error message
+
+### ഒരു ടെൿ പ്രശ്നസന്ദേശത്തിന്റെ പരിശോധനാരീതി
 
 ```latex
 \documentclass{article}
@@ -66,7 +66,7 @@ My command is used here \mycommand.
 \end{document}
 ```
 
-This produces a multi-line message in the log file.
+ലോഗ് ഫയലിൽ കുറേ വരികളുള്ള ഒരു സന്ദേശം ഈ പ്രമാണം പ്രവര്‍ത്തിപ്പിക്കുമ്പോൾ കാണാം:
 
 ```
 ! Undefined control sequence.
@@ -78,21 +78,23 @@ l.8 My command is used here \mycommand
 ```
 {: .noedit :}
 
-* The first line, marked with `!`, gives the general nature of the error (undefined command in this case).
-* The second pair of lines show the line that TeX was processing, with a line break marking the point
-  that TeX had reached. The undefined command is the last token read so the last word before the line break,
-  `\textbold` here. After the line break are the remaining tokens `{hmmm}` that have possibly been read as
-  an argument but have not yet been executed by TeX.
-* There may in general be some additional lines at this point, showing more context of the error message,
-* The final line starts with `l.` followed by a line number, and then the line in the source file where the
-  error is detected.
-
-* The final line is a `?`.  If using TeX interactively it is possible to
-  enter instructions to TeX at this point, but most editors and online
-  systems run TeX in a mode that does not stop at errors but will
-  scroll past this and try to process the rest of the document. Typing
-  `s` to the prompt will instruct TeX to carry on in this mode if you
-  are working interactively.
+* ആശ്ചര്യചിഹ്നം `!` കൊണ്ട് അടയാളപ്പെടുത്തിയ ഒന്നാമത്തെ വരിയിൽ, പ്രശ്നത്തിന്റെ പൊതുസ്വഭാവം
+  സ്പഷ്ടമാക്കിയിരിക്കുന്നു (ഈ സംഭവത്തിൽ   നിര്‍വ്വചിക്കപ്പെടാത്ത ആജ്ഞ `undefined command` എന്ന്).
+* അടുത്ത രണ്ടു വരികൾ കാണിക്കുന്നതു് ഇന്‍പുട്ടിലെ ഏതു വരിയാണു് ടെൿ വായിക്കുമ്പൊഴാണു് പ്രശ്നം സംഭവിച്ചതു്
+  എന്നാണു്. ആ വരിയിൽ ടെൿ എവിടം വരെ എത്തിയിട്ടുണ്ട് എന്നതു് അവിടം വച്ച് ഇന്‍പുട്ടിലെ വരി മുറിച്ചു
+  കൊണ്ട് സൂചിപ്പിച്ചിരിക്കുന്നു. ഇവിടെ നിർവ്വചിക്കപ്പെടാത്ത ആജ്ഞ എന്നതു് പ്രശ്നസന്ദേശത്തിൽ വരി മുറിക്കുന്നതിനു്
+  തൊട്ടുമുമ്പുഉള്ള സംജ്ഞയാണു്: `\textbold`. വരി മുറിച്ചതിനു ശേഷം കാണുന്ന  `{hmmm}` എന്നതു്
+  തൊട്ടുമുന്നിലെ ആജ്ഞയുടെ വാദം (argument) ആയി കരുതി വായിച്ചതും എന്നാൽ ടെൿ ഉപയോഗിക്കാൻ
+  ആരംഭിച്ചിട്ടില്ലാത്തതുമായ സംജ്ഞകളാണു്.
+* പൊതുവേ സന്ദര്‍ഭം മനസ്സിലാക്കാൻ സഹായിക്കുന്ന ഇന്‍പുട്ടിലെ പ്രസ്തുക വരിക്കു സമീപമുള്ള ചില വരികളും കാണപ്പെടാം
+* അവസാനത്തെ വരി തുടങ്ങുന്നതു് ആ വരിയുടെ ക്രമസംഖ്യയ്ക്കു മുമ്പ് `l.` എന്നു ചേര്‍ത്തിരിയ്ക്കുന്നതു വച്ചാണു്.
+  അതിനു തുടര്‍ച്ചയായി പ്രശ്നത്തിനു കാരണമായ സ്രോതസ്സിലെ വരിയുടെ ഉള്ളടക്കവും.
+  
+* ഏറ്റവും ഒടുവിലെ വരി `?` എന്നാണു്. സമ്പര്‍ക്കം പുലര്‍ത്താവുന്ന രീതിയിലാണു് ടെൿ പ്രവർത്തിപ്പിക്കുന്നതെങ്കിൽ
+  ഇവിടെ നിര്‍ദ്ദേശങ്ങൾ നല്ക്കി തുടർന്നു പ്രവര്‍ത്തിപ്പിക്കാവുന്നതാണു്, പക്ഷേ മിക്ക എഡിറ്ററുകളും ഓണ്‍ലൈൻ
+  സംവിധാനങ്ങളും ഒരു പ്രശ്നം കാണുമ്പോൾ അവിടെ നിര്‍ത്താതെ തുടര്‍ന്നും പ്രവര്‍ത്തിപ്പിക്കാനുള്ള മട്ടിലാണു്
+  ടെൿ പ്രവര്‍ത്തിപ്പിക്കുന്നതു്. സമ്പര്‍ക്കം സാദ്ധ്യമാവുന്ന രീതിയാണു് ടെൿ പ്രവര്‍ത്തിപ്പിക്കുന്നതെങ്കിൽ ഇവിടെ
+  `s` എന്നു് ടൈപ്പു് ചെയ്താൽ പ്രശ്നങ്ങളിൽ നിശ്ചലമാകാതെ തുടരാൻ സാധിക്കുന്നതാണു്.
 
 
 Note here that TeX does not see the error at the point that
