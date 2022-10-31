@@ -106,8 +106,8 @@ ABC → αβγ → {\cjkfont 你好}
 \usepackage{fontspec}
 \setmainfont[Script=Malayalam,HyphenChar="0000]{RIT Rachana}  % സ്വതന്ത്ര അക്ഷരസഞ്ചയം ഇവിടെ ലഭ്യമാണു്: https://rachana.org.in
 
-\usepackage{polyglossia}
-\setdefaultlanguage{malayalam}
+\usepackage{polyglossia}  %വാക്കുകൾ ഭാഷാനിയമമനുസരിച്ച് മുറിയ്ക്കുന്നതിനു്
+\setdefaultlanguage{malayalam}  % പ്രമാണത്തിന്റെ പ്രധാന ഭാഷ
 \lefthyphenmin=3   %വാക്കുകൾ മുറിക്കുന്നതിനു് ഇടതും വലതും വേണ്ട അക്ഷരങ്ങളുടെ എണ്ണം
 \righthyphenmin=4
 \setotherlanguage{english}  %പ്രമാണത്തിലുപയോഗിക്കുന്ന ഇതര ഭാഷകൾ 
