@@ -96,22 +96,20 @@ l.8 My command is used here \mycommand
   ടെൿ ക്രമപ്പെടുത്തിയിരിക്കുന്നതു്. സമ്പര്‍ക്കം സാദ്ധ്യമാവുന്ന രീതിയാണു് ടെൿ പ്രവര്‍ത്തിപ്പിക്കുന്നതെങ്കിൽ ഇവിടെ
   `s` എന്നു് ടൈപ്പു് ചെയ്താൽ പ്രശ്നങ്ങളിൽ നിശ്ചലമാകാതെ തുടരാൻ സാധിക്കുന്നതാണു്.
 
+ആജ്ഞ നിര്‍വ്വചിച്ചിരിക്കുന്ന സ്ഥലത്ത് പ്രശ്നമൊന്നും ടെൿ കണ്ടില്ലെന്നതു് ശ്രദ്ധിക്കുക. `\mycommand` നിര്‍വ്വചിക്കുകയും
+എന്നാൽ ഉപയോഗിക്കാതിരിക്കുകയുമാണെങ്കിൽ ഒരു പ്രശ്നവും അറിയിക്കുകയുമില്ല. പ്രശ്നം ചൂണ്ടിക്കാണിച്ചതു് എട്ടാമത്തെ
+വരിയിലാണെങ്കിലും "യഥാര്‍ത്ഥ" പ്രശ്നം നാലാമത്തെ വരിയിലെ നിര്‍വ്വചനത്തിലാണു്. ആയതിനാൽ, പ്രശ്നത്തിന്റെ മുഴുവൻ
+സന്ദേശവും വായിക്കുകയെന്നതു് പ്രധാനമാണു്.
 
-Note here that TeX does not see the error at the point that
-the definition is made; and in fact if `\mycommand` is defined but not
-used, no error would be raised. So although the error is reported on
-line 8, the "real" error is in the definition on line 4, so it is
-important to see the whole error message.
-
-Beware that some editors show one line "summaries" of the error log.
-This can be particularly misleading if shown as
+ചില എഡിറ്ററുകളിൽ പ്രശ്നസന്ദേശത്തിന്റെ സംക്ഷിപ്തം മാത്രമേ കാണിക്കാറുള്ളൂവെന്ന കാര്യം ഓര്‍മ്മയിൽ വയ്ക്കുക.
+ഇതു് തീര്‍ത്തും തെറ്റിദ്ധാരണാജനകമാവാം, പ്രത്യേകിച്ച്
 
 `line 8: undefined command: ...\mycommand`
 
-as it makes it appear that `\mycommand` is not defined.
+എന്നു മാത്രം കണ്ടാൽ `\mycommand` നിര്‍വ്വചിച്ചിട്ടേയില്ല എന്നു മാത്രമേ ഒറ്റനോട്ടത്തിൽ തോന്നുകയുള്ളൂ.
 
 
-### Mismatched braces
+### ജോടിയില്ലാത്ത വക്രാവരണചിഹ്നങ്ങൾ (braces)
 
 
 ```latex
@@ -125,18 +123,18 @@ as it makes it appear that `\mycommand` is not defined.
 \end{document}
 ```
 
-Here the error is a mismatched `}` used to end the optional
-argument. The closing brace causes LaTeX's option parsing
-to fail and you get an internal and not that helpful error: 
+ഇവിടത്തെ പ്രശ്നം ഐച്ഛികവാദങ്ങളുടെ അവസാനം സൂചിപ്പിക്കുന്നതിനു് `]` ചിഹ്നത്തിനു പകരം
+ജോടിയില്ലാത്ത `}` ചിഹ്നം ഉപയോഗിച്ചുവെന്നാണു്. അടയ്ക്കുന്ന വക്രാവരണചിഹ്നം കാരണം
+ലാറ്റെക്കിന്റെ ഐച്ഛിക വിശകലനം തെറ്റുകയും ആന്തരികമായ എന്നാൽ ഒട്ടും സഹായകരമല്ലാത്ത
+ഒരു പ്രശ്നസന്ദേശം ലഭിക്കുകയും ചെയ്യുന്നു:
 
 ```
 ! Argument of \@fileswith@ptions has an extra }.
 ```
 {: .noedit :}
 
-While the error description is unhelpful; the following two
-lines do accurately display the location of the error by the use of
-the linebreak showing how far TeX had read:
+പ്രശ്ന വിശദാംശങ്ങൾ സഹായകരമല്ലെങ്കിലും തുടര്‍ന്നു വരുന്ന രണ്ടു വരികൾ പ്രശ്നത്തിനു കാരണമായ
+സ്ഥലം (ടെൿ വായിച്ചിടത്തോളം) അവിടെ വച്ച് വരിമുറിച്ചു കൊണ്ട് കൃത്യമായും അടയാളപ്പെടുത്തിയിരിക്കുന്നു:
 
 ```
 l.4 \usepackage[leqno}
@@ -145,7 +143,7 @@ l.4 \usepackage[leqno}
 {: .noedit :}
 
 
-### Missing files
+### ഇല്ലാത്ത പ്രമാണങ്ങൾ
 
 ```latex
 \documentclass{article}
@@ -158,19 +156,19 @@ l.4 \usepackage[leqno}
 \end{document}
 ```
 
-This produces the error
+ഇതു് താഴെ തന്നിരിക്കുന്ന പ്രശ്നത്തിനു കാരണമാവുന്നു:
 
 ```
 ! LaTeX Error: File `amsmathz.sty' not found.
 ```
 {: .noedit :}
 
-Note: the same error may be caused by two different causes; a simple
-typo as here, which may be corrected by fixing the package name, or
-that the file really is missing and needs to be installed on the
-current system.
+കുറിപ്പു്: ഈ പ്രശ്നം രണ്ടു കാരണങ്ങൾ കൊണ്ടു സംഭവിക്കാം; ഇവിടെയുള്ളതു പോലെ ലഘുവായ ഒരു
+അക്ഷരത്തെറ്റു കാരണമോ (അക്ഷരത്തെറ്റു് തിരുത്തി പരിഹരിക്കാവുന്നതു്) അല്ലെങ്കിൽ ശരിക്കും ആ ഫയൽ
+കംപ്യൂട്ടറിൽ ഇല്ലാത്തതു കാരണമോ (അതുള്‍പ്പെടുന്ന പൊതിക്കെട്ട് ഇന്‍സ്റ്റാൾ ചെയ്താൽ പരിഹരിക്കാവുന്നതു്).
 
-### Blank lines in display math
+
+### പ്രദര്‍ശക ഗണിതത്തിലെ ഒഴിഞ്ഞ വരികൾ
 
 ```latex
 \documentclass{article}
@@ -188,21 +186,22 @@ Some text
 \end{document}
 ```
 
-Produces the slightly mysterious error
+എന്നതു് അല്പം ദുര്‍ഗ്രഹമായ പ്രശ്നസന്ദേശമാണു് നല്കുന്നതു്:
 
 ```
 ! Missing $ inserted.
 ```
 {: .noedit :}
 
-But the fix is simple, blank lines are not allowed in math
-environments and should be deleted.
+പക്ഷേ പരിഹാരം ലളിതമാണു്: ഗണിത പരിസരങ്ങള്‍ക്കകത്ത് ഒഴിഞ്ഞ വരികൾ അനുവദനീയമല്ല,
+അവ നീക്കം ചെയ്യുക.
 
-## Exercise
+## അഭ്യാസം
 
-Attempt to fix the errors in the supplied examples.
+തന്നിരിക്കുന്ന ഉദാഹരണങ്ങളിലെ പ്രശ്നങ്ങൾ പരിഹരിക്കുക.
 
-Produce small documents with different errors and note the form of the error messages.
+പലവിധത്തിലുള്ള പ്രശ്നങ്ങളുള്ള ചെറിയ പ്രമാണങ്ങൾ നിര്‍മ്മിച്ച് പ്രശ്നസന്ദേശങ്ങളുടെ രൂപം കുറിച്ചു വയ്ക്കുക.
+
 
 <script>
   window.addEventListener('load', function(){
