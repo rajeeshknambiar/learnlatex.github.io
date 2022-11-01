@@ -1,47 +1,47 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "Accessing documentation and getting help"
-description: "This lesson shows the main sources of documentation for LaTeX-related software and packages, and how to seek help when you are in trouble."
-toc-anchor-text: "Help & documentation"
-toc-description: "Accessing help and documentation."
+lang: "ml"
+title: "സഹായക്കുറിപ്പു് ഉപഗയോഗിക്കുന്നതും സഹായം തേടുന്നതും"
+description: "ലാറ്റെൿ അനുബന്ധ സോഫ്റ്റ്‌വെയറുകളെയും പൊതിക്കെട്ടുകളെയും സംബന്ധിച്ച സഹായക്കുറിപ്പുകളുടെ പ്രധാന ഉറവിടങ്ങളെക്കുറിച്ചും പ്രശ്നം നേരിടുമ്പോൾ എങ്ങനെ സയാഹം തേടണമെന്നും ഈ പാഠത്തിൽ പരിചയപ്പെടാം."
+toc-anchor-text: "സഹായവും കുറിപ്പുകളും"
+toc-description: "സഹായക്കുറിപ്പു് ഉപഗയോഗിക്കുന്നതും സഹായം തേടുന്നതും."
 ---
 
-# Documentation and getting help
+# സഹായക്കുറിപ്പു് ഉപഗയോഗിക്കുന്നതും സഹായം തേടുന്നതും
 
 <span
-  class="summary">This lesson shows the main sources of documentation for LaTeX-related software and packages, and how to seek help when you are in trouble.</span>
+  class="summary">ലാറ്റെൿ അനുബന്ധ സോഫ്റ്റ്‌വെയറുകളെയും പൊതിക്കെട്ടുകളെയും സംബന്ധിച്ച സഹായക്കുറിപ്പുകളുടെ പ്രധാന ഉറവിടങ്ങളെക്കുറിച്ചും പ്രശ്നം നേരിടുമ്പോൾ എങ്ങനെ സയാഹം തേടണമെന്നും ഈ പാഠത്തിൽ പരിചയപ്പെടാം.</span>
+  
+ഒരു പാക്കേജ് അഥവാ പൊതിക്കെട്ടിന്റെയോ, ക്ലാസ്സിന്റെയോ സഹായക്കുറിപ്പുകൾ ലഭ്യമാക്കുവാൻ പല വഴികളുണ്ടു്.
 
-There are several ways to access the documentation of a package or class.
 
 ## `texdoc`
 
-If you've installed a TeX distribution (_e.g._, TeX Live or MiKTeX) and included
-the documentation when you installed it you can access the locally saved
-documentation using the `texdoc` command line tool. Using:
+ടെൿലൈവോ മിൿടെക്കോ പോലെയുള്ള ഒരു ടെൿ വിതരണം നിങ്ങൾ ഇന്‍സ്റ്റാൾ ചെയ്യുമ്പോൾ സയാഹക്കുറിപ്പുകൾ
+കൂടി അതിലുള്‍പ്പെടുത്തിയിട്ടുണ്ടെങ്കിൽ `texdoc` ആജ്ഞ ഉപയോഗിച്ച് ആവശ്യമായ സഹായക്കുറിപ്പ് വായിക്കാം.
+
+താഴെക്കൊടുത്തിരിക്കുന്ന
 
 `texdoc` < _pkg_ >
 
-will open the documentation of package `<pkg>`. The utility will search the
-available documentation and open what it thinks is the closest match to your
-search term. You can list and choose from among all the viable results it finds
-using:
+എന്ന ആജ്ഞ `<pkg>` എന്ന പൊതിക്കെട്ടിന്റെ സഹായക്കുറിപ്പു് തുറക്കും. ഈ ഉപാധി ലഭ്യമായ എല്ലാ സഹായക്കുറിപ്പുകളും
+തിരഞ്ഞ് ഏറ്റവും അനുയോജ്യമെന്നു കരുതുന്ന ഒരെണ്ണം തുറക്കുകയാണു് ചെയ്യുന്നതു്. അതു കണ്ടെത്തുന്ന എല്ലാ കുറിപ്പുകളുടെയും
+പട്ടിക കാണുവാനും അതിൽ നിന്നു തെരഞ്ഞെടുക്കാനും ഈ ആജ്ഞ ഉപയോഗിക്കാം:
 
 `texdoc -l` < _pkg_ >
 
 ## texdoc.org
 
-This is a [website](https://texdoc.org/) which works similarly to the `texdoc` utility. You can search
-for documentation they have available just like you would do with `texdoc -l`
-and then choose from among the results.
+`texdoc` ഉപാധി പോലെ ഉപയോഗിക്കാവുന്ന ഒരു [വെബ്സൈറ്റ്](https://texdoc.org/) ആണിത്. അവിടെ ലഭ്യമായ
+സഹായക്കുറിപ്പുകൾ `texdoc -l` ഉപയോഗിച്ചെന്ന പോലെ തിരയുകയും ആവശ്യമുള്ളത് എടുക്കുകയും ചെയ്യാം.
 
 ## CTAN
 
-[CTAN](https://www.ctan.org) is the Comprehensive TeX Archive Network. Most LaTeX packages are published
-there. You can search the site for a package to access its
-documentation. Usually the packages are saved in `ctan.org/pkg/<pkg-name>`
-and you can access the README and documentation of the packages stored on CTAN
-there.
+സമ്പൂര്‍ണ്ണ ടെൿ ശേഖര ശൃംഖലയാണു് [CTAN](https://www.ctan.org). ഒട്ടുമീക്ക ലാറ്റെൿ പൊതിക്കെട്ടുകളും
+പ്രസിദ്ധപ്പെടുത്തുന്നത് അവിടെയാണു്. ആ സൈറ്റിൽ നിങ്ങള്‍ക്കാവശ്യമുള്ള പൊതിക്കെട്ട് തിരഞ്ഞ് അതിന്റെ സയാഹക്കുറിപ്പ്
+പ്രാപ്യമാക്കാം. പൊതുവേ ഏതു പൊതിക്കെട്ടും `ctan.org/pkg/<pkg-name>` എന്ന വിലാസത്തിൽ ലഭ്യമാണ്,
+അവിടെയുള്ള  README പ്രമാണവും സഹായക്കുറിപ്പുകളും നോക്കാവുന്നതാണു്.
+
 
 ## Books on LaTeX
 
