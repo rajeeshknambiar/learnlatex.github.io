@@ -15,9 +15,10 @@ permalink: /ml/contact
 
 ## വെബ്സ‌ൈറ്റ് സംഘം
 
-ഈ [വെബ്‌സൈറ്റിന്റെ സ്രോതസ്സ്](https://github.com/learnlatex/learnlatex.github.io/) ഉള്ളതു് [ഗിറ്റ്‌ഹബ്ബിൽ](https://github.com/learnlatex/) ആണു്. കൂടുതലറിയാൻ [സംഭാവന ചെയ്യുക](../CONTRIBUTING), [അനുമതിപത്രം](../LICENSE) എന്നിവ വായിക്കുക.
+ഈ [വെബ്‌സൈറ്റിന്റെ സ്രോതസ്സ്](https://github.com/learnlatex/learnlatex.github.io/) പരിപാലിക്കുന്നതു് [ഗിറ്റ്‌ഹബ്ബിൽ](https://github.com/learnlatex/) ആണു്. കൂടുതലറിയാൻ [സംഭാവന ചെയ്യുക](../CONTRIBUTING), [അനുമതിപത്രം](../LICENSE) എന്നിവ വായിക്കുക.
 
-നിര്‍ദ്ദേശങ്ങൾ [ഗിറ്റ്‌ഹബ്ബിൽ ഒരു വിഷയം തുറന്നോ](https://github.com/learnlatex/learnlatex.github.io/issues) [ഞങ്ങള്‍ക്ക് ഇ-മെയിൽ അയച്ചോ](mailto:texfaq@texfaq.org) നല്കാം.
+നിര്‍ദ്ദേശങ്ങൾ [ഗിറ്റ്‌ഹബ്ബിൽ ഒരു വിഷയം തുറന്നോ](https://github.com/learnlatex/learnlatex.github.io/issues)
+അഥവാ [ഞങ്ങള്‍ക്ക് ഇ-മെയിൽ അയച്ചോ](mailto:texfaq@texfaq.org) നല്കാം.
 
 ## അച്ചടിമുദ്ര
 
