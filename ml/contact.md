@@ -1,23 +1,25 @@
 ---
 layout: "page"
-lang: "en"
-title: Contact
-permalink: /en/contact
+lang: "ml"
+title: സമ്പര്‍ക്കം
+permalink: /ml/contact
 ---
 
-# Contact
+# സമ്പര്‍ക്കം
 
-## Individual Support
+## വ്യക്തിഗത സഹായം
 
-Unfortunately we do not have the resources to offer individual help on LaTeX problems and will therefore not reply to emails seeking support. See [The LaTeX Project's help page](https://www.latex-project.org/help/) for ways to get user support.
+ഓരോരുത്തര്‍ക്കും പ്രത്യേകം സഹായം നല്കാനുള്ള ആള്‍ബലം നിര്‍ഭാഗ്യവശാൽ ഞങ്ങള്‍ക്കില്ല; ആയതിനാൽ സഹായം തേടിയുള്ള ഇ-മെയിലുകള്‍ക്കു്
+മറുപടിയയക്കാനും നിര്‍വ്വാഹമില്ല. ഉപയോക്തൃസഹായം ലഭിക്കാനുള്ള വഴികള്‍ക്കു് [ലാറ്റെൿ പദ്ധതിയുടെ സഹായ താൾ](https://www.latex-project.org/help/) കാണുക.
 
-## Website Team
 
-The [source code of this website](https://github.com/learnlatex/learnlatex.github.io/) is on [GitHub](https://github.com/learnlatex/), please see [CONTRIBUTING](../CONTRIBUTING) and [LICENSE](../LICENSE) for details.
+## വെബ്സ‌ൈറ്റ് സംഘം
 
-You can also [open an issue on GitHub](https://github.com/learnlatex/learnlatex.github.io/issues) or [email us](mailto:texfaq@texfaq.org) with suggestions.
+ഈ [വെബ്‌സൈറ്റിന്റെ സ്രോതസ്സ്](https://github.com/learnlatex/learnlatex.github.io/) ഉള്ളതു് [ഗിറ്റ്‌ഹബ്ബിൽ](https://github.com/learnlatex/) ആണു്. കൂടുതലറിയാൻ [സംഭാവന ചെയ്യുക](../CONTRIBUTING), [അനുമതിപത്രം](../LICENSE) എന്നിവ വായിക്കുക.
 
-## Impressum
+നിര്‍ദ്ദേശങ്ങൾ [ഗിറ്റ്‌ഹബ്ബിൽ ഒരു വിഷയം തുറന്നോ](https://github.com/learnlatex/learnlatex.github.io/issues) [ഞങ്ങള്‍ക്ക് ഇ-മെയിൽ അയച്ചോ](mailto:texfaq@texfaq.org) നല്കാം.
+
+## അച്ചടിമുദ്ര
 
 <p>Joseph Wright<br>
 2, Dowthorpe End<br>
