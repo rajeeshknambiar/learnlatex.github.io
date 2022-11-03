@@ -1,72 +1,76 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "LaTeX Showcase - Examples for further study"
-description: "This lesson shows assorted examples of other popular LaTeX packages that were not covered in the main lessons."
-toc-anchor-text: "LaTeX Showcase"
-toc-description: "Examples for further study."
+lang: "ml"
+title: "ലാറ്റെൿ കാഴ്ചപ്പെട്ടി - ഉപരിപഠനത്തിനുള്ള ഉദാഹരണങ്ങൾ"
+description: "പ്രധാന പാഠഭാഗത്തു പരാമര്‍ശിച്ചിട്ടില്ലാത്ത ചില ജനപ്രിയ ലാറ്റെൿ പൊതിക്കെട്ടുകളുടെ ഉദാഹരണം ഈ പാഠത്തിൽ കാണാം."
+toc-anchor-text: "ലാറ്റെൿ കാഴ്ചപ്പെട്ടി"
+toc-description: "ഉപരിപഠനത്തിനുള്ള ഉദാഹരണങ്ങൾ."
 ---
 
 # Showcase
 
 <span
-  class="summary">This lesson shows assorted examples of other popular LaTeX packages that were not covered in the main lessons.</span>
+  class="summary">പ്രധാന പാഠഭാഗത്തു പരാമര്‍ശിച്ചിട്ടില്ലാത്ത ചില ജനപ്രിയ ലാറ്റെൿ പൊതിക്കെട്ടുകളുടെ
+  ഉദാഹരണം ഈ പാഠത്തിൽ കാണാം.</span>
 
-This course has given an overview of the core features of LaTeX.
-LaTeX has vast array of extension packages and is used in many subject
-areas.  We give here some examples, with no explanation here but links
-to the package documentation at [texdoc.org](https://texdoc.org).
-The examples are taken from the package documentation unless otherwise noted.
+ലാറ്റെക്കിന്റെ കാതലായ സവിശേഷതകളെപ്പറ്റി ഒരവലോകനം ഈ പാഠ്യക്രമത്തിൽ നടത്തിയിട്ടുണ്ട്.
+വിവിധ വിഷയങ്ങളിലും മേഖലകളിലും ഉപയോഗിക്കുന്ന വിപുലീകരണ പൊതിക്കെട്ടുകളുടെ ബൃഹത്തായ
+ശേഖരം തന്നെ ലാറ്റെക്കിനുണ്ട്. വിശദീകരണങ്ങളില്ലാതെ അത്തരം ചില പൊതിക്കെട്ടുകളുടെ
+[texdoc.org](https://texdoc.org)ൽ സൂക്ഷിച്ചിട്ടുള്ള സഹായരേഖകളിലേക്കുള്ള കണ്ണി മാത്രം 
+ഇവിടെ നല്കിയിരിക്കുന്നു. മറ്റുവിധത്തിൽ സൂചിപ്പിച്ചിട്ടിലെങ്കിൽ, ഉദാഹരണങ്ങളെല്ലാം പൊതിക്കെട്ടുകളുടെ
+സഹായരേഖയിൽ നിന്ന് എടുത്തിട്ടുള്ളവയാണു്.
 
 <p
-  class="hint">Note that inclusion here is not intended as an endorsement of the package over other similar packages, we just aim for a small sample showing a range of areas not otherwise covered in this course.</p>
+  class="hint">സമാനമായ മറ്റു പൊതിക്കെട്ടുകളെ അപേക്ഷിച്ച് സാക്ഷ്യപ്പെടുത്തുകയെന്നുള്ള ഉദ്ദേശ്യത്തോടെയല്ല
+  ഇവിടെ പൊതിക്കെട്ടുകളെ ഉള്‍പ്പെടുത്തിയിരുക്കുന്നത് എന്ന കാര്യം ശ്രദ്ധിക്കുക. ഈ പാഠ്യക്രമത്തിൽ വിവരിച്ചിട്ടില്ലാത്ത
+  വിശാല മേഖലകളുടെ ഒരു ചെറിയ മാതൃക പരിചയപ്പെടുത്തുക എന്ന ഉദ്ദേശ്യം മാത്രമേയുള്ളൂ.</p>
 
-## Chemistry
+## രസതന്ത്രം
 
-Package: [`mhchem`](https://texdoc.org/pkg/mhchem)
+പൊതിക്കെട്ടു്: [`mhchem`](https://texdoc.org/pkg/mhchem)
 
 {% include extra-01-example-mchem.md %}
 
-## Linguistics
+## ഭാഷാശാസ്ത്രം
 
-Package: [`forest`](https://texdoc.org/pkg/forest)
+പൊതിക്കെട്ടു്: [`forest`](https://texdoc.org/pkg/forest)
 
 {% include extra-01-example-forest.md %}
 
-## Chess
+## ചതുരംഗം
 
 <!-- not 2017 -->
-Package: [`xskak`](https://texdoc.org/pkg/xskak)
+പൊതിക്കെട്ടു്: [`xskak`](https://texdoc.org/pkg/xskak)
 
 {% include extra-01-example-xskak.md %}
 
 
-## Poetry
+## പദ്യം
 
-Class: [`memoir`](https://texdoc.org/pkg/memoir)
+ക്ലാസ്സ്: [`memoir`](https://texdoc.org/pkg/memoir)
 
 {% include extra-01-example-memoir.md %}
 
 
-## Drawing
+## ചിത്രം വര
 <!-- not 2017 -->
-Package: [`tikz`](https://texdoc.org/pkg/tikz)
+പൊതിക്കെട്ടു്: [`tikz`](https://texdoc.org/pkg/tikz)
 
 
 {% include extra-01-example-tikz.md %}
 
 
-## Function plotting
+## ഗണിതസമവാക്യങ്ങളുടെ ആലേഖനം
 
-Package: [`pgfplots`](https://texdoc.org/pkg/pgfplots)
+പൊതിക്കെട്ടു്: [`pgfplots`](https://texdoc.org/pkg/pgfplots)
 
 
 {% include extra-01-example-pgfplots.md %}
 
 
-## Music
+## സംഗീതം
 
-Package: [`musixtex`](https://texdoc.org/pkg/musixtex)
+പൊതിക്കെട്ടു്: [`musixtex`](https://texdoc.org/pkg/musixtex)
 
 
 
