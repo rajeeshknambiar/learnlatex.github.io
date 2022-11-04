@@ -1,11 +1,11 @@
 ---
 layout: "lesson"
 lang: "ml"
-title: "Language-specifics for Malayalam"
-description: "This lesson shows language-specific details for typesetting with LaTeX in Malayalam. The focus is on hyphenation, where Malayalam typically does not have visible hyphen character."
+title: "മലയാള ഭാഷാ സവിശേഷതകൾ"
+description: "T>ഈ പാഠം, ലാറ്റെൿ ഉപയോഗിച്ച് പാഠവിന്യാസം ചെയ്യുമ്പോൾ മലയാള ലിപിക്ക് സവിശേഷമായുള്ള പ്രത്യേകതകളെ, വിശേഷിച്ചും വാക്കുകൾ മുറിക്കുന്നതിലുള്ളതിനെ പരിചയപ്പെടുത്തുന്നു."
 next: "extra-01"
-toc-anchor-text: "Malayalam Language-specifics"
-toc-description: "Typesetting with LaTeX in Malayalam."
+toc-anchor-text: "മലയാള ഭാഷാ സവിശേഷതകൾ"
+toc-description: "ലാറ്റെൿ ഉപയോഗിച്ചുള്ള മലയാള പാഠവിന്യാസം."
 ---
 
 # മലയാള ഭാഷാ സവിശേഷതകൾ
