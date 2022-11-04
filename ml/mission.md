@@ -1,12 +1,18 @@
 ---
 layout: "page"
-lang: "en"
-title: Mission
-permalink: /en/mission
+lang: "ml"
+title: ദൗത്യം
+permalink: /ml/mission
 ---
 
-# Learn LaTeX Mission
+# ലേണ്‍ ലാറ്റെക്കിന്റെ ദൗത്യം
 
-This website aims to help you take the first steps with LaTeX, a document preparation system designed to produce high-quality typeset output. LaTeX can be scary for new users as it is not a word processor, and because it is not a single program. Our aim here is to help you get started without trying to show you everything in one go.
+ഉന്നത നിലവാരത്തിലുള്ള പാഠവിന്യാസം സൃഷ്ടിക്കാനുപയോഗിക്കുന്ന, ലാറ്റെൿ എന്ന പ്രമാണ പ്രസിദ്ധീകരണ സംവിധാനം പഠിക്കുവാനുള്ള
+ആദ്യ ചുവടുകൾ വയ്ക്കാൻ നിങ്ങളെ സഹായിക്കുക എന്നതാണീ വെബ്‌സൈറ്റിന്റെ ഉദ്ദേശ്യം. ലാറ്റെൿ വേഡ് പ്രൊസസ്സറോ ഒരൊറ്റ പ്രോഗ്രാമോ
+അല്ല എന്നതിനാൽ ആദ്യമായി ഉപയോഗിക്കുന്നവര്‍ക്കു് അല്പം പരിഭ്രമമുണ്ടാവാം. എല്ലാ ആശയങ്ങളും ഒറ്റയടിക്കു് നിരത്താൻ ശ്രമിക്കാതെ
+നിങ്ങളുടെ പഠനം ആരംഭിക്കാൻ സഹായിക്കുക എന്നതാണു് ഞങ്ങളുടെ ലക്ഷ്യം.
 
-To do that, we have taken around 16 of the most important things you’ll need to know, and made them into short ‘lessons’. Each lesson is very focused, so they should not take too long to cover. In each lesson, we’ve given examples of what you’d write, and they are available so you can try them out online. Learn more about [how examples work](./help#examples) in the help section.
+അതിനായി നിങ്ങളറിഞ്ഞിരിക്കേണ്ട പതിനാറോളം പ്രധാനപ്പെട്ട കാര്യങ്ങളെടുത്ത് ചെറു 'പാഠങ്ങളായി' അവതരിപ്പിക്കുകയാണു് ഞങ്ങൾ
+ചെയ്യുന്നതു്. ഓരോ പാഠവും കാച്ചിക്കുറുക്കിയതാണു്, അവ മുഴുമിക്കുവാൻ ഒരുപാടു് സമയമെടുക്കില്ല. ഓരോ പാഠത്തിലും നിങ്ങൾ ചെയ്തുനോക്കേണ്ട
+ഉദാഹരണങ്ങളും നല്കിയിട്ടുണ്ടു്, അവ ഓണ്‍ലൈനായിത്തന്നെ അഭ്യസിച്ചു നോക്കാം. [ഉദാഹരണങ്ങൾ എങ്ങന പ്രവര്‍ത്തിപ്പിക്കാം]
+(./help#examples) എന്നു സഹായ ഖണ്ഡത്തിൽ കൂടുതലറിയാം.
