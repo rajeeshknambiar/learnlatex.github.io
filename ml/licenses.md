@@ -1,29 +1,26 @@
 ---
 layout: "page"
 lang: "en"
-title: Licenses
-permalink: /en/licenses
+title: അനുമതിപത്രങ്ങൾ
+permalink: /ml/licenses
 ---
 
-# Licenses
+# അനുമതിപത്രങ്ങൾ
 
-The [Learn LaTeX website]({{ "/" | absolute_url }}) uses 2 types of licenses:
+[ലാറ്റെൿ പഠന വെബ്‌സൈറ്റ്]({{ "/" | absolute_url }}) രണ്ടു് തരം അനുമതിപത്രങ്ങൾ ഉപയോഗിക്കുന്നു:
 
-## Content
+## ഉള്ളടക്കം
 
-The content of this website is available under the
-[Creative Commons BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
-license. That means you can use the material as long as you say where it came
-from and let others do the same.
+ഈ വെബ്‌സൈറ്റിന്റെ ഉള്ളടക്കം [ക്രിയേറ്റിവ് കോമണ്‍സ് ബൈ-എസ്എ 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
+അനുമതിപത്ര പ്രകാരമാണു്. എവിടെനിന്നാണു് ലഭിച്ചതെന്നു സ്പഷ്ടമാക്കുകയും മറ്റുള്ളവര്‍ക്കുപയോഗിക്കാനുള്ള
+അനുമതി നല്കുകയും ചെയ്യുന്നിടത്തോളം ഈ ഉള്ളടക്കം നിങ്ങള്‍ക്കുപയോഗിക്കാമെന്നാണു് അതിനര്‍ത്ഥം.
 
-See [LICENSE](../LICENSE) for details.
+വിശദവിവരങ്ങള്‍ക്കു് [അനുമതിപത്രം](../LICENSE) വായിക്കുക.
 
-## Code Examples
+## കോഡ് ഉദാഹരണങ്ങൾ
 
-The code examples are licensed as
-[Creative Commons CC0](https://creativecommons.org/share-your-work/public-domain/cc0/) 
-(No Rights Reserved). This is a legal text that is (essentially) the same as 
-Public Domain, at least in countries where that concept exists. The key point 
-is that _you can use the examples without any issues_. You _do not_ need to 
-reference them, you _do not_ need to share them when you modify them: you can 
-just use them.
+കോഡ് ഉദാഹരണങ്ങൾ ലഭ്യമാക്കിയിരിക്കുന്നതു് [ക്രിയേറ്റിവ് കോമണ്‍സ് സിസി0](https://creativecommons.org/share-your-work/public-domain/cc0/) 
+(ഒരവകാശവുമില്ല) പ്രകാരമാണു്. അടിസ്ഥാനപരമായി ഈ നിയമപരമായ കുറിപ്പ് 'പൊതുസഞ്ചയം' എന്നതിനു
+തുല്യമാണു്, ചുരുങ്ങിയതു് ആ ആശയം നിലനില്ക്കുന്ന രാജ്യങ്ങളിലെങ്കിലും. _ഒരു പ്രശ്നവുമില്ലാതെ ഉദാഹരണങ്ങൾ ഉപയോഗിക്കാം_
+എന്നതാണു് പ്രധാനവസ്തുത. നിങ്ങൾ അവയെ പരാമര്‍ശിക്കുകയോ മാറ്റം വരുത്തിയാൽ പങ്കുവയ്ക്കുകയോ ചെയ്യണമെന്നില്ല,
+യഥേഷ്ടം ഉപയോഗിക്കാം.
