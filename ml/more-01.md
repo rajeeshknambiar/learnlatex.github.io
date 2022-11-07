@@ -1,28 +1,29 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "More on: What is LaTeX and how does it work?"
-description: "This lesson gives more context on the history of LaTeX and other formats available."
-toc-anchor-text: "More on: What is LaTeX and how does it work?"
+lang: "ml"
+title: "കൂടുതലറിയാൻ: ലാറ്റെൿ എന്താണു്, അതെങ്ങനെ പ്രവര്‍ത്തിക്കുന്നു?"
+description: "ലാറ്റെക്കിന്റെ ചരിത്രത്തെപ്പറ്റിയും ലഭ്യമായ മറ്റു വിധാനങ്ങളെപ്പറ്റിയും കൂടുതൽ പശ്ചാത്തല വിവരങ്ങൾ 
+പാഠത്തിൽ വിശദീകരിക്കുന്നു."
+toc-anchor-text: "കൂടുതലറിയാൻ: ലാറ്റെൿ എന്താണു്, അതെങ്ങനെ പ്രവര്‍ത്തിക്കുന്നു?"
 ---
 
-The word 'LaTeX' actually consists of two components, 'La' and 'TeX'. In the
-following we will briefly describe where they come from.
+'ലാ', 'റ്റെൿ' എന്ന രണ്ടു് ഭാഗങ്ങൾ ചേര്‍ന്നതാണു് 'ലാറ്റെൿ' എന്ന പദം. ഇവ രണ്ടും എങ്ങനെ വന്നുവെന്ന്
+താഴെ ചുരുക്കി വിവരിക്കാം.
 
-TeX was originally invented by Stanford professor Donald Knuth. Knuth is
-well known for a series of books called *The Art of Computer Programming*
-(known as TAOCP). In
-1973 a new edition of the books was to be made; this was the time when the
-typesetting industry switched from traditional typesetting with lead to
-photo-based typesetting. Donald Knuth did not like the quality of the print and
-therefore decided to implement his own typesetting system.
+സ്റ്റാന്‍ഫഡ് യൂനിവേഴ്സിറ്റിയിൽ പ്രഫസറായ ഡോണള്‍ഡ് ക്നുതു് ആണു് റ്റെൿ ആദ്യമായി വികസിപ്പിച്ചതു്.
+TAOCP എന്നുകൂടി അറിയപ്പെടുന്ന *The Art of Computer Programming* പുസ്തകസഞ്ചയത്തിന്റെ
+ഗ്രന്ഥകര്‍ത്താവ് എന്ന നിലയിൽ വിഖ്യാതനാണ് ക്നുതു്. അച്ചടി പരമ്പരാഗതമായ ലോഹഅച്ചുകൂടത്തിൽ നിന്നു്
+ഫോട്ടോടൈപ്‌സെറ്റിങ് എന്ന സങ്കേതത്തിലേക്ക് മാറിക്കൊണ്ടിരിക്കുന്ന കാലഘട്ടത്തിൽ, 1973ൽ ആ പുസ്തകങ്ങളുടെ
+പുതിയ പതിപ്പുകൾ തയ്യാറാക്കുകയായിരുന്നു. ക്നുത്തിനു് പുതിയ സങ്കേതത്തിലിറക്കിയ പതിപ്പുകളുടെ അച്ചടിയുടെ
+നിലവാരം ഒട്ടും സ്വീകാര്യമായി തോന്നിയില്ല. അദ്ദേഹം തനതായ ഒരു കംപ്യൂട്ടർ അധിഷ്ഠിത പാഠവിന്യാസ
+സംവിധാനം നടപ്പിലാക്കാൻ തീരുമാനിച്ചു.
+ 
+1977 മെയ് മാസത്തിൽ റ്റെക്കിന്റെ നിര്‍മ്മാണം ആരംഭിച്ചു.
 
-In May 1977 the development of TeX started.
+റ്റെക്കിന്റെ ആദ്യരൂപം ഉപയോഗിക്കുവാൻ സങ്കീര്‍ണ്ണമായിരുന്നു, ക്നുതു് പോലും തന്റെ പുസ്തകം റ്റെക്കിൽ
+തയ്യാറാക്കുന്ന ജോലി ലളിതമാക്കാൻ നിരവധി 'മാക്രോ'കൾ ഉപയോഗിച്ചു. ലെസ്‌ലി ലാംപര്‍ട്ട് എന്ന
+കംപ്യൂട്ടർ ശാസ്ത്രജ്ഞനും റ്റെൿ ഉപയോഗം ലളിതമാക്കുന്ന ഒരു സംഘം മാക്രോകൾ വികസിപ്പിക്കുകയും
+അതിനെ “ലാറ്റെൿ” എന്നു വിളിക്കുകയും ചെയ്തു.
 
-The original TeX was rather complicated to use, even Donald Knuth used various
-macros to edit his books. Leslie Lamport, who works for Microsoft nowadays, also
-developed a set of macros that simplify the use of TeX and called this macro
-set “LaTeX”.
-
-Today LaTeX is the most common way to interact with TeX. Another alternative is
-[ConTeXt](https://www.contextgarden.net/).
+ഇന്ന് റ്റെൿ ഉപയോഗിക്കാനുള്ള ഏറ്റവും പ്രചാരമുള്ള മാര്‍ഗ്ഗമാണു് ലാറ്റെൿ. മറ്റൊരു വഴിയാണു്
+[കോണ്‍ടെക്സ്റ്റ്](https://www.contextgarden.net/).
