@@ -1,29 +1,33 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "Basic LaTeX document structure"
-description: "This lesson shows the basic structure of a LaTeX document, and how to build it into a PDF file, as well as the main special characters used to control LaTeX."
-toc-anchor-text: "Document structure"
-toc-description: "The basic structure of a document."
+lang: "ml"
+title: "ലാറ്റെൿ പ്രമാണത്തിന്റെ അടിസ്ഥാന ഘടന"
+description: "ഒരു ലാറ്റെൿ പ്രമാണത്തിന്റെ അടിസ്ഥാന ഘടന, അതുപയോഗിച്ച് പിഡിഎഫ് പ്രമാണം നിര്‍മ്മിക്കുക,
+ലാറ്റെക്കിനെ നിയന്ത്രിക്കാനുപയോഗിക്കുന്ന സവിശേഷ അക്ഷരങ്ങൾ മുതലായ കാര്യങ്ങൾ ഈ പാഠത്തിൽ പരിചയപ്പെടാം."
+toc-anchor-text: "പ്രമാണ ഘടന"
+toc-description: "ഒരു ലാറ്റെൿ പ്രമാണത്തിന്റെ അടിസ്ഥാന ഘടന."
 ---
 
-# LaTeX document structure
+# ലാറ്റെൿ പ്രമാണ ഘടന
 
 <span
-  class="summary">This lesson shows the basic structure of a LaTeX document, and how to build it into a PDF file, as well as the main special characters used to control LaTeX.</span>
+  class="summary">ഒരു ലാറ്റെൿ പ്രമാണത്തിന്റെ അടിസ്ഥാന ഘടന, അതുപയോഗിച്ച് പിഡിഎഫ് പ്രമാണം നിര്‍മ്മിക്കുക,
+ലാറ്റെക്കിനെ നിയന്ത്രിക്കാനുപയോഗിക്കുന്ന സവിശേഷ അക്ഷരങ്ങൾ മുതലായ കാര്യങ്ങൾ ഈ പാഠത്തിൽ പരിചയപ്പെടാം.</span>
 
-Your first LaTeX document is going to be very simple: the idea is to show you
-how a document looks and how to typeset it successfully. It is also your
-first chance to see [how to use the examples](help) here on `learnlatex.org`.
+നിങ്ങളുടെ ആദ്യത്തെ ലാറ്റെൿ പ്രമാണം വളരെ ലളിതമായ ഒന്നാണു്; ഒരു പ്രമാണം കാണാൻ എങ്ങനെയിരിക്കുമെന്നും
+എങ്ങനെ വിജയകരമായി അതിന്റെ പാഠവിന്യാസം നടത്താമെന്നും മനസ്സിലാക്കുക എന്നതാണു് ഉദ്ദേശ്യം. `learnlatex.org`ൽ
+[ഉദാഹരണങ്ങൾ എങ്ങനെ ഉപയോഗിക്കാം](help) എന്നു പഠിക്കാനുള്ള നിങ്ങളുടെ ആദ്യത്തെ അവസരവുമാണിതു്.
 
-If you are using a local LaTeX installation, in your editor create a new file
-called `first.tex`, and either copy–paste the text below or type it in.
+നിങ്ങളുടെ കംപ്യൂട്ടറിൽ സ്ഥാപിച്ചിട്ടുള്ള ലാറ്റെൿ വിതരണമാണു് ഉപയോഗിക്കുന്നതെങ്കിൽ എഡിറ്റർ ഉപയോഗിച്ച് `first.tex`
+എന്ന പേരിലോ മറ്റോ ഒരു പ്രമാണം ഉണ്ടാക്കിയതിനു ശേഷം ചുവടെ നല്കിയിരിക്കുന്ന പാഠം ടൈപ്പു് ചെയ്യുക (പകര്‍ത്തി ചേര്‍ക്കുന്നതിനു
+പകരം എല്ലായ്പോഴും ടൈപ്പു് ചെയ്യുക, ശരിയായി പഠിക്കാൻ അങ്ങനെയേ സാധിക്കൂ).
 
-If you are using the online system, you can just click on the ‘Run at TeXLive.net’
-or ‘Open in Overleaf’ buttons in the example to try it out!
+നിങ്ങളൊരു ഓണ്‍ലൈൻ ലാറ്റെൿ സംവിധാനമാണു് ഉപയോഗിക്കുന്നതെങ്കിൽ ‘Run at TeXLive.net’ അല്ലെങ്കിൽ
+‘Open in Overleaf’ എന്ന ബട്ടണുകളിൽ ഏതെങ്കിലുമൊന്ന് ഉപയോഗിച്ച് ഈ ഉദാഹരണങ്ങൾ പരീക്ഷിക്കുക.
 
 <p
-  class="hint">We suggest you try out the online options even if you have set up LaTeX locally; this is a good chance to see how the different options work.</p>
+  class="hint">നിങ്ങളുടെ കംപ്യൂട്ടറിൽ ലാറ്റെൿ ഉണ്ടെങ്കില്‍ക്കൂടിയും ഓണ്‍ലൈൻ സംവിധാനങ്ങൾ പരീക്ഷിച്ചു നോക്കാൻ ഞങ്ങൾ 
+  ശുപാര്‍ശ ചെയ്യുന്നു; ഇവിടെ ലഭ്യമായ വിവിധ സൗകര്യങ്ങൾ എങ്ങനെ പ്രവര്‍ത്തിക്കുന്നുവെന്നു മനസ്സിലാക്കാനുള്ള നല്ല അവസരമാണിതു്.</p>
 
 ```latex
 \documentclass{article}
