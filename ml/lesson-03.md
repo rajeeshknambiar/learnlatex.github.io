@@ -53,56 +53,59 @@ This is a first document.
 [സഹായം](./help) നോക്കുക.
 
 
-## Handling errors
+## പ്രശ്നങ്ങൾ കൈകാര്യം ചെയ്യുന്നതു്
 
-Errors happen.
-Check that you have entered each line in the text file exactly as written above.
-Sometimes seemingly small input changes give large changes in the
-result, including causing a document to not work.
-If you are stuck, try erasing the document and copying it fresh from the
-lines above.
+പിഡിഎഫ് നിര്‍മ്മിക്കുവാൻ ഒരുപക്ഷേ നിങ്ങൾ പ്രശ്നം നേരിട്ടിരിക്കാം.
+പ്രമാണത്തിലെ ഓരോ വരിയും മുകളിലെഴുതിയ അതേപോലെ ചേര്‍ത്തിരിക്കുന്നുവെന്ന് ഉറപ്പുവരുത്തുക.
+ചിലപ്പോൾ ഇന്‍പുട്ട് നല്കുന്നതിലുള്ള വളരെ ചെറിയ വ്യതാസം പോലും ലഭിക്കുന്ന ഫലത്തിൽ വലിയ
+വ്യത്യാസത്തിനു കാരണമാകാം, ഔട്പുട്ട് പ്രമാണം ഉണ്ടാകാതിരിക്കുന്നതടക്കം.
+നിങ്ങൾക്ക് ഒരുവിധത്തിലും ശരിയാക്കാനാകുന്നിലെങ്കിൽ പ്രമാണത്തിലുള്ളതെല്ലാം മായ്ച്ച്, മുകളിൽ
+തന്നിരിക്കുന്ന ഉദാഹരണം അതേപടി പകര്‍ത്തി ചേര്‍ത്തു നോക്കുക.
 
-If your LaTeX typesetting run ends with a question mark then you can get out by
-typing `x` and `<Enter>`.
+നിങ്ങളുടെ ലാറ്റെൿ പ്രവര്‍ത്തനം ഒരു ചോദ്യചിഹ്നത്തിൽ തടഞ്ഞു നില്‍ക്കുന്നെങ്കിൽ `x` എന്നും `<Enter>`
+എന്നും ടൈപ്പ് ചെയ്ത് അവിടെ നിന്നു രക്ഷപ്പെടാം.
 
-LaTeX's error messages try to be helpful, but they are not the same as messages
-in word processors. Some editors also make it hard to see the 'full' text of an
-error, which can hide key details. LaTeX always creates a log of what it is
-doing; this is a text file ending in `.log`. You can always see the full  error
-messages there, and if you have a problem, expert LaTeX users will often ask for a
-copy of your log file.
+ലാറ്റെക്കിലെ പ്രശ്നസന്ദേശങ്ങൾ നിങ്ങള്‍ക്കു്  സഹായകരമാകുവാൻ ശ്രമിക്കും, പക്ഷേ അവ വേഡ്
+പ്രൊസസ്സറുകളിലേതു പോലെയാവണമെന്നില്ല. ചില എഡിറ്ററുകൾ പ്രശ്നസന്ദേശങ്ങളുടെ പ്രധാന
+ഭാഗങ്ങൾ മറച്ചു വയ്ക്കാം, അതിനാൽ പ്രശ്നസന്ദേശങ്ങൾ  പൂര്‍ണ്ണമായി ഒറ്റനോട്ടത്തിൽ അവയിൽ
+കാണണമെന്നില്ല. `.log` എന്നതിലവസാനിക്കുന്ന ഒരു ടെക്സ്റ്റ് ഫയലിൽ ലാറ്റെൿ എല്ലായ്പോഴും
+അതു  ചെയ്തുകൊണ്ടിരിക്കുന്ന ഓരോ കാര്യത്തിന്റെയും നാള്‍വഴി രേഖപ്പെടുത്തി വയ്ക്കും. എപ്പോള്‍
+നോക്കിയാലും അതിനകത്ത് മുഴുവൻ പ്രശ്നസന്ദേശങ്ങളും കാണാം. നിങ്ങളുടെ എന്തെങ്കിലും പ്രശ്നം
+പരിഹരിക്കണമെന്നുണ്ടെങ്കിൽ ലാറ്റെൿ വിദഗ്ദ്ധർ പലപ്പോഴും ലോഗ് പ്രമാണത്തിന്റെ പകര്‍പ്പു്
+ആവശ്യപ്പെടാറുണ്ട്. 
 
 <p
-  class="hint">We cover more about dealing with errors in <a href="./lesson-15">lesson 15</a>.</p>
+  class="hint">പ്രശ്നനിര്‍ദ്ധാരണത്തിനുള്ള വഴികൾ <a href="./lesson-15">പാഠം 15ൽ</a> വിശദമായി പഠിക്കാം.</p>
 
-## What you've got
+## നിങ്ങളിപ്പോൾ മനസ്സിലാക്കിയ കാര്യങ്ങൾ
 
-The first document shows the basics.
-LaTeX documents are a mixture of text and commands.
-The commands start with a backslash
-and sometimes have arguments in curly braces
-(or sometimes optional arguments in square brackets).
-Then you get an output PDF by telling LaTeX to typeset your file.
+ആദ്യത്തെ പ്രമാണത്തിൽ ഏറ്റവും അടിസ്ഥാനപരമായ കാര്യങ്ങളാണുള്ളതു്.
+ലാറ്റെൿ  പ്രമാണങ്ങൾ പാഠത്തിന്റെയും ആജ്ഞകളുടെയും ഒരു  മിശ്രണമാണു്.
+ആജ്ഞകൾ തുടങ്ങുന്നത് 'ബാക്ക്‌സ്ലാഷ്' അക്ഷരത്തിലാണ്, ചില ആജ്ഞകള്‍
+വാദങ്ങൾ സ്വീകരിക്കുന്നത് വക്രാവരണ ചിഹ്നത്തിനകത്താണ് (curly braces),
+ചില ഐച്ഛികവാദങ്ങൾ കോഷ്ഠചിഹ്നത്തിനകത്തും (square brackets).
+പിഡിഎഫ് പ്രമാണം ലഭിക്കുന്നതു്് ലാറ്റെക്കിനോട് പാഠവിന്യാസം ചെയ്യാൻ 
+നിങ്ങളാവശ്യപ്പെടുമ്പൊഴാണു്.
 
-Every LaTeX document has a `\begin{document}` and a matching
-`\end{document}`.
-Between these two is the *document body*, where your content goes.
-Here the body has two paragraphs (in LaTeX you separate paragraphs
-with one or more blank lines).
-Before `\begin{document}` is the *document preamble*,
-which has code to set up the document layout.
-The `\usepackage` command is described in a [later lesson](lesson-06)
-it is used in most examples on this site to set up the font encoding.
+ഏതൊരു ലാറ്റെൿ പ്രമാണത്തിനും `\begin{document}` എന്ന ആജ്ഞയും 
+അതിനു ജോടിയായി `\end{document}` എന്ന ആജ്ഞയുമുണ്ട്.
+ഇവയ്ക്കു രണ്ടിനുമിടയിലാണു്  നിങ്ങളുടെ ഉള്ളടക്കം ചേര്‍ത്തിരിക്കുന്ന  *പ്രമാണത്തിന്റെ  കാമ്പു്*.
+ലാറ്റെക്കിൽ ഖണ്ഡിക തിരിക്കുവാനായി ഒന്നോ അതിലധികമോ ഒഴിഞ്ഞ വരികളുപയോഗിക്കാം.
+`\begin{document}` എന്ന ആജ്ഞയ്ക്കു മുമ്പുള്ള സ്ഥലമാണു്് *പ്രമാണ ആമുഖം*,
+ഇതാണു് പ്രമാണത്തിന്റെ ഘടന നിര്‍ണ്ണയിക്കുന്ന കോഡ് ഉള്‍ക്കൊള്ളുന്നതു്.
+`\usepackage`  എന്ന  ആജ്ഞ [പിന്നീടുള്ള  ഒരു പാഠത്തിൽ](lesson-06)
+വിശദീകരിച്ചിട്ടുണ്ടു്; ഫോണ്ട് എന്‍കോഡിങ് ക്രമീകരിക്കുവാൻ ഈ വെബ്‌സൈറ്റിലുള്ള
+പല ഉദാഹരണങ്ങളിലും അതുപയോഗിച്ചിട്ടുണ്ടു്.
 
-LaTeX has other `\begin{...}` and `\end{...}` pairs; these are
-called *environments*.
-You must match them so that for every `\begin{x}` there has to be an `\end{x}`.
-If you nest them, then you must have `\end{y} ... \end{x}` to match
-`\begin{x} ... \begin{y}`, i.e. the `\begin` and `\end` statements matching
-in order.
+ലാറ്റെക്കിനു്് മറ്റു പല `\begin{...}`, `\end{...}` ജോടികളുണ്ടു്, അവയെ *പരിസരങ്ങൾ*
+(environments) എന്നാണു് വിളിക്കുന്നതു്.  ഏതു `\begin{x}` പരിസരത്തിന്റെ  തുടക്കത്തിനും
+പൂരകമായി ഒരു `\end{x}` നല്കിയിരിക്കണം. ഒരു പരിസരത്തിനകത്തു് മറ്റൊരെണ്ണം
+ഉപയോഗിച്ചിട്ടുണ്ടെങ്കിൽ `\end{y} ... \end{x}` എന്നു് `\begin{x} ... \begin{y}` എന്നതിനു്
+പൂരകമായി നല്കിയിരിക്കണം, അതായതു് `\begin`, `\end` എന്ന പ്രസ്താവനകൾ
+അവയുടെ ക്രമത്തിൽ തന്നെ ജോടി ചേര്‍ത്തിരിക്കണം.
 
-We can add comments to a LaTeX file by starting them with `%`; let's use
-that to show the structure:
+ലാറ്റെൿ പ്രമാണത്തിൽ വിവരണങ്ങളോ അഭിപ്രായങ്ങളോ  (comment) ചേര്‍ക്കുവാൻ
+`%` അക്ഷരത്തിൽ ആരംഭിച്ചാൽ മതി; ഒരുദാഹരണം നോക്കാം:
 
 ```latex
 \documentclass[a4paper,12pt]{article} % The document class with options
@@ -117,12 +120,14 @@ This is a new paragraph.
 \end{document}
 ```
 
-You can see above that we've got two paragraphs: notice the use of a blank  line
-to do that. Also notice that multiple spaces are treated as a single space.
+മുകളിലെ ഉദാഹരണത്തിൽ രണ്ടു ഖണ്ഡികകളുണ്ടെന്നു്  നിങ്ങള്‍ക്കു കാണാം: അതിനായി
+ഒഴിഞ്ഞ വരി ഉപയോഗിച്ചതു ശ്രദ്ധിക്കുക. ഒന്നിലധികം വിടവ് (സ്പേസ്) ഔട്പുട്ടിൽ
+ഒറ്റയൊന്നായി കണക്കാക്കിയതും ശ്രദ്ധിക്കുക.
 
-You might also sometimes want a 'hard' space that does not break over lines: in
-LaTeX we can create that using `~`, 'tying' two pieces of text together. That's
-particularly useful when we start creating cross-references later in the course.
+വരികളുടെ അവസാനം മുറിയാൻ പാടില്ലാത്ത 'ഉറപ്പുള്ള' ഒരു വിടവ് നിങ്ങള്‍ക്കു് ചിലപ്പോൾ
+ആവശ്യം വരാം: രണ്ടു വാക്കുകളെ ലാറ്റെക്കിൽ അങ്ങനെ 'കൂട്ടിക്കെട്ടുന്നതിനു്' ഉപയോഗിക്കുന്നതു്
+`~` എന്ന അക്ഷരമാണു്. ഇതിന്റെ  ഉപയോഗം പ്രത്യേകിച്ച് ഉപകാരപ്പെടുന്നതു് മറ്റു പാഠഭാഗങ്ങളെ
+പരാമര്‍ശിക്കുന്നതു പഠിക്കുന്ന പാഠം അല്പം കഴിഞ്ഞു വരുമ്പോൾ കാണാം.
 
 ## Special characters
 
