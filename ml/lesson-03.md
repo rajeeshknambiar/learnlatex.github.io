@@ -46,7 +46,7 @@ This is a first document.
 നിങ്ങളുപയോഗിക്കുന്ന എഡിറ്ററിനെ ആശ്രയിച്ചിരിക്കും. ശേഷം നിങ്ങള്‍ക്കൊരു പിഡിഎഫ് പ്രമാണം ലഭിക്കും, അതിന്റെ
 ഉള്ളടക്കം കാണാം: മുകളിൽ നല്കിയ പാഠഭാഗവും _കൂടെ_ താളിന്റെ എണ്ണവും (ഇതു് ലാറ്റെൿ സ്വമേധയാ ചേര്‍ക്കുന്നതാണു്).
 
-ഫലമായി ലഭിച്ച `first.pdf` എന്ന പ്രമാണം നിങ്ങള്‍ക്കിഷ്ടമുള്ള പിഡിഎഫ് കാഴ്ചസഹായ പ്രോഗ്രാം ഉപയോഗിച്ച്
+ഫലമായി ലഭിച്ച `first.pdf` എന്ന പ്രമാണം നിങ്ങള്‍ക്കിഷ്ടമുള്ള പിഡിഎഫ് കാഴ്ചസഹായി പ്രോഗ്രാം ഉപയോഗിച്ച്
 തുറന്നു നോക്കുക. ഒന്നാന്തരമായിരിക്കുന്നില്ലേ, അനുമോദനങ്ങൾ!
 
 പിഡിഎഫ് ഫലത്തിനു പകരം എച്ടിഎംഎൽ ആണു നിങ്ങള്‍ക്കാവശ്യമെങ്കിൽ അതെങ്ങനെ നിര്‍മ്മിക്കാമെന്നു മനസ്സിലാക്കാൻ
@@ -129,25 +129,26 @@ This is a new paragraph.
 `~` എന്ന അക്ഷരമാണു്. ഇതിന്റെ  ഉപയോഗം പ്രത്യേകിച്ച് ഉപകാരപ്പെടുന്നതു് മറ്റു പാഠഭാഗങ്ങളെ
 പരാമര്‍ശിക്കുന്നതു പഠിക്കുന്ന പാഠം അല്പം കഴിഞ്ഞു വരുമ്പോൾ കാണാം.
 
-## Special characters
+## സവിശേഷ അക്ഷരങ്ങൾ
 
-You've probably spotted that ``\``, `{` and `}` have a special meaning to LaTeX.
-A ``\`` starts an instruction to LaTeX: a 'command'. The curly brace characters
- `{` and `}` are used to show _mandatory arguments_: information that commands
- require.
+``\``, `{`, `}` എന്നിവയ്ക്ക് ലാറ്റെക്കിൽ പ്രത്യേക അര്‍ത്ഥമുണ്ടെന്നു് ഇതിനകം നിങ്ങൾ ശ്രദ്ധിച്ചു കാണും.
+ലാറ്റെക്കിനു് ഒരു നിര്‍ദ്ദേശം ('ആജ്ഞ') നല്കുന്നതു് ആരംഭിക്കുകയാണു് ``\`` ചെയ്യുന്നതു്. 
+`{`, `}` എന്ന വക്രാവരണചിഹ്നങ്ങൾ ഉപയോഗിക്കുന്നതു് ആജ്ഞകള്‍ക്കാവശ്യമായ _നിര്‍ബ്ബന്ധമായും
+നല്ക്കേണ്ട വാദങ്ങളെയാണു്_.
 
-There are some other characters with special meaning; we've just seen that `~`
-is a 'hard' space, for example. Almost all of these characters  are _very_
-uncommon in normal text, which is why they were chosen for special meanings.
-If you do need to show one of these special characters, we've put some
-[information in the further details page](more-03).
+വിശേഷ അര്‍ത്ഥമുള്ള മറ്റു് അക്ഷരങ്ങളുമുണ്ട്; ഉദാഹരണത്തിനു് നമ്മൾ ഈയ്യടുത്തു് കണ്ട `~` അക്ഷരം
+'മുറിയാത്ത' വിടവ് എന്നാണര്‍ത്ഥമാക്കുന്നതു്. ഇത്തരം ഏതാണ്ടെല്ലാ അക്ഷരങ്ങളും സാധാരണ പാഠത്തിൽ
+_വളരെ_ വിരളമാണു് എന്നതിനാലാണ് വിശേഷ അര്‍ത്ഥം നല്കാൻ അവയെ തിരഞ്ഞെടുത്തതു്. നിങ്ങള്‍ക്ക്
+ഇതിലേതെങ്കിലും ഒരക്ഷരം ഔട്പുട്ടിൽ കാണിക്കേണ്ടി വരികയാണെങ്കിൽ [വിശദാംശങ്ങളുടെ താളിൽ വിവരങ്ങൾ](more-03)
+ഞങ്ങൾ ചേര്‍ത്തിട്ടുണ്ടു്.
 
-## Exercise
+## അഭ്യാസം
 
-Experiment with the online editing and typesetting system; click the
-button to typeset the content, then edit it in the webpage and re-typeset it.
+എഡിറ്റിങും പാഠവിന്യാസവും ചെയ്യാവുന്ന ഒരു ഓണ്‍ലൈൻ സംവിധാനം പരീക്ഷിച്ചു നോക്കുക: പാഠം വിന്യസിക്കാനുള്ള
+ബട്ടൻ അമര്‍ത്തി നോക്കുക, വെബ് താളിൽ തന്നെ ഉള്ളടക്കം മാറ്റി വീണ്ടും പാഠം വിന്യസിക്കുക.
 
-Try adding text to your first document, typesetting and seeing the changes in
-your PDF. Make some different paragraphs and add variable spaces. Explore how
-your editor works; click on your source and find how to go to the same line  in
-your PDF. Try adding some hard spaces and see how they influence line-breaking.
+നിങ്ങളുടെ ആദ്യത്തെ പ്രമാണത്തിനകത്ത് കൂടുതൽ പാഠം ചേര്‍ത്തു് വീണ്ടും പാഠവിന്യാസം ചെയ്ത് പിഡിഎഫ് പ്രമാണത്തിൽ
+വന്നിട്ടുള്ള മാറ്റങ്ങൾ നോക്കുക. കുറച്ച് ഖണ്ഡികകൾ അധികമായി ചേര്‍ക്കുകയും കുറേയധികം വിടവ്/ശൂന്യസ്ഥലം നല്കുകയും
+ചെയ്യുക. നിങ്ങളുടെ എഡിറ്റർ എങ്ങനെ പ്രവര്‍ത്തിക്കുന്നുവെന്ന് സൂക്ഷ്മമായി പരിശോധിക്കുക: സ്രോതസ്സിലെ ഒരു വരിയിൽ
+അമര്‍ത്തി പിഡിഎഫിൽ അതേ സ്ഥലത്ത് ചെല്ലുന്നതെങ്ങനെ എന്നു കണ്ടെത്തുക. കുറേ മുറിക്കാത്ത വിടവ് നല്കിയാൽ
+അതെങ്ങനെയാണു് വരി മുറിക്കുന്നതിനെ സ്വാധീനിക്കുന്നതെന്നു് നിരീക്ഷിക്കുക.
