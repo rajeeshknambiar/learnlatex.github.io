@@ -1,35 +1,37 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "More on: Working with LaTeX"
-description: "This lesson gives more detail on what LaTeX is and the engines it runs on."
-toc-anchor-text: "More on: Working with LaTeX"
+lang: "ml"
+title: "കൂടുതലറിയാൻ: ലാറ്റെൿ ഉപയോഗിക്കുന്നതു്"
+description: "ലാറ്റെൿ എന്തെന്നും ഏതൊക്കെ എന്‍ജീനുകളിലാണ് അതു പ്രവര്‍ത്തിക്കുന്നതെന്നും ഈ പാഠത്തിൽ കൂടുതലായി അറിയാം."
+toc-anchor-text: "കൂടുതലറിയാൻ: ലാറ്റെൿ ഉപയോഗിക്കുന്നതു്"
 ---
 
-For most of our examples, we don't use a program called `latex` but instead
-one called `pdflatex`. This is one of a family of related programs, all
-of which are 'descendants' of `latex`. We have chosen `pdflatex` because
-it is perhaps the most widely-used system and directly produces PDF files.
+നമ്മുടെ മിക്ക ഉദാഹരണങ്ങളും വിന്യസിക്കാൻ `latex` എന്നു പേരുള്ള പ്രവര്‍ത്തകമല്ല നമ്മളുപയോഗിക്കാൻ
+പോകുന്നത്, പകരം `pdflatex` എന്ന ഒന്നാണു്. `latex` പ്രോഗ്രാമിന്റെ 'പിന്തുടര്‍ച്ചക്കാരായ' കുറേ
+പ്രോഗ്രാമുകളുടെ കുടുംബത്തിൽ പെട്ട ഒന്നാണിതു്. ഞങ്ങൾ `pdflatex` തിരഞ്ഞെടുക്കാൻ കാരണം അതു്
+വ്യാപകമായി ഉപയോഗിക്കപ്പെടുന്നതു കൊണ്ടും നേരിട്ട് പിഡിഎഫ് പ്രമാണങ്ങൾ നിര്‍മ്മിക്കുന്നതു കൊണ്ടുമാണു്.
 
-## Formats and engines
+## രൂപഘടനകളും എന്‍ജിനുകളും
 
-As described [earlier](more-01), LaTeX is built on a system called TeX. We
-call LaTeX a 'format': a collection of macros (instructions and commands) that
-TeX understands. When you run `pdflatex`, you are _actually_ starting a
-program called 'pdfTeX' with a pre-loaded 'LaTeX format'. We normally call
-pdfTeX an _engine_: a program that understands TeX instructions.
+അല്പം [മുമ്പ്](more-01) വിവരിച്ചതു പോലെ, റ്റെൿ എന്നറിയപ്പെടുന്ന ഒരു സംവിധാനത്തിനു മുകളിലാണു്
+ലാറ്റെൿ നിര്‍മ്മിച്ചിരിക്കുന്നതു്. ലാറ്റെക്കിനെ ഒരു 'രൂപഘടന' (format) എന്നാണു നാം വിശേഷിപ്പിക്കുക,
+എന്തെന്നാൽ റ്റെക്കിനു് മനസ്സിലാവുന്ന ഒരു കൂട്ടം മാക്രോകളുടെ (നിര്‍ദ്ദേശങ്ങളും ആജ്ഞകളും) സഞ്ചയമാണതു്
+എന്നതു കൊണ്ടുതന്നെ. നിങ്ങൾ `pdflatex` പ്രവര്‍ത്തിപ്പിക്കുമ്പോൾ _യഥാര്‍ത്ഥത്തിൽ_ 'pdfTeX' എന്ന
+ഒരു പ്രോഗ്രാം ഒരു 'ലാറ്റെൿ രൂപഘടന' മുന്‍കൂറായി നിറച്ച് പ്രവര്‍ത്തിപ്പിക്കുക്കയാണു് ചെയ്യുന്നതു്. pdfTeX
+പ്രോഗ്രാമിനെ നമ്മൾ വിശേഷിപ്പിക്കുന്നതു് ഒരു _എന്‍ജിൻ_ ആണെന്നാണു്; അതായതു് റ്റെൿ നിര്‍ദ്ദേശങ്ങൾ
+മനസ്സിലാക്കാൻ സാധിക്കുന്ന ഒരു പ്രോഗ്രാം എന്നു്.
 
-There are three engines in common use today:
+ഇക്കാലത്തു് പ്രചാരത്തില്ലുള്ള മൂന്നു് എന്‍ജിനുകളുണ്ട്:
 
-- pdfTeX
-- XeTeX
-- LuaTeX
+- പിഡിഎഫ്‌റ്റെൿ (pdfTeX)
+- സീറ്റെൿ (XeTeX)
+- ലുവാറ്റെൿ (LuaTeX)
 
-We will cover [XeTeX and LuaTeX later](lesson-14): the main thing we need to
-know now is that they are capable of loading operating system fonts, whereas
-pdfTeX can't do that.
+[സീറ്റെക്കും ലുവാറ്റെക്കും](lesson-14) നമ്മൾ പിന്നീട് വിശദമായി പരിചയപ്പെടും: ഇപ്പോൾ അറിഞ്ഞിരിക്കേണ്ട
+പ്രധാന കാര്യമെന്തെന്നാൽ ഇവ രണ്ടിനും ഓപ്പറേറ്റിംഗ് പ്രവര്‍ത്തകത്തിൽ ലഭ്യമായ അക്ഷരസഞ്ചയങ്ങൾ ഉപയോഗിക്കാൻ
+സാധിക്കും, പിഡിഎഫ്‌റ്റെക്കിനു് സാധിക്കില്ല എന്നതാണു്.
 
-If you are in Japan, or writing lots of Japanese, you might also come across
-pTeX and upTeX. These are specialized engines for vertical typesetting. LuaTeX
-can also do a lot of this, but at the moment upTeX, in particular, is still
-the most popular system for Japanese.
+നിങ്ങൾ ജപ്പാനിലാണെങ്കിലോ ധാരാളം ജാപ്പനീസ് എഴുതുന്നയാളാണെങ്കിലോ പിറ്റെൿ (pTeX), അപ്‌റ്റെൿ (upTeX)
+എന്നിവയുമായി പരിചയമുണ്ടായേക്കാം. ഇവ (ജാപ്പനീസ് എഴുതുന്ന ഒരു രീതിയിൽ) കുത്തനെയുള്ള പാഠവിന്യാസം
+നടത്താൻ സാധിക്കുന്ന വിശേഷപ്പെട്ട എന്‍ജിനുകളാണു്. ലുവാറ്റെക്കിനും അതൊരുപാടു് ചെയ്യാൻ സാധിക്കും, പക്ഷേ
+അപ്‌റ്റെൿ ആണു് നിലവിൽ ജാപ്പനീസിനുപയോഗിക്കുന്നതിൽ ഏറ്റവും പ്രചാരമുള്ള എന്‍ജിന്‍.
