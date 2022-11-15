@@ -1,39 +1,41 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "More on: Basic LaTeX document structure"
-description: "This lesson gives more detail on how to run LaTeX, and the special characters it uses and how to insert them in the output PDF."
-toc-anchor-text: "More on: Basic LaTeX document structure"
+lang: "ml"
+title: "കൂടുതലറിയാൻ: ലാറ്റെൿ പ്രമാണത്തിന്റെ അടിസ്ഥാന ഘടന"
+description: "ലാറ്റെൿ പ്രവര്‍ത്തിപ്പിക്കുന്നതെങ്ങനെ, അതുപയോഗിക്കുന്ന സവിശേഷ അക്ഷരങ്ങൾ ഏതൊക്കെ, പിഡിഎഫ് പ്രമാണത്തിൽ അവ എങ്ങനെ ഉള്‍പ്പെടുത്താം എന്നിവയെക്കുറിച്ചു് കൂടുതൽ വിവരങ്ങൾ ഈ പാഠത്തിൽ മനസ്സിലാക്കാം."
+toc-anchor-text: "കൂടുതലറിയാൻ: ലാറ്റെൿ പ്രമാണത്തിന്റെ അടിസ്ഥാന ഘടന"
 ---
 
-## Running LaTeX
+## ലാറ്റെൿ പ്രവര്‍ത്തനം
 
-As [detailed earlier](lesson-02), LaTeX documents are simply plain text. To see
-this, try opening your first document in a simple text editor, for example
-on Windows using Notepad. You should see the same text as in a dedicated LaTeX
-editor, but without any highlight of keywords.
+[മുമ്പു് വിശദീകരിച്ചതു പോലെ](lesson-02), ലാറ്റെൿ പ്രമാണങ്ങൾ വെറും ടെക്സ്റ്റ് ഫയലുകളാണ്.
+ഇതു പരിശോധിക്കാൻ നിങ്ങളുടെ ആദ്യ ലാറ്റെൿ പ്രമാണം ഒരു ലളിതമായ ടെക്സ്റ്റ് എഡിറ്റർ (ഉദാ:
+വിന്‍ഡോസിലെ നോട്ട്പാഡ്) ഉപയോഗിച്ച് തുറന്നു നോക്കുക. സൂചകപദങ്ങളുടെ നിറങ്ങളൊഴികെ ഒരു
+നിര്‍ദ്ദിഷ്ട ലാറ്റെൿ എഡിറ്ററിൽ കാണിക്കുന്ന അതേ ഉള്ളടക്കം ഇതിലും നിങ്ങള്‍ക്കു കാണാം.
 
-You can also convert to PDF without your editor; this means using the Command
-Prompt/Terminal, so don't worry if you are not familiar with this. If you
-*are*, you can navigate to the directory containing your `.tex` source file and
-run
+ലാറ്റെൿ എഡിറ്ററില്ലാതെയും നിങ്ങള്‍ക്ക് പിഡിഎഫ് ആക്കി മാറ്റാം, അതിനായി ടെര്‍മിനൽ/കമാന്‍ഡ് ലൈൻ
+ഉപയോഗിക്കണം. അതുപയോഗിച്ചു പരിചയമില്ലെങ്കിൽ സാരമില്ല, വിട്ടേക്കുക. പരിചയമുണ്ടെങ്കിൽ നിങ്ങളുടെ
+`.tex` പ്രമാണസ്രോതസ്സ് ഉള്ള ഡയരക്ടറിയിൽ നിന്ന്
 
 `pdflatex first`
 
-or
+എന്നോ
 
 `pdflatex first.tex`
 
-to typeset your PDF. Notice that the `.tex` extension is optional: LaTeX will
-assume files end with `.tex` unless you specify otherwise.
+എന്നോ പ്രവര്‍ത്തിപ്പിച്ച് പിഡിഎഫ് പ്രമാണം നിര്‍മ്മിക്കാം (നിങ്ങളുടെ സ്രോതസ്സിന്റെ പേരു് `first` എന്നല്ലെങ്കിൽ
+അതിനനുസരിച്ച് മാറ്റുക. വിടവോ മറ്റു വിശേഷ അക്ഷരങ്ങളോ സ്രോതസ്സിന്റെ പേരിൽ ഉപയോഗിക്കാതിരിക്കാൻ ശ്രദ്ധിക്കുക).
+`.tex` എന്ന വാലറ്റം നല്കണമെന്നു് നിര്‍ബന്ധമില്ല എന്നു ശ്രദ്ധിച്ചാലും; മറിച്ച് സ്പഷ്ടമാക്കിയില്ലെങ്കിൽ സ്രോതസ്സുകൾ
+`.tex` എന്നതിലവസാനിക്കും എന്നു് ലാറ്റെൿ സ്വയം അനുമാനിക്കും.
 
-## Special characters
+## സവിശേഷ അക്ഷരങ്ങൾ
 
-If you need to type in a special character, most of the time you can simply
-use a backslash in front of it, so for example `\{` is used to print a literal
-`{`. There are a few cases where you need to use a longer command instead:
+ലാറ്റെക്കിൽ സവിശേഷ അര്‍ത്ഥമുള്ള ഏതെങ്കിലും അക്ഷരം നിങ്ങള്‍ക്ക് ചിത്രീകരിക്കണമെങ്കിൽ മിക്കതിനും മുന്നിൽ ഒരു
+'ബാക്ക്സ്ലാഷ്' ചിഹ്നം ചേര്‍ത്താൽ മതിയാകും, ഉദാഹരണത്തിനു് `{` എന്നു അച്ചടിയിൽ കാണാൻ `\{`
+എന്നുപയോഗിച്ചാൽ മതി. എന്നാൽ ചുരുക്കം ചില അക്ഷരങ്ങള്‍ക്കു് അല്പം നീളമുള്ള ആജ്ഞകൾ തന്നെ ഉപയോഗിക്കണം:
 
-| Symbol | Short Command <br><small>(math and text)</small> | Long Command <br><small>(for text only)</small> |
+
+| ചിഹ്നം | ചെറിയ ആജ്ഞ <br><small>(ഗണിതത്തിലും പാഠത്തിലും)</small> | നീണ്ട ആജ്ഞ <br><small>(പാഠത്തിൽ മാത്രം)</small> |
 | --- | --- | --- |
 | `{`    | `\{`          | `\textbraceleft`  |
 | `}`    | `\}`          | `\textbraceright` |
@@ -46,7 +48,6 @@ use a backslash in front of it, so for example `\{` is used to print a literal
 | `^`    |               | `\textasciicircum`|
 | `~`    |               | `\textasciitilde` |
 
-For the last three symbols there are no short commands available,
-because `\\` is used to indicate a linebreak and `\~` and `\^` are used
-to produce tilde and circumflex accents when using only ASCII
-characters as input.
+അവസാനത്തെ മൂന്നു് ചിഹ്നങ്ങള്‍ക്കും ചെറു ആജ്ഞകളില്ല; കാരണം വരിമുറിക്കുന്നതിനാണു് `\\` ഉപയോഗിക്കുന്നത്,
+ഉച്ചാരണചിഹ്നങ്ങൾ അക്ഷരങ്ങള്‍ക്കു മേലെ ഇടുവാനാണു് `\~`, `\^` എന്നിവ ഉപയോഗിക്കുന്നത്.
+
