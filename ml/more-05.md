@@ -1,29 +1,29 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "More on: Using document classes to influence design"
-description: "This lesson gives information on more specialized document classes for LaTeX."
-toc-anchor-text: "More on: Using document classes to influence design"
+lang: "ml"
+title: "കൂടുതലറിയാൻ: പ്രമാണവര്‍ഗങ്ങളുപയോഗിച്ച് രൂപകല്പനയെ സ്വാധീനിക്കുന്നതു്"
+description: "ലാറ്റെക്കിൽ പ്രത്യേകാവശ്യങ്ങള്‍ക്കു വേണ്ടിയുള്ള സവിശേഷമായ പ്രമാണവര്‍ഗങ്ങളെപ്പറ്റി
+കൂടുതൽ വിവരങ്ങൾ ഈ പാഠം നല്കും."
+toc-anchor-text: "കൂടുതലറിയാൻ: പ്രമാണവര്‍ഗങ്ങളുപയോഗിച്ച് രൂപകല്പനയെ സ്വാധീനിക്കുന്നതു്"
 ---
 
-## Journal-specific classes
+## ജേണൽ പ്രബന്ധങ്ങള്‍ക്കായുള്ള വര്‍ഗങ്ങൾ
 
-Many academic journals provide LaTeX classes for submissions. These
-typically set up the layout to be similar to the final journal,
-although that does depend on font usage, etc. If there is a class
-available, it is normally provided directly by the editorial office,
-who should give appropriate detail on what features it has. Many of
-these are also available on [CTAN](https://ctan.org) and in standard TeX
-distributions.
+പല അക്കാദമിക ജേണലുകളും പ്രബന്ധം സമര്‍പ്പിക്കാനുള്ള ലാറ്റെൿ പ്രമാണവര്‍ഗങ്ങൾ ലഭ്യമാക്കാറുണ്ടു്.
+അന്തിമമായി ജേണലിൽ പ്രസിദ്ധീകരിക്കപ്പെടുന്ന രൂപകല്പനയോട് അടുത്തുനില്ക്കുന്ന പ്രമാണങ്ങളുണ്ടാക്കാൻ
+ഇവ ഉപകരിക്കും (ഉപയോഗിക്കുന്ന അക്ഷരസഞ്ചയങ്ങളു മറ്റും മാറാം, പക്ഷേ). പൊതുവേ പ്രസാധക
+കാര്യാലയത്തിൽ നിന്നു് നേരിട്ടായിരിക്കും അവ ലഭ്യമാക്കുക; അതിനകത്ത് എന്തൊക്കെ സൗകര്യങ്ങൾ
+ലഭ്യമാണെന്നുള്ള പ്രസക്തവിവരങ്ങൾ അവിടെ നിന്നു് കിട്ടും. അവയിൽ പലതും [സീടാൻ](https://ctan.org)
+സംഭരണിയിലും ലാറ്റെൿ വിതരണങ്ങളിലും ലഭ്യവുമാണു്.
 
-## Classes for presentations
 
-One area that needs a lot of special treatment is creating presentations. The `slides`
-class was written for making 'classical' printed slides, and it does not
-have any special support for on-screen presentations. Two classes
-have been developed to do just that, and that are widely used:
-`beamer` and `powerdot`. As `beamer` is probably the more common one, we will
-give you an example of how it works:
+## അവതരണങ്ങള്‍ക്കായുള്ള വര്‍ഗങ്ങൾ
+
+പ്രത്യേക പരിചരണം വളരെയധികം ആവശ്യമുള്ള ഒരു മേഘലയാണു് അവതരണങ്ങൾ (പ്രസന്റേഷൻ).
+`slides` എന്ന വര്‍ഗം എഴുതപ്പെട്ടത് 'സാമ്പ്രദായിക' അച്ചടി സ്ലൈഡുകളുണ്ടാക്കാനാണു്, സ്ക്രീനിൽ
+അവതരിപ്പിക്കുന്നതിനുള്ള പ്രത്യേകതകൾ അതു് പിന്തുണയ്ക്കുന്നില്ല. അതിനു വേണ്ടി പ്രത്യേകമായാണ് വിപുലമായി
+ഉപയോഗിക്കപ്പെടുന്ന `beamer`, `powerdot` എന്ന രണ്ടു വര്‍ഗങ്ങൾ വികസിപ്പിച്ചത്. `beamer`
+ആണു് കൂടുതൽ പ്രചാരത്തിലുള്ളതു്, അതെങ്ങനെ ഉപയോഗിക്കാമെന്നുള്ളതിന്റെ ഒരുദാഹരണം നോക്കാം:
 
 ```latex
 \documentclass{beamer}
@@ -47,20 +47,19 @@ give you an example of how it works:
 \end{document}
 ```
 
-This shows two important ideas. First, `beamer` divides a document into frames,
-each of which can make more than one slide (page). Second, `beamer` adds to the
-normal LaTeX syntax to allow parts of the source to appear 'a bit at a time'.
-This is powerful but more complicated than we can cover here: take a look  at
-[this blog
-entry](https://www.texdev.net/2014/01/17/the-beamer-slide-overlay-concept/) for
-more.
+രണ്ടു് പ്രധാന ആശയങ്ങൾ ഇതിലുണ്ട്. ഒന്നു് — പ്രമാണത്തിനെ 'ചട്ടക്കൂടുകൾ' (ഫ്രെയിം) ആയാണ് `beamer`
+വിഭജിക്കുന്നത്, അവ ഓരോന്നും ഒന്നോ അതില്‍ക്കൂടുതലോ സ്ലൈഡുകൾ (താളുകള്‍) ഉണ്ടാക്കും. രണ്ടു് — താളുകൾ
+'അല്പാല്പമായി' പ്രത്യക്ഷപ്പെടുത്താനുപയോഗിക്കാവുന്ന പുതിയ ചില ലാറ്റെൿ ആജ്ഞകൾ `beamer` നല്കുന്നുണ്ട്.
+അതൊരു മികച്ച സൗകര്യമാണു്, പക്ഷേ നമുക്കിവിടെ വിസ്തരിക്കാവുന്നതിലധികം സങ്കീര്‍ണ്ണമാണു്: കൂടുതൽ മനസ്സില്ലാക്കാൻ
+ഈ [ബ്ലോഗ് താൾ](https://www.texdev.net/2014/01/17/the-beamer-slide-overlay-concept/)
+സന്ദര്‍ശിക്കുക.
 
-## A class for images
+## ചിത്രങ്ങള്‍ക്കായുള്ള വര്‍ഗങ്ങൾ
 
-There are occasions when you need to make an image (which might be text-heavy)
-using LaTeX. Often, you do not want anything other than the content itself on
-the 'page'. That is easiest to do using the [`standalone`](https://ctan.org/pkg/standalone)
-class. It automatically sets the size of the page to surround the printed content.
+നിങ്ങള്‍ക്ക് (ധാരാളം പാഠഭാഗമുള്ള) ഒരു ചിത്രം ലാറ്റെൿ ഉപയോഗിച്ച് നിര്‍മ്മിക്കേണ്ട ചില അവസങ്ങളുണ്ടായേക്കാം.
+മിക്കവാറും ഒരു താളിൽ ഈ ഉള്ളടക്കം മുഴുവനായും നിറഞ്ഞു നില്ക്കുകയായിരിക്കും നിങ്ങള്‍ക്കു വേണ്ടതു്. അതിനു്
+ഏറ്റവുമെളുപ്പം [`standalone`](https://ctan.org/pkg/standalone) എന്ന വര്‍ഗം ഉപയോഗിക്കുന്നതാണു്.
+താളിന്റെ വലുപ്പം ഉള്ളടക്കത്തിനനുസരിച്ച് അതു് സ്വയം ക്രമീകരിച്ചുതരും.
 
 ```latex
 \documentclass{standalone}
