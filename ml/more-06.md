@@ -55,12 +55,13 @@ Birnen sind gelb.
 `french` എന്ന ഐച്ഛികത്തോടു കൂടി `babel` സജ്ജമാക്കിയിൽ ഈ മാറ്റം സ്വയമേവ അച്ചടിയിൽ
 വന്നു കൊള്ളും.
 
-## Global options
+## എല്ലാത്തിനും ബാധകമാവുന്ന ഐച്ഛികങ്ങൾ
 
-Sometimes, you want an option to be available to all of the packages you've
-loaded. That is done by giving it on the `\documentclass` line: every package
-can 'see' this list. So to pass the language of a document to all packages,
-we might use:
+ചില അവസരങ്ങളിൽ നിങ്ങളുടെ പ്രമാണത്തിൽ ഉപയോഗിച്ച എല്ലാ പൊതിക്കെട്ടുകള്‍ക്കും ഒരു പ്രത്യേക
+ഐച്ഛികം ലഭ്യമാക്കണമെന്നിരിക്കട്ടെ. ഇതു സാധിക്കുന്നതിനു് `\documentclass` സ്പഷ്ടമാക്കിയിട്ടുള്ള
+വരിയിലാണ് ആ ഐച്ഛികം നല്കേണ്ടതു്. അപ്പോൾ എല്ലാ പൊതിക്കെട്ടുകള്‍ക്കും ആ ഐച്ഛികങ്ങളുടെ
+പട്ടിക 'കാണാൻ' കഴിയും. ഒരു പ്രമാണത്തിന്റെ ഭാഷ എല്ലാ പൊതിക്കെട്ടുകള്‍ക്കും ലഭ്യമാക്കാൻ
+നമുക്ക് ഇങ്ങനെ ചെയ്യാം:
 
 ```latex
 \documentclass[ngerman]{article} % Notice that the option name is 'ngerman'
@@ -83,12 +84,13 @@ Birnen sind gelb.
 \end{document}
 ```
 
-## More definitions
+## കൂടുതൽ നിര്‍വ്വചനങ്ങൾ
 
-`\newcommand` allows commands with up to nine arguments, the first of which may be optional.
+`\newcommand` ഒൻപതോളം വാദങ്ങൾ സ്വീകരിക്കുന്ന ആജ്ഞകൾ നിര്‍മ്മിക്കാനുപയോഗിക്കാം, അതിൽ
+ആദ്യത്തേത് ഐച്ഛികമാവാം.
 
-If we take the example from the main lesson, we could make the color
-optional, defaulting to blue.
+പ്രധാന പാഠഭാഗത്തിലെ ഉദാഹരണമെടുത്താൽ, അതിലെ നിറം നമുക്ക് ഐച്ഛികമാക്കി നോക്കാം; ഒന്നും
+സ്പഷ്ടമാക്കിയില്ലെങ്കിൽ നീലനിറം വരുന്ന മാതിരി.
 
 ```latex
 \documentclass{article}
@@ -105,16 +107,16 @@ Something about \kw{apples} and \kw[red]{oranges}.
 \end{document}
 ```
 
-Optional arguments are delimited with `[]` and if omitted, the default
-value specified in the definition is used.
+ഐച്ഛിക വാദങ്ങൾക്ക് അതിരിടുവാൻ ഉപയോഗിക്കുന്നത് `[]` ചിഹ്നങ്ങളാണു്. ഇവ ഒഴിവാക്കുകയാണെങ്കിൽ
+ആജ്ഞയുടെ നിര്‍വ്വചനത്തിൽ സ്പഷ്ടമാക്കിയ മൂല്യം എന്താണോ അതുപയോഗിക്കും.
 
 ## `\NewDocumentCommand`
 
-From the October 2020 LaTeX release, an extended definition system is available.
-In older LaTeX releases this was available via the `xparse` package which we use
-here for compatibility.
+ലാറ്റെക്കിന്റെ 2020 ഒൿറ്റോബർ പതിപ്പു് മുതൽ കുറേക്കൂടി വിപുലീകരിച്ച ഒരു നിര്‍വ്വചന സംവിധാനം ലഭ്യമാണു്.
+ലാറ്റെക്കിന്റെ പഴയ പതിപ്പുകളിൽ ഈ സൗകര്യം `xparse` പൊതിക്കെട്ട് വഴിയാണു് പ്രാപ്യമായിരുന്നതു്;
+എല്ലാ പതിപ്പുകളിലും പ്രവര്‍ത്തിക്കുന്നതിനായി നമ്മുടെ ഉദാഹരണത്തിൽ ഇതുപയോഗിച്ചിട്ടുണ്ട്.
 
-We can repeat the above example but using `\NewDocumentCommand`
+മുകളിലെ ഉദാഹരണം `\NewDocumentCommand` ഉപയോഗിച്ച് ആവര്‍ത്തിച്ചു നോക്കാം.
 
 ```latex
 \documentclass{article}
@@ -132,16 +134,15 @@ Something about \kw{apples} and \kw[red]{oranges}.
 \end{document}
 ```
 
-Just as with `\newcommand`, `\NewDocumentCommand` takes the command
-being defined (`\kw` here) and the definition body, using `#1` to `#9`
-for the arguments, however the difference is in how the arguments are
-specified.
+`\newcommand`-ലേതു പോലെ തന്നെ `\NewDocumentCommand` സ്വീകരിക്കുന്നതും നിര്‍വ്വചിക്കപ്പെടുന്ന
+ആജ്ഞയുടെ പേരു് (ഇവിടെ `\kw`), നിര്‍വ്വചന ശരീരം (ഉള്ളടക്കം), `#1` മുതൽ `#9` വരെയുള്ള
+വാദങ്ങൾ എന്നിവ തന്നെയാണു്; എന്നാൽ വ്യത്യാസമുള്ളത് വാദങ്ങൾ എങ്ങനെ സ്പഷ്ടമാക്കിയിരിക്കുന്നു
+എന്നിടത്താണു്.
 
-Unlike `\newcommand` where just the number of arguments is given,
-optionally supplying a default for the first, with
-`\NewDocumentCommand` each argument is specified by a letter so a two
-argument command would be specified by `{mm}` rather than `[2]`. This
-is slightly more verbose but allows many more forms of commands to be
-defined. Here we just give this simple example where the first
-argument is optional, defaulting to blue (`O{blue}`) and the second
-argument is mandatory (`m`).
+മൊത്തം വാദങ്ങളുടെ എണ്ണവും ആദ്യത്തേത് ഐച്ഛികമാണെങ്കിൽ അതിനു സ്വതവേ ലഭിക്കുന്ന മൂല്യവും
+മാത്രമാണു് `\newcommand` ഉപയോഗിച്ചുള്ള നിര്‍വ്വചനത്തിൽ പറയുന്നതെങ്കിൽ, `\NewDocumentCommand`
+സ്പഷ്ടമാക്കുന്നതു് ഓരോ വാദവും ഒരു അക്ഷരം കൊണ്ടു് സൂചിപ്പിക്കുകയാണു്. അതായതു്, രണ്ടു വാദമൂല്യങ്ങൾ
+സ്വീകരിക്കുന്ന ഒരു ആജ്ഞ സ്പഷ്ടമാക്കുന്നതു് `[2]` എന്നതിനു പകരം `{mm}` എന്നുപയോഗിച്ചാണു്.
+ഇതല്പം വാചാലമാണെങ്കിലും പല തരത്തിലുള്ള ആജ്ഞകളെ നിര്‍വ്വചിക്കാൻ നമ്മെ പ്രാപ്തരാക്കുന്നു.
+ഇവിടെ നമ്മൾ ആദ്യത്തെ വാദമൂല്യം ഐച്ഛികമായതും അതു നല്കിയില്ലെങ്കിൽ 'നീല' നിറം ഉപയോഗിക്കുന്നതും
+(`O{blue}`) രണ്ടാമത്തെ വാദമൂല്യം നിര്‍ബന്ധവുമായ (`m`) ഒരു ലളിതമായ ഉദാഹരണമാണു് നല്കിയിരിക്കുന്നതു്.
