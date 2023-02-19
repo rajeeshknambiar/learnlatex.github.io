@@ -1,39 +1,38 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "More on: Including graphics and positioning"
-description: "This lesson gives details on how better name and store graphics files to be used with LaTeX, and how you can make your own graphics from within LaTeX."
-toc-anchor-text: "More on: Including graphics and positioning"
+lang: "ml"
+title: "കൂടുതലറിയാൻ: ചിത്രങ്ങൾ ഉള്‍ക്കൊള്ളിക്കുന്നതും അവയുടെ സ്ഥാനവും"
+description: "ലാറ്റെക്കിൽ ഉപയോഗിക്കാനുള്ള ചിത്രങ്ങളുടെ ഫയലുകൾ അനുയോജ്യമായ പേരിൽ സൂക്ഷിച്ചു വയ്ക്കുന്നതിനെപ്പറ്റിയും ലാറ്റെൿ ഉപയോഗിച്ചു തന്നെ ചിത്രങ്ങൾ നിര്‍മ്മിക്കുന്നതിനെപ്പറ്റിയും ഈ പാഠത്തിൽ കൂടുതലായി മനസ്സിലാക്കാം."
+toc-anchor-text: "കൂടുതലറിയാൻ: ചിത്രങ്ങൾ ഉള്‍ക്കൊള്ളിക്കുന്നതും അവയുടെ സ്ഥാനവും"
 ---
 
-## Naming graphics files
+## ചിത്രങ്ങളുടെ ഫയലുകള്‍ക്കു് പേരിടുന്നതു്
 
-LaTeX works on many computer platforms so
-file names deserve some thought.
-Safest is to name your graphics simply, in particular without spaces.
-For example, if you want to organize your files by keeping all
-graphics in a subdirectory, then something like
-`\includegraphics[width=30pt]{pix/mom.png}`
-is portable and future-proof.
+ലാറ്റെൿ പലവിധം കംപ്യൂട്ടർ സംവിധാനങ്ങളിൽ പ്രവര്‍ത്തിക്കുന്ന സോഫ്റ്റ്‌വെയറാണ്, അതിനാൽ
+പ്രമാണങ്ങള്‍ക്കു്/ഫയലുകള്‍ക്കു് ഉപയോഗിക്കുന്ന പേരുകളിൽ അല്പം ശ്രദ്ധിക്കുന്നതു് നന്നായിരിക്കും.
+എളുപ്പം ചെയ്യാവുന്ന സുരക്ഷിതമായ കാര്യമാണ് ഫയലുകളുടെ പേരിൽ വിടവ്/സ്പേസ് ഉപയോഗിക്കാതിരിക്കുക
+എന്നതു്. ഉദാഹരണത്തിനു്, നിങ്ങളുടെ ചിത്രങ്ങൾ എല്ലാം (`pix`) എന്ന ഒരു സബ്ഡയരക്ടറിക്കകത്തു്
+അടുക്കി വയ്ക്കുന്നെങ്കിൽ `\includegraphics[width=30pt]{pix/mom.png}` എന്ന തരത്തിൽ
+പേരിടുന്നത് നല്ല രീതിയാണ്; അതാവുമ്പോൾ എല്ലായിടത്തും പ്രശ്നമില്ലാതെ പ്രവര്‍ത്തിക്കും.
 
-Spaces in file names are traditionally somewhat problematic, but are now
-generally supported. However, if you have spaces in the name, and you have
-issues, you may wish to try removing the spaces as the first step.
+പേരുകളിൽ വിടവ്/സ്പേസ് ഉള്ള പ്രമാണങ്ങൾ പ്രശ്നമുണ്ടാക്കാറുണ്ട്, പക്ഷേ ലാറ്റെൿ ഇപ്പോൾ അതു് പൊതുവേ
+പിന്തുണക്കുന്നുണ്ട്. എങ്കിലും, പ്രമാണത്തിന്റെ പേരിൽ സ്പേസ് ഉള്ളതു കാരണം എന്തെങ്കിലും പ്രശ്നം നേരിടുന്നെങ്കിൽ
+അതു് മാറ്റി നോക്കുക.
 
-Accented character support is somewhat variable; there are issues with some
-systems, particularly on Windows. If you find issues with accented characters
-in file names, try using only ASCII characters for a test.
+ചിഹ്നങ്ങളോ അവയുള്ള അക്ഷരങ്ങളോ പ്രമാണത്തിന്റെ പേരിലുണ്ടെങ്കിൽ അതിനുള്ള പിന്തുണ അത്ര ഉറപ്പുള്ളതല്ല,
+പ്രത്യേകിച്ചും വിന്‍ഡോസ് പ്രവര്‍ത്തകത്തിൽ. ചിഹ്നങ്ങളുള്ള അക്ഷരങ്ങള്‍ക്കു പകരം ആസ്കി അക്ഷരങ്ങൾ ഉപയോഗിച്ചു നോക്കുക. 
 
-## Storing graphics in a subdirectory
+## ചിത്രങ്ങൾ ഒരു സബ്ഡയരക്ടറിയിൽ സൂക്ഷിക്കുന്നതു്
 
-A common way to lay out source files is to put all graphics into a subdirectory.
-You can then include the relative path, as is shown above; notice that the
-`/` character is used to separate parts of the path _even on Windows_.
+എല്ലാ ചിത്രങ്ങളും ഒരു സബ്ഡയരക്ടറിക്കകത്ത് സൂക്ഷിക്കുന്നതു് പ്രമാണ സ്രോതസ്സുകൾ ചിട്ടപ്പെടുത്തി വയ്ക്കുന്നതിനു്
+സാധാരണ അവലംബിക്കുന്ന ഒരു രീതിയാണു്. എന്നിട്ട് റ്റെൿ ഫയലിനകത്ത് ഈ സബ്ഡയരക്ടറിയുടെ ആപേക്ഷിക
+സ്ഥാനം ഉള്‍പ്പെടുത്തിയാൽ മതി, മേൽ പ്രസ്താവിച്ച ഉദാഹരണത്തിലേതു പോലെ. ശ്രദ്ധിക്കുക, `/` അക്ഷരം
+ഡയരക്ടറികളുടെ വിവിധ ഭാഗങ്ങളെ വേർതിരിക്കുവാൻ ഉപയോഗിക്കുന്നതാണ്, _വിന്‍ഡോസ് പ്രവര്‍ത്തകത്തിൽ ഉള്‍പ്പടെ_.
 
-If you have a lot of graphics, you might want to set up the subdirectory
-in advance. That can be done using `\graphicspath`, which needs a braced entry
-for each subdirectory. For example, to include both `figs` and `pics`
-subdirectories, we would have:
+നിങ്ങളുടെ പ്രമാണത്തിൽ ധാരാളം ചിത്രങ്ങളുപയോഗിക്കുന്നുണ്ടെങ്കിൽ സബ്ഡയരക്ടറികൾ ഒറ്റ പ്രാവശ്യം ‍മുന്‍കൂട്ടി സ്പഷ്ടമാക്കുന്നത്
+ചിത്രങ്ങള്‍ ഉള്‍പ്പെടുത്തുന്നിടത്ത് ആവര്‍ത്തിക്കാതിരിക്കാൻ സഹായിക്കും. `\graphicspath` ആജ്ഞ ഉപയോഗിച്ച് ഇതു്
+സാധിക്കാം. ഈ ആജ്ഞയിൽ ഓരോ‌ സബ്ഡയരക്ടറിയും വക്രാവരണചിഹ്നത്തിനകത്ത് നല്കണം. ഉദാഹരണത്തിനു്
+`figs`,`pics` എന്ന രണ്ടു സബ്ഡയരക്ടറികൾ ഉള്‍പ്പെടുത്തുന്നതു് ഇങ്ങനെയാണു്:
 
 <!-- {% raw %} -->
 ```latex
@@ -41,7 +40,7 @@ subdirectories, we would have:
 ```
 <!-- {% endraw %} -->
 
-Notice in particular the trailing `/` in these.
+ഓരോന്നിനും അവസാനം ചേര്‍ത്തിട്ടുള്ള `/` പ്രത്യേകം ശ്രദ്ധിക്കുക.
 
 ## Producing graphics
 
