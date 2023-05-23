@@ -1,28 +1,26 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "More on: Tables"
-description: "This lesson shows more ways to customize a table by styling a column, changing spacing and rules, and further packages that provide different extensions to tables."
-toc-anchor-text: "More on: Tables"
+lang: "ml"
+title: "പട്ടികകളെപ്പറ്റി കൂടുതലറിയാൻ"
+description: "നിരയുടെ ശൈലി മാറ്റിയും വിടവുകളും വരകളും മാറ്റിയും പട്ടികകൾ പലവിധത്തിൽ ഭേദഗതി വരുത്താനും മറ്റു പൊതിക്കെട്ടുകളുപയോഗിച്ച് പട്ടികകളുടെ നിര്‍മ്മിതി വിപുലീകരിക്കാനും ഈ പാഠത്തിൽ മനസ്സിലാക്കാം."
+toc-anchor-text: "പട്ടികകളെപ്പറ്റി കൂടുതലറിയാൻ"
 ---
 
 
-## The other preamble contents
+## ആമുഖത്തിൽ നല്കുന്ന മറ്റു സൂചകങ്ങൾ
 
-As the lesson didn't cover all the available preamble-tokens, a few others are
-explained with examples here.  You might want to revisit the tables at the start
-of the lesson to get an overview of the things available. The short descriptions
-provided there should suffice to understand what the different column types `m`,
-`b`, `w`, and `W` do after you understood `l`, `c`, `r`, and `p`. If not you
-might want to experiment a bit with them. What's still missing are the handy
-other preamble-tokens `>`, `<`, `@`, `!`, and `|`. 
+പട്ടികയുടെ നിരകളിൽ നല്കാവുന്ന എല്ലാ പീഠികാസൂചകങ്ങളും (preamble token) പ്രധാന പാഠത്തിൽ പറഞ്ഞിട്ടില്ല, അവയിൽ
+ചിലത് ഉദാഹരണസഹിതം ഇവിടെ നല്കിയിട്ടുണ്ട്. പട്ടികകളിൽ ഇതുവരെ ലഭ്യമായിട്ടുള്ള സൂചകങ്ങൾ ഒന്നുകൂടെ പരിചയപ്പെടുന്നത്
+നന്നായിരിക്കും. അവിടെ പറഞ്ഞിരുന്ന ലഘുവിവരണങ്ങൾ `l`, `c`, `r`, `p`എന്ന പംക്തീസൂചകങ്ങൾ (column types)
+മനസ്സിലാക്കിയതിനുശേഷം `m`,`b`, `w`, `W` എന്നിവ മനസ്സിലാക്കാൻ സഹായിക്കും. ഇല്ലായെങ്കിൽ അവ പരീക്ഷിച്ചു നോക്കാം.
+ശേഷിക്കുന്ന സൂചകങ്ങൾ ഇവയാണ്: `>`, `<`, `@`, `!`, `|`.
 
-### Styling a column
 
-Since `>` and `<` can be used to put things before and after the cell contents
-of a column, you can use these to add commands which affect the look
-of a column. For instance, if you want to italicize the first column and put a
-colon after it, you can do the following:
+### ഒരു നിരയുടെ ശൈലീകരണം
+
+`>`, `<` എന്നിവ ഒരു നിരയിലെ കോശങ്ങളുടെ ഉള്ളടക്കത്തിനു മുന്‍പും പിന്‍പും എന്തെങ്കിലും നല്കാനുപയോഗിക്കാമെന്നതിനാൽ
+അവയുപയോഗിച്ച് നിരയുടെ കെട്ടും മട്ടും മാറ്റാനുള്ള ആജ്ഞകൾ നല്കാം. ഉദാഹരണത്തിനു്, ആദ്യത്തെ നിരയിലെ അക്ഷരങ്ങളെ
+ചരിഞ്ഞ ശൈലിയിലാക്കാനും അതിനുശേഷം അര്‍ദ്ധവിരാമചിഹ്നം `:` നല്കാനും ഇങ്ങനെ ചെയ്യാം:
 
 <!-- {% raw %} -->
 ```latex
@@ -45,13 +43,13 @@ colon after it, you can do the following:
 ```
 <!-- {% endraw %} -->
 
-`\itshape` makes all the following text italic, but its effect is 'contained'
-by the table cell. We will look at manual font formatting [in a few lessons
-time](lesson-11).
+`\itshape` തുടര്‍ന്നു വരുന്ന എല്ലാ പാഠത്തെയും ചരിഞ്ഞ ശൈയിലിലാക്കുന്നു, പക്ഷേ അതിന്റെ പ്രഭാവം ഒരു
+കോശത്തിനകത്തു മാത്രം 'ഒതുങ്ങുന്നു'. ആവശ്യാനുസരണം അക്ഷരശൈലി മാറ്റുന്നത് [അല്പം കഴിഞ്ഞുള്ള പാഠത്തിൽ
+കാണാം](lesson-11).
 
-You may want the first cell not to be affected
-because it is the table head. Here `\multicolumn` may be used. Remember that
-it can be used to change a single cell's alignment as shown below.
+ആദ്യത്തെ നിര പട്ടികയുടെ തലക്കെട്ട് ആയതിനാൽ അതിനെ ഈ ശൈലീകരണത്തിൽ നിന്ന് നമുക്ക് ഒഴിവാക്കാം.
+അതിന് `\multicolumn` ഉപയോഗിക്കാം. ഒരൊറ്റ കോശത്തിന്റെ അണിനിരത്തൽ മാറ്റാനും താഴെ നല്കിയിരിക്കുന്നതു
+പോലെ ഇതുപയോഗിക്കാമെന്ന് ഓര്‍ക്കുക.
 
 <!-- {% raw %} -->
 ```latex
