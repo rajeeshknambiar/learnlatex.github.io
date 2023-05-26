@@ -290,11 +290,10 @@ C & D\\
 
 ### `tabularx`
 
-The `tabularx` environment, provided by the package of
-the same name, has a similar syntax to `tabular*` but instead of
-adjusting the inter-column space, adjusts the widths of columns
-specified by a new column type, `X`. This is equivalent to a
-specification of `p{...}` for an automatically determined width.
+അതേ നാമത്തിലുള്ള പൊതിക്കെട്ട് നല്കുന്ന `tabularx` പരിസരത്തിനു് `tabular*`-നു സമാനമായ
+വാക്യഘടനയാണുള്ളത്, എന്നാൽ നിരകള്‍ക്കിടയിലുള്ള വിടവ് ക്രമീകരിക്കുന്നതിനു പകരം `X` എന്ന പുതിയ
+പംക്തീശൈലി ഉപയോഗിച്ച് നിരകളുടെ വീതി നിശ്ചിതമായി ക്രമീകരിക്കുകയാണു് ചെയ്യുന്നതു്. ഈ ശൈലി,
+സ്വയം വീതി നിര്‍ണ്ണയിക്കപ്പെട്ട `p{...}` നിര്‍ദ്ദേശത്തിനു് സമമാണു്. 
 
 ```latex
 \documentclass{article}
@@ -331,20 +330,18 @@ C & D D D D D D D\\
 
 \end{document}
 ```
+`tabularx` ഉപയോഗിക്കുമ്പോൾ ഈ പാഠങ്ങളിൽ ചര്‍ച്ച ചെയ്ത മറ്റു വിദ്യകളിൽ നിന്നു വ്യത്യസ്തമായി, പട്ടിക
+പലപ്രാവശ്യം വിന്യസിച്ചു നോക്കിയാലേ അന്തിമ രൂപത്തിലെത്തുകയുള്ളൂ. അതിനര്‍ത്ഥം ഈ പരിസരം ഉപയോഗിക്കുന്നതിന്
+ഒരുപാട് പരിമിതകൾ ഉണ്ടെന്നാണു്; [പൊതിക്കെട്ടിന്റെ കൈപ്പുസ്തകം](https://texdoc.org/pkg/tabularx) കാണുക.
 
-Unlike the other forms discussed in these lessons, `tabularx` needs to
-typeset the table several times with trial widths to determine the
-final setting. This means that there are several restrictions on the
-use of the environment; see the
-[package documentation](https://texdoc.org/pkg/tabularx).
 
-## Multi-page tables
+## പല താളുകൾ ആവശ്യമായ പട്ടികകൾ
 
-A `tabular` forms an unbreakable box so it must be small enough to fit
-on one page, and is often placed in a floating `table` environment.
+മുറിക്കാനാവാത്ത ഒരു പെട്ടിയാണ് `tabular` നിര്‍മ്മിക്കുന്നത്, അതിനാൽ ഒരു താളിൽ ഒതുങ്ങുന്നത്ര വലുപ്പമേ
+ഇതിനുണ്ടാവാൻ പാടുള്ളൂ. മാത്രമല്ല, വിട്ടുനില്‍ക്കുന്ന `table` പരിസരത്തിനകത്താണു് അതിനെ സാധാരണ വയ്ക്കാറ്.
 
-Several packages provide variants with similar syntax that do allow
-page breaking. Here we show the `longtable` package:
+താളിനറ്റത്തു വച്ച് പട്ടിക മുറിക്കാൻ സഹായിക്കുന്ന നിരവധി പൊതിക്കെട്ടുകൾ സമാനമായ വാക്യഘടനയോടു കൂടി ലഭ്യമാണു്.
+നമ്മൾ ഇവിടെ `longtable` പൊതിക്കെട്ട് ഉപയോഗിക്കുന്നത് വിശദീകരിക്കുന്നു:
 
 ```latex
 \documentclass{article}
@@ -381,19 +378,17 @@ A Wider Entry & b\\
 \end{document}
 ```
 
-`longtable` is notable in that it preserves the column widths
-over all pages of the table; however in order to achieve this it
-may take several runs of LaTeX so that wide entries encountered later
-in the table can affect the column widths in earlier pages.
+പട്ടികയിലെ നിരകൾക്ക് അതു നിറഞ്ഞു നില്‍ക്കുന്ന എല്ലാ താളുകളിലും ഒരേ വീതി പരിപാലിക്കുമെന്നത്
+`longtable` പരിസരത്തിന്റെ മേന്മയാണ്; പക്ഷേ അതു ശരിയാക്കാൻ പലതവണ ലാറ്റെൿ പ്രവര്‍ത്തിപ്പിക്കേണ്ടി
+വരും, കാരണം പിന്നീടു വരുന്ന വീതി കൂടിയ കോശങ്ങള്‍ക്കനുസരിച്ച് മുന്‍പത്തെ താളിലുള്ള നിരയുടെ വീതി മാറ്റേണ്ടതുണ്ട്.
 
-## Table notes
 
-It is quite common to need footnote-like marks in a table referring to
-notes under the table. The `threeparttable` package simplifies the
-markup for such tables, arranging that the notes are set in a
-block the same width as the table. Refer to the
-[package documentation](https://texdoc.org/pkg/threeparttable)
-for full details, but we show a simple example here.
+## പട്ടികക്കുറിപ്പുകൾ
+
+പട്ടികയിലെ ഉള്ളടക്കത്തെ പരാമര്‍ശിക്കുന്ന അടിക്കുറിപ്പുകൾ അതിനു ചുവടെ ചേര്‍ക്കുക എന്നത് പലപ്പോഴും ആവശ്യമുള്ള കാര്യമാണ്.
+പട്ടികയുടെ അതേ വീതിയിലുള്ള ഒരു ചതുരത്തിനകത്ത് കുറിപ്പുകൾ വിന്യസിക്കാനുള്ള നിര്‍ദ്ദേശങ്ങൾ എളുപ്പം നല്കാൻ സഹായിക്കുന്ന
+പൊതിക്കെട്ടാണ് `threeparttable`. വിശദവിവരങ്ങള്‍ക്ക് [പൊതിക്കെട്ടിന്റെ കൈപ്പുസ്തകം]https://texdoc.org/pkg/threeparttable)
+നോക്കുക, ഒരു ലളിതമായ ഉദാഹരണം ഇവിടെ കാണിക്കാം:
 
 ```latex
 \documentclass{article}
